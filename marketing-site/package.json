@@ -1,0 +1,35 @@
+{
+  "name": "marketing-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "deploy": "scp -i ~/.ssh/id_ed25519_do -r out/* root@164.92.190.232:/var/www/site_zyg_marketing/",
+    "windows:deploy": "scp -i C:/Users/Nouman.Ejaz/.ssh/id_ed25519_zyg_deploy -r out/* root@164.92.190.232:/var/www/site_zyg_marketing/"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.19",
+    "dagre": "^0.8.5",
+    "next": "16.1.4",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-icons": "^5.5.0",
+    "react-markdown": "^10.1.0",
+    "reactflow": "^11.11.4",
+    "rehype-raw": "^7.0.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.4",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
