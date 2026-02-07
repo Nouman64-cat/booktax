@@ -10,6 +10,13 @@ interface BlogPageProps {
     params: { slug: string };
 }
 
+export async function generateStaticParams() {
+    const { dummyBlogs } = await import("../../../data/dummyBlogs");
+    return dummyBlogs.map((post) => ({
+        slug: post.slug,
+    }));
+}
+
 export async function generateMetadata(
     { params }: BlogPageProps,
     parent: ResolvingMetadata
