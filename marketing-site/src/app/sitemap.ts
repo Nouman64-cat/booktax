@@ -1,6 +1,5 @@
 import { MetadataRoute } from "next";
 import { fetchBlogs } from "../services/hygraphApi";
-import { fetchTeamMembers } from "../services/teamMember";
 
 export const dynamic = "force-static";
 
@@ -33,14 +32,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
-  // Fetch dynamic team members
-  const teamMembers = await fetchTeamMembers();
-  const teamRoutes = teamMembers.map((member: any) => ({
-    url: `${baseUrl}/team/${member.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.5,
-  }));
-
-  return [...routes, ...blogRoutes, ...teamRoutes];
+  return [...routes, ...blogRoutes];
 }

@@ -18,7 +18,7 @@ import { MdOutlineAutoAwesome } from "react-icons/md";
 import { LuLayoutDashboard } from "react-icons/lu";
 
 const baseNavItems = [
-    { label: "Teams", to: "/about" },
+    { label: "About", to: "/about" },
     { label: "Resources", to: "/blogs" },
     { label: "Pricing", to: "/pricing" },
 ];
