@@ -4,6 +4,7 @@ import { SEO_KEYWORDS } from "../config/seo";
 import { LOGO_URL } from "../config";
 import HeroSection from "../components/home/HeroSection";
 import ServicesOverview from "../components/home/ServicesOverview";
+import TrustedBy from "../components/home/TrustedBy";
 
 export const metadata: Metadata = {
   title: "Booktax Solution - Financial Clarity for Startups & Small Businesses",
@@ -44,6 +45,7 @@ export default function Home() {
       />
       <HeroSection />
       <ServicesOverview />
+      <TrustedBy />
     </main>
   );
 }
