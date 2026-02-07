@@ -5,6 +5,7 @@ import { LOGO_URL } from "../config";
 import HeroSection from "../components/home/HeroSection";
 import ServicesOverview from "../components/home/ServicesOverview";
 import TrustedBy from "../components/home/TrustedBy";
+import FaqCTA from "../components/home/FaqCTA";
 
 export const metadata: Metadata = {
   title: "Booktax Solution - Financial Clarity for Startups & Small Businesses",
@@ -46,6 +47,7 @@ export default function Home() {
       <HeroSection />
       <ServicesOverview />
       <TrustedBy />
+      <FaqCTA />
     </main>
   );
 }

@@ -3,10 +3,9 @@
 import React, { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FiSun, FiMoon, FiChevronDown, FiCpu, FiLayout } from "react-icons/fi";
+import { FiChevronDown, FiCpu, FiLayout } from "react-icons/fi";
 
 import { useAuth } from "../../context/AuthContext";
-import { useTheme } from "../../context/ThemeContext";
 import { LOGO_URL, STUDIO_URL } from "../../config";
 
 import { MdOutlineAutoAwesome } from "react-icons/md";
@@ -23,11 +22,6 @@ const Navbar: React.FC = () => {
 
     const pathname = usePathname();
     const { user, signOut } = useAuth();
-    const { theme, setTheme, resolvedTheme } = useTheme();
-
-    const toggleTheme = () => {
-        setTheme(resolvedTheme === "dark" ? "light" : "dark");
-    };
 
     useEffect(() => {
         setMobileOpen(false);
@@ -40,8 +34,8 @@ const Navbar: React.FC = () => {
     const getLinkClasses = (path: string) => {
         const isActive = pathname === path;
         return `text-sm font-normal transition-colors ${isActive
-            ? "text-gray-900 dark:text-white"
-            : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+            ? "text-gray-900"
+            : "text-gray-600 hover:text-gray-900"
             }`;
     };
 
@@ -50,13 +44,13 @@ const Navbar: React.FC = () => {
     };
 
     return (
-        <header className="sticky top-0 z-50 bg-gray-50/80 dark:bg-gray-900/80 backdrop-blur-sm border-b border-gray-200/50 dark:border-gray-800/50">
+        <header className="sticky top-0 z-50 bg-gray-50/80 backdrop-blur-sm border-b border-gray-200/50">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2">
                         <img src={LOGO_URL} alt="Booktax Solution" className="w-6 h-6 object-contain" />
-                        <span className="text-base font-semibold text-gray-900 dark:text-white">
+                        <span className="text-base font-semibold text-gray-900">
                             Booktax Solution
                         </span>
                     </Link>
@@ -72,27 +66,18 @@ const Navbar: React.FC = () => {
 
                     {/* Desktop Actions */}
                     <div className="hidden lg:flex items-center gap-4">
-                        {/* Theme Toggle */}
-                        <button
-                            onClick={toggleTheme}
-                            className="p-1.5 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
-                            aria-label="Toggle theme"
-                        >
-                            {resolvedTheme === "dark" ? <FiSun className="w-4 h-4" /> : <FiMoon className="w-4 h-4" />}
-                        </button>
-
                         {user ? (
                             <>
                                 <a
                                     href={STUDIO_URL}
-                                    className="px-4 py-2 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-sm font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-all hover:ring-2 hover:ring-primary-500/50 shadow-sm hover:shadow-primary-500/20"
+                                    className="px-4 py-2 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-800 transition-all hover:ring-2 hover:ring-primary-500/50 shadow-sm hover:shadow-primary-500/20"
                                 >
                                     Open Studio
                                 </a>
                                 <button
                                     type="button"
                                     onClick={handleSignOut}
-                                    className="text-sm font-normal text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition-colors"
+                                    className="text-sm font-normal text-gray-600 hover:text-red-600 transition-colors"
                                 >
                                     Sign out
                                 </button>
@@ -102,7 +87,7 @@ const Navbar: React.FC = () => {
                                 {/* Contact Us Button */}
                                 <Link
                                     href="/contact"
-                                    className="px-4 py-2 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-sm font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-all shadow-sm"
+                                    className="px-4 py-2 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-800 transition-all shadow-sm"
                                 >
                                     Contact Us
                                 </Link>
@@ -113,7 +98,7 @@ const Navbar: React.FC = () => {
                     {/* Mobile Menu Button */}
                     <button
                         type="button"
-                        className="p-2 text-gray-600 dark:text-gray-400 lg:hidden"
+                        className="p-2 text-gray-600 lg:hidden"
                         onClick={() => setMobileOpen((value) => !value)}
                         aria-label="Toggle navigation"
                     >
@@ -126,34 +111,25 @@ const Navbar: React.FC = () => {
 
             {/* Mobile Menu */}
             {mobileOpen && (
-                <div className="lg:hidden border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
+                <div className="lg:hidden border-t border-gray-200 bg-white">
                     <div className="px-6 py-4 space-y-1">
                         {navItems.map((item) => (
                             <Link
                                 key={item.to}
                                 href={item.to}
-                                className={`block py-2 text-sm ${pathname === item.to ? "text-gray-900 dark:text-white" : "text-gray-600 dark:text-gray-400"}`}
+                                className={`block py-2 text-sm ${pathname === item.to ? "text-gray-900" : "text-gray-600"}`}
                             >
                                 {item.label}
                             </Link>
                         ))}
 
-                        {/* Mobile Theme Toggle */}
-                        <button
-                            onClick={toggleTheme}
-                            className="flex w-full items-center justify-between py-2 text-sm text-gray-600 dark:text-gray-400"
-                        >
-                            <span>Switch theme</span>
-                            {resolvedTheme === "dark" ? <FiSun className="w-4 h-4" /> : <FiMoon className="w-4 h-4" />}
-                        </button>
-
                         <div className="pt-4 space-y-2">
                             {user ? (
                                 <>
-                                    <a href={STUDIO_URL} className="block w-full px-4 py-2 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-sm font-medium text-center">
+                                    <a href={STUDIO_URL} className="block w-full px-4 py-2 rounded-lg bg-gray-900 text-white text-sm font-medium text-center">
                                         Open Studio
                                     </a>
-                                    <button onClick={handleSignOut} className="block w-full text-sm text-gray-600 dark:text-gray-400 text-center py-2">
+                                    <button onClick={handleSignOut} className="block w-full text-sm text-gray-600 text-center py-2">
                                         Sign out
                                     </button>
                                 </>
@@ -162,7 +138,7 @@ const Navbar: React.FC = () => {
                                     {/* Mobile Contact Button */}
                                     <Link
                                         href="/contact"
-                                        className="block w-full px-4 py-2 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-sm font-medium text-center mt-2"
+                                        className="block w-full px-4 py-2 rounded-lg bg-gray-900 text-white text-sm font-medium text-center mt-2"
                                     >
                                         Contact Us
                                     </Link>
