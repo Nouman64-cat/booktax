@@ -9,11 +9,11 @@ import CommunitySectionClient from "../components/home/CommunitySectionClient";
 import AppSelectionSection from "../components/home/AppSelectionSection";
 
 export const metadata: Metadata = {
-  title: "Zygotrix - Genetic Analysis & Simulation Platform",
-  description: "Zygotrix is a comprehensive platform for genetic analysis, DNA sequencing simulation, and inheritance pattern modeling. Built for researchers and teams.",
+  title: "Booktax - Genetic Analysis & Simulation Platform",
+  description: "Booktax is a comprehensive platform for genetic analysis, DNA sequencing simulation, and inheritance pattern modeling. Built for researchers and teams.",
   keywords: SEO_KEYWORDS.HOME,
   openGraph: {
-    title: "Zygotrix - Genetic Analysis Platform",
+    title: "Booktax - Genetic Analysis Platform",
     description: "Advanced tools for genetic analysis and simulation.",
     images: ["https://ap-south-1.graphassets.com/cmg0d4awz0abu07pfgv3s80hg/cmg0o8wb80r7d07pd9fu2aywz"],
   },
@@ -23,7 +23,7 @@ export default function Home() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
-    name: 'Zygotrix',
+    name: 'Booktax',
     applicationCategory: 'ScientificApplication',
     operatingSystem: 'Web browser',
     offers: {
@@ -34,9 +34,9 @@ export default function Home() {
     description: 'Comprehensive platform for genetic analysis and simulation.',
     publisher: {
       '@type': 'Organization',
-      name: 'Zygotrix',
-      logo: 'https://cdn-zygotrix.s3.us-east-1.amazonaws.com/zygotrix-logo.png',
-      url: 'https://zygotrix.com'
+      name: 'Booktax',
+      logo: 'https://cdn-Booktax.s3.us-east-1.amazonaws.com/Booktax-logo.png',
+      url: 'https://Booktax.com'
     }
   }
   return (

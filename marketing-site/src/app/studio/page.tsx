@@ -8,7 +8,7 @@ import type { IconKey } from '../../components/universal/Icon';
 import { STUDIO_URL } from '../../config';
 
 export const metadata: Metadata = {
-    title: 'Zygotrix Studio - Precision Breeding & Simulation',
+    title: 'Booktax Studio - Precision Breeding & Simulation',
     description: 'Design breeding programs, predict phenotypes, and map inheritance with our advanced simulation engine.',
     keywords: SEO_KEYWORDS.STUDIO,
 };
@@ -69,7 +69,7 @@ export default function StudioPage() {
                         Ready to start your research?
                     </h2>
                     <p className="text-lg text-gray-600 dark:text-gray-400 mb-10">
-                        Join thousands of researchers and students using Zygotrix Studio to simulate and analyze genetic data.
+                        Join thousands of researchers and students using Booktax Studio to simulate and analyze genetic data.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
@@ -79,7 +79,7 @@ export default function StudioPage() {
                             Get Started for Free
                         </a>
                         <a
-                            href="https://calendly.com/working-nouman-ejaz/zygotrix-demo"
+                            href="https://calendly.com/working-nouman-ejaz/Booktax-demo"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-8 py-3.5 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-semibold hover:bg-gray-100 dark:hover:bg-gray-800 transition-all"

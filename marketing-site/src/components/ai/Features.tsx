@@ -46,7 +46,7 @@ const Features = () => {
                         Intelligence That Adapts and <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500">Expands</span>
                     </h3>
                     <p className="text-lg text-slate-600 dark:text-slate-300">
-                        Zygotrix isn't just another AI. It's a living system that learns from its environment to provide unparalleled results.
+                        Booktax isn't just another AI. It's a living system that learns from its environment to provide unparalleled results.
                     </p>
                 </div>
 

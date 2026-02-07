@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         }
 
         return {
-            title: `${blog.title} | Zygotrix Blog`,
+            title: `${blog.title} | Booktax Blog`,
             description: blog.excerpt || blog.content.markdown.substring(0, 160),
             alternates: {
                 canonical: `/blogs/${blog.slug}`,
@@ -65,7 +65,7 @@ export default async function BlogDetailPage({ params }: Props) {
         datePublished: blog?.date, // Ensure this field exists in your API response
         author: {
             '@type': 'Person',
-            name: blog?.authors[0]?.name || 'Zygotrix Team'
+            name: blog?.authors[0]?.name || 'Booktax Team'
         }
     };
     return (

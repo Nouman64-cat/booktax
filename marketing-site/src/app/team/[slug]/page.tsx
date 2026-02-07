@@ -23,8 +23,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         }
 
         return {
-            title: `${member.name} - ${member.role} | Zygotrix Team`,
-            description: member.bio.markdown.substring(0, 160) || `Learn more about ${member.name}, ${member.role} at Zygotrix.`,
+            title: `${member.name} - ${member.role} | Booktax Team`,
+            description: member.bio.markdown.substring(0, 160) || `Learn more about ${member.name}, ${member.role} at Booktax.`,
             openGraph: {
                 title: `${member.name} - ${member.role}`,
                 description: member.bio.markdown.substring(0, 160),

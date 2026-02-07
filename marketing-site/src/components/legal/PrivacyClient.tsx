@@ -56,7 +56,7 @@ We take your privacy seriously and only access your data when necessary for the 
 • Respond to your comments, questions, and requests
 • Monitor and analyze trends, usage, and activities
 • Detect, investigate, and prevent fraudulent transactions and abuse
-• Personalize and improve your experience on Zygotrix`,
+• Personalize and improve your experience on Booktax`,
     },
     {
         title: "Information Sharing",
@@ -89,7 +89,7 @@ However, no method of transmission over the Internet is 100% secure, and we cann
 • Objection to or restriction of certain processing
 • Withdrawal of consent where applicable
 
-To exercise these rights, please contact us at privacy@zygotrix.io.`,
+To exercise these rights, please contact us at privacy@Booktax.io.`,
     },
     {
         title: "Cookies and Tracking",
@@ -99,7 +99,7 @@ We use both session cookies (which expire when you close your browser) and persi
     },
     {
         title: "Children's Privacy",
-        content: `Zygotrix is not intended for children under 16 years of age. We do not knowingly collect personal information from children under 16. If you believe we have collected information from a child under 16, please contact us immediately.`,
+        content: `Booktax is not intended for children under 16 years of age. We do not knowingly collect personal information from children under 16. If you believe we have collected information from a child under 16, please contact us immediately.`,
     },
     {
         title: "Changes to This Policy",
@@ -109,8 +109,8 @@ We use both session cookies (which expire when you close your browser) and persi
         title: "Contact Us",
         content: `If you have any questions about this Privacy Policy, please contact us at:
 
-Email: privacy@zygotrix.io
-Address: Zygotrix Research Labs
+Email: privacy@Booktax.io
+Address: Booktax Research Labs
 
 We will respond to your inquiry within 30 days.`,
     },
@@ -151,7 +151,7 @@ const PrivacyClient: React.FC = () => {
                     </h1>
 
                     <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-                        Your privacy is important to us. This policy explains how Zygotrix
+                        Your privacy is important to us. This policy explains how Booktax
                         collects, uses, and protects your personal information.
                     </p>
 

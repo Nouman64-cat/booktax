@@ -31,7 +31,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({
 
     useEffect(() => {
         // Hydration safe init
-        const stored = localStorage.getItem("zygotrix_theme");
+        const stored = localStorage.getItem("Booktax_theme");
         if (stored) {
             setThemeState(stored as Theme);
         }
@@ -63,7 +63,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({
     const setTheme = useCallback((newTheme: Theme) => {
         isManuallySetRef.current = true; // Mark as manually set
         setThemeState(newTheme);
-        localStorage.setItem("zygotrix_theme", newTheme);
+        localStorage.setItem("Booktax_theme", newTheme);
 
         // Reset the flag after a short delay
         setTimeout(() => {

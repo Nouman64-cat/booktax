@@ -11,7 +11,7 @@ const YouTubeVideo: React.FC = () => {
                         Experience the <span className="text-emerald-500 dark:text-emerald-400">Future of Genetics</span>
                     </h2>
                     <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                        Watch our platform overview to see how Zygotrix streamlines genetic analysis and inheritance modeling.
+                        Watch our platform overview to see how Booktax streamlines genetic analysis and inheritance modeling.
                     </p>
                 </div>
 
@@ -25,7 +25,7 @@ const YouTubeVideo: React.FC = () => {
                             <iframe
                                 className="w-full h-full"
                                 src="https://www.youtube.com/embed/lRU3yOf5S7Q?si=qPNhdAwPV6CKRl99"
-                                title="Zygotrix Platform Demo"
+                                title="Booktax Platform Demo"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowFullScreen

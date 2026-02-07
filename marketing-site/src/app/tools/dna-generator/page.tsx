@@ -3,12 +3,12 @@ import DnaGeneratorClient from "../../../components/tools/DnaGeneratorClient";
 import { SEO_KEYWORDS } from "../../../config/seo";
 
 export const metadata: Metadata = {
-    title: "Free DNA Sequence Generator - Create Random DNA & RNA Online | Zygotrix",
+    title: "Free DNA Sequence Generator - Create Random DNA & RNA Online | Booktax",
     description: "Generate random DNA sequences up to 10 million base pairs with customizable GC content. Free online DNA generator tool powered by high-performance C++ engine. Download DNA and RNA sequences instantly.",
     keywords: SEO_KEYWORDS.TOOLS,
     openGraph: {
-        title: "Free DNA Sequence Generator - Zygotrix",
-        description: "Generate random DNA sequences up to 10 million base pairs with customizable GC content. Powered by Zygotrix C++ Engine.",
+        title: "Free DNA Sequence Generator - Booktax",
+        description: "Generate random DNA sequences up to 10 million base pairs with customizable GC content. Powered by Booktax C++ Engine.",
         type: "website",
         images: ["https://ap-south-1.graphassets.com/cmg0d4awz0abu07pfgv3s80hg/cmg0o8wb80r7d07pd9fu2aywz"],
     },
@@ -23,7 +23,7 @@ export default function DnaGeneratorPage() {
                     __html: JSON.stringify({
                         "@context": "https://schema.org",
                         "@type": "SoftwareApplication",
-                        "name": "Zygotrix DNA Generator",
+                        "name": "Booktax DNA Generator",
                         "applicationCategory": "EducationalApplication",
                         "operatingSystem": "Web Browser",
                         "offers": {

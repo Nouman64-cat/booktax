@@ -11,7 +11,7 @@ import React, {
 
 import type { AuthResponse, SignInPayload, UserProfile } from "../types/auth";
 
-const STORAGE_KEY = "zygotrix_auth_token";
+const STORAGE_KEY = "Booktax_auth_token";
 
 type AuthContextValue = {
     user: UserProfile | null;

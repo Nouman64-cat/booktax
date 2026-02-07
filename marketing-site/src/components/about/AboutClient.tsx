@@ -17,7 +17,7 @@ import { HiBeaker, HiCog } from "react-icons/hi";
 import { fetchTeamMembers } from "../../services/teamMember";
 import type { TeamMemberSummary } from "../../types/teamMember";
 
-const CONTACT_EMAIL = "contact@zygotrix.com";
+const CONTACT_EMAIL = "contact@Booktax.com";
 
 const cardPalettes = [
     {
@@ -176,7 +176,7 @@ const values = [
         name: "Extensible tooling",
         icon: HiCog,
         description:
-            "Traits, weights, and downstream pipelines are modular so teams can adapt Zygotrix to bespoke research programs.",
+            "Traits, weights, and downstream pipelines are modular so teams can adapt Booktax to bespoke research programs.",
         color: "from-emerald-500 to-teal-500",
     },
 ];
@@ -240,7 +240,7 @@ const AboutClient: React.FC = () => {
                         </div>
 
                         <h1 className="text-5xl font-bold leading-tight text-gray-900 dark:text-white sm:text-6xl">
-                            Zygotrix is crafted for teams who translate
+                            Booktax is crafted for teams who translate
                             <span className="relative whitespace-nowrap px-2">
                                 <span className="relative z-10 text-emerald-500">genetics</span>
                             </span>
@@ -250,7 +250,7 @@ const AboutClient: React.FC = () => {
                         <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-400 max-w-2xl">
                             We believe that understanding inheritance patterns should feel
                             intuitive, whether you are prototyping in a notebook or running
-                            production simulations. Zygotrix distills complex models into
+                            production simulations. Booktax distills complex models into
                             approachable building blocks so you can focus on insight
                             generation.
                         </p>
@@ -290,7 +290,7 @@ const AboutClient: React.FC = () => {
 
                                 {/* Logo or placeholder */}
                                 <div className="mx-auto w-36 mb-6 flex items-center justify-center text-2xl font-bold text-gray-900 dark:text-white">
-                                    ZYGOTRIX
+                                    Booktax
                                 </div>
 
                                 <p className="text-center text-sm leading-relaxed text-gray-600 dark:text-gray-400">
@@ -317,10 +317,10 @@ const AboutClient: React.FC = () => {
                             </span>
                         </div>
                         <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                            Meet the minds behind Zygotrix
+                            Meet the minds behind Booktax
                         </h2>
                         <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                            Core contributors and collaborators who help guide Zygotrix
+                            Core contributors and collaborators who help guide Booktax
                             towards making genetics accessible for everyone.
                         </p>
                     </div>
@@ -474,7 +474,7 @@ const AboutClient: React.FC = () => {
                                                 Active Contributors
                                             </h3>
                                             <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                                                Currently contributing to the Zygotrix project
+                                                Currently contributing to the Booktax project
                                             </p>
                                         </div>
                                         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mb-12">
@@ -575,7 +575,7 @@ const AboutClient: React.FC = () => {
                                                 Past Contributors
                                             </h3>
                                             <p className="text-sm text-gray-400 dark:text-gray-500 mt-1">
-                                                Alumni who helped shape Zygotrix
+                                                Alumni who helped shape Booktax
                                             </p>
                                         </div>
                                         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -670,7 +670,7 @@ const AboutClient: React.FC = () => {
                             <p className="text-gray-600 dark:text-gray-300">
                                 Our Hygraph workspace does not have any published team members
                                 yet. Check back soon to learn more about the people building
-                                Zygotrix.
+                                Booktax.
                             </p>
                         </div>
                     )}
@@ -731,7 +731,7 @@ const AboutClient: React.FC = () => {
                             </span>
                         </div>
                         <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                            Join the Zygotrix Community
+                            Join the Booktax Community
                         </h2>
                         <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
                             Connect with genetics enthusiasts, researchers, and developers. Share ideas, get support, and be part of our growing community.
@@ -782,7 +782,7 @@ const AboutClient: React.FC = () => {
                                         Explore our open-source contributions, report issues, and contribute to the codebase.
                                     </p>
                                     <a
-                                        href="https://github.com/Nouman64-cat/Zygotrix"
+                                        href="https://github.com/Nouman64-cat/Booktax"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="inline-flex items-center gap-2 text-gray-700 dark:text-gray-400 font-semibold hover:gap-3 transition-all"

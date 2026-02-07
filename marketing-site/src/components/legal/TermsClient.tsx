@@ -6,13 +6,13 @@ import Link from "next/link";
 const sections = [
     {
         title: "Acceptance of Terms",
-        content: `By accessing or using Zygotrix ("the Platform"), you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this site.
+        content: `By accessing or using Booktax ("the Platform"), you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this site.
 
 These Terms of Service apply to all users of the Platform, including without limitation users who are browsers, researchers, customers, and contributors of content.`,
     },
     {
         title: "Use License",
-        content: `Subject to your compliance with these Terms, Zygotrix grants you a limited, non-exclusive, non-transferable, revocable license to:
+        content: `Subject to your compliance with these Terms, Booktax grants you a limited, non-exclusive, non-transferable, revocable license to:
 
 • Access and use the Platform for personal, educational, or research purposes
 • Run genetic simulations and analyses using our tools
@@ -40,7 +40,7 @@ We reserve the right to disable any user account at any time if we believe you h
     },
     {
         title: "Data Collection, Recording, and Privacy",
-        content: `By using Zygotrix, you explicitly acknowledge and agree that:
+        content: `By using Booktax, you explicitly acknowledge and agree that:
 
 What We Record:
 • Your complete account information including name, email, and registration details
@@ -73,11 +73,11 @@ By continuing to use the Platform, you consent to our data collection practices 
     },
     {
         title: "Intellectual Property",
-        content: `The Platform and its original content, features, and functionality are owned by Zygotrix and are protected by international copyright, trademark, patent, trade secret, and other intellectual property laws.
+        content: `The Platform and its original content, features, and functionality are owned by Booktax and are protected by international copyright, trademark, patent, trade secret, and other intellectual property laws.
 
-Your Content: You retain ownership of any content you create using the Platform, including simulation configurations, trait definitions, and research projects. By posting content on Zygotrix, you grant us a worldwide, non-exclusive, royalty-free license to use, reproduce, and display such content in connection with operating and promoting the Platform.
+Your Content: You retain ownership of any content you create using the Platform, including simulation configurations, trait definitions, and research projects. By posting content on Booktax, you grant us a worldwide, non-exclusive, royalty-free license to use, reproduce, and display such content in connection with operating and promoting the Platform.
 
-Our Content: All Zygotrix branding, logos, algorithms, documentation, and user interface designs remain our exclusive property.`,
+Our Content: All Booktax branding, logos, algorithms, documentation, and user interface designs remain our exclusive property.`,
     },
     {
         title: "Acceptable Use",
@@ -96,7 +96,7 @@ Our Content: All Zygotrix branding, logos, algorithms, documentation, and user i
     },
     {
         title: "Scientific Accuracy Disclaimer",
-        content: `Zygotrix provides genetic simulation tools for educational and research purposes. While we strive for scientific accuracy:
+        content: `Booktax provides genetic simulation tools for educational and research purposes. While we strive for scientific accuracy:
 
 • Simulations are models and may not perfectly reflect real-world genetics
 • Results should be validated against empirical data before making decisions
@@ -108,7 +108,7 @@ You acknowledge that genetic inheritance is complex and that our tools provide a
     },
     {
         title: "Limitation of Liability",
-        content: `To the fullest extent permitted by law, Zygotrix shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation:
+        content: `To the fullest extent permitted by law, Booktax shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation:
 
 • Loss of profits, data, or other intangible losses
 • Damage to your computer system or loss of data
@@ -128,7 +128,7 @@ Upon termination:
 • We may delete your account and associated data
 • All provisions of these Terms which should survive termination shall survive
 
-You may terminate your account at any time by contacting us at support@zygotrix.io.`,
+You may terminate your account at any time by contacting us at support@Booktax.io.`,
     },
     {
         title: "Changes to Terms",
@@ -146,8 +146,8 @@ Any disputes arising from these Terms or your use of the Platform shall be resol
         title: "Contact Information",
         content: `For any questions about these Terms of Service, please contact us:
 
-Email: legal@zygotrix.io
-Support: support@zygotrix.io
+Email: legal@Booktax.io
+Support: support@Booktax.io
 
 We aim to respond to all inquiries within 5 business days.`,
     },
@@ -188,7 +188,7 @@ const TermsClient: React.FC = () => {
                     </h1>
 
                     <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-                        Please read these terms carefully before using Zygotrix. By using
+                        Please read these terms carefully before using Booktax. By using
                         our platform, you agree to be bound by these terms.
                     </p>
 
@@ -248,7 +248,7 @@ const TermsClient: React.FC = () => {
                         </div>
                         <div>
                             <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2">
-                                By using Zygotrix, you acknowledge:
+                                By using Booktax, you acknowledge:
                             </h3>
                             <ul className="text-slate-600 dark:text-slate-300 space-y-2">
                                 <li className="flex items-start gap-2">

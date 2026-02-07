@@ -31,7 +31,7 @@ const ZygoAISectionClient: React.FC = () => {
                     </h2>
 
                     <p className="text-lg sm:text-xl leading-8 text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-                        Experience the power of Zygotrix AI right from your screen.
+                        Experience the power of Booktax AI right from your screen.
                         Analyze data, generate hypotheses, and visualize inheritance patterns in real-time.
                     </p>
                 </div>
@@ -146,10 +146,10 @@ const ZygoAISectionClient: React.FC = () => {
                 {/* Final CTA */}
                 <div className="mt-12 text-center">
                     <Link
-                        href="https://ai.zygotrix.com/register"
+                        href="https://ai.Booktax.com/register"
                         className="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-emerald-500/25 hover:bg-emerald-500 hover:scale-105 transition-all duration-300"
                     >
-                        <span>Launch Zygotrix AI</span>
+                        <span>Launch Booktax AI</span>
                         <HiLightningBolt className="w-4 h-4" />
                     </Link>
                 </div>

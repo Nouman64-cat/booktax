@@ -18,15 +18,15 @@ const HeroSection: React.FC = () => {
 
                         <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
                             Seamlessly merge <strong>AI-driven research</strong> with <strong>advanced biological simulation</strong>.
-                            From literature review to phenotype prediction, Zygotrix powers your entire workflow.
+                            From literature review to phenotype prediction, Booktax powers your entire workflow.
                         </p>
 
                         <div className="flex flex-wrap items-center gap-4 pt-2">
                             <Link
-                                href="https://ai.zygotrix.com/register"
+                                href="https://ai.Booktax.com/register"
                                 className="px-6 py-3 rounded-lg bg-emerald-600 text-white text-sm font-semibold hover:bg-emerald-500 hover:shadow-lg hover:shadow-emerald-500/30 transition-all duration-300 flex items-center gap-2"
                             >
-                                <FaBrain className="w-5 h-5" /> Launch Zygotrix AI
+                                <FaBrain className="w-5 h-5" /> Launch Booktax AI
                             </Link>
                             <a
                                 href={`${STUDIO_URL}/signup`}

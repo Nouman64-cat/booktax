@@ -80,7 +80,7 @@ const AppSelectionSection: React.FC = () => {
 
                 <div className="grid md:grid-cols-2 gap-16 lg:gap-24 max-w-6xl mx-auto relative z-10 px-4 sm:px-12">
 
-                    {/* --- ZYGOTRIX AI CARD --- */}
+                    {/* --- Booktax AI CARD --- */}
                     <div className="relative group">
                         {/* Connecting Circuits (Left Card) */}
                         <svg className="absolute -inset-[50%] w-[200%] h-[200%] pointer-events-none z-0 overflow-visible" viewBox="0 0 200 200" preserveAspectRatio="none">
@@ -135,23 +135,23 @@ const AppSelectionSection: React.FC = () => {
                                     <FaBrain className="w-8 h-8" />
                                 </div>
 
-                                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Zygotrix AI</h3>
+                                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Booktax AI</h3>
                                 <p className="text-gray-600 dark:text-gray-400 mb-8 flex-grow">
                                     Your personal AI Geneticist. Perform deep literature reviews, run automated GWAS analyses, and synthesize complex biological data.
                                 </p>
 
                                 <Link
-                                    href="https://ai.zygotrix.com/register"
+                                    href="https://ai.Booktax.com/register"
                                     className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-emerald-600 text-white font-bold hover:bg-emerald-500 transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(16,185,129,0.5)]"
                                 >
-                                    Launch Zygotrix AI <FaArrowRight className="w-4 h-4" />
+                                    Launch Booktax AI <FaArrowRight className="w-4 h-4" />
                                 </Link>
                             </div>
                         </div>
                     </div>
 
 
-                    {/* --- ZYGOTRIX STUDIO CARD --- */}
+                    {/* --- Booktax STUDIO CARD --- */}
                     <div className="relative group">
                         {/* Connecting Circuits (Right Card) */}
                         <svg className="absolute -inset-[50%] w-[200%] h-[200%] pointer-events-none z-0 overflow-visible" viewBox="0 0 200 200" preserveAspectRatio="none">
@@ -203,13 +203,13 @@ const AppSelectionSection: React.FC = () => {
                                     <FaDna className="w-8 h-8" />
                                 </div>
 
-                                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Zygotrix Studio</h3>
+                                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Booktax Studio</h3>
                                 <p className="text-gray-600 dark:text-gray-400 mb-8 flex-grow">
                                     The advanced simulation workbench. Design complex breeding programs, visualize pedigree inheritance, and manage virtual experiments.
                                 </p>
 
                                 <a
-                                    href={STUDIO_URL || "https://studio.zygotrix.com/signup"}
+                                    href={STUDIO_URL || "https://studio.Booktax.com/signup"}
                                     className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 font-bold hover:bg-slate-800 dark:hover:bg-slate-200 transition-all shadow-lg"
                                 >
                                     Launch Studio <FaArrowRight className="w-4 h-4" />

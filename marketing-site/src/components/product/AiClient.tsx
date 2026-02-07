@@ -22,7 +22,7 @@ import {
 } from "react-icons/fa";
 import { AI_APP_URL, BOT_NAME } from "../../config";
 
-const ZYGOTRIX_AI_URL = AI_APP_URL;
+const Booktax_AI_URL = AI_APP_URL;
 
 const AiClient: React.FC = () => {
     const botName = BOT_NAME;
@@ -199,7 +199,7 @@ const AiClient: React.FC = () => {
                     <p className="mx-auto max-w-3xl text-xl text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
                         Harness the power of artificial intelligence to explore genetics,
                         run simulations, and gain insights faster than ever before.
-                        Available right inside Zygotrix, whenever you need help.
+                        Available right inside Booktax, whenever you need help.
                     </p>
 
                     {/* Standalone App Banner */}
@@ -220,7 +220,7 @@ const AiClient: React.FC = () => {
                             Experience the complete AI agent platform designed specifically for genetics research.
                         </p>
                         <a
-                            href={ZYGOTRIX_AI_URL}
+                            href={Booktax_AI_URL}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#1E3A8A] to-[#10B981] dark:from-[#3B82F6] dark:to-[#10B981] text-white rounded-full font-semibold text-lg shadow-2xl hover:shadow-[#1E3A8A]/50 dark:hover:shadow-[#3B82F6]/50 hover:scale-105 transition-all duration-300"

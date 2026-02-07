@@ -22,7 +22,7 @@ const CommunitySectionClient: React.FC = () => {
         {
             icon: FaHandsHelping,
             title: "Get Support",
-            description: "Connect with fellow users and our team to get help with Zygotrix tools and genetics questions.",
+            description: "Connect with fellow users and our team to get help with Booktax tools and genetics questions.",
             gradient: "from-[#10B981] to-[#059669]",
         },
     ];
@@ -38,8 +38,8 @@ const CommunitySectionClient: React.FC = () => {
         },
         {
             name: "GitHub",
-            description: "Contribute to Zygotrix, report issues, and explore our open-source projects.",
-            href: "https://github.com/Nouman64-cat/Zygotrix",
+            description: "Contribute to Booktax, report issues, and explore our open-source projects.",
+            href: "https://github.com/Nouman64-cat/Booktax",
             icon: FaGithub,
             color: "from-slate-700 to-slate-900",
             buttonText: "View GitHub",
@@ -70,7 +70,7 @@ const CommunitySectionClient: React.FC = () => {
 
                     <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
                         Connect with genetics enthusiasts, researchers, and developers from around the world.
-                        Share knowledge, get help, and be part of the Zygotrix journey.
+                        Share knowledge, get help, and be part of the Booktax journey.
                     </p>
                 </div>
 

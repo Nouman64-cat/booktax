@@ -6,7 +6,7 @@ const VideoSection = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl font-bold text-slate-800 dark:text-white mb-4">
-                        See Zygotrix In Action
+                        See Booktax In Action
                     </h2>
                     <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
                         Watch how our biological AI engine adapts and evolves to solve complex problems in real-time.
@@ -17,7 +17,7 @@ const VideoSection = () => {
                     <div className="aspect-w-16 aspect-h-9 relative pb-[56.25%] h-0">
                         <iframe
                             src="https://www.youtube.com/embed/lRU3yOf5S7Q?si=Yz7bCd1ZUVuN8bFR"
-                            title="Zygotrix AI Demo"
+                            title="Booktax AI Demo"
                             className="absolute top-0 left-0 w-full h-full"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerPolicy="strict-origin-when-cross-origin"

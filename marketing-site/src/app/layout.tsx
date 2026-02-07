@@ -38,14 +38,14 @@ const axiforma = localFont({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL('https://zygotrix.com'),
-    title: "Zygotrix - Genetics Intelligence Engine",
+    metadataBase: new URL('https://Booktax.com'),
+    title: "Booktax - Genetics Intelligence Engine",
     description: "Uniting Mendelian ratios, polygenic scores, and expressive trait registries in a toolkit designed for the future of genetic research.",
     alternates: {
         canonical: './',
     },
     openGraph: {
-        title: "Zygotrix - Genetics Intelligence Engine",
+        title: "Booktax - Genetics Intelligence Engine",
         description: "Uniting Mendelian ratios, polygenic scores, and expressive trait registries in a toolkit designed for the future of genetic research.",
         type: "website",
         images: ["https://ap-south-1.graphassets.com/cmg0d4awz0abu07pfgv3s80hg/cmg0o8wb80r7d07pd9fu2aywz"],

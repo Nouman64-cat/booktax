@@ -146,7 +146,7 @@ const PedigreeAnalystClient: React.FC = () => {
 
                         <p className="text-xl text-slate-700 dark:text-slate-300 leading-relaxed max-w-3xl mx-auto">
                             Trace traits, predict inheritance patterns, and visualize family potential.
-                            Powered by Zygotrix's specialized <span className="font-semibold text-emerald-600 dark:text-emerald-400">genetic inference engine</span>.
+                            Powered by Booktax's specialized <span className="font-semibold text-emerald-600 dark:text-emerald-400">genetic inference engine</span>.
                         </p>
                     </div>
 
@@ -197,7 +197,7 @@ const PedigreeAnalystClient: React.FC = () => {
                             <div className="absolute inset-0 z-20 flex items-center justify-center bg-white/30 dark:bg-black/30 backdrop-blur-[1px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                                 <div className="bg-white dark:bg-gray-900 px-6 py-4 rounded-xl shadow-xl border border-slate-200 dark:border-slate-700 flex flex-col items-center gap-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                                     <p className="font-semibold text-slate-900 dark:text-white">Start Building Your Tree</p>
-                                    <a href="https://ai.zygotrix.com/register" className="pointer-events-auto px-5 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition font-medium text-sm flex items-center gap-2">
+                                    <a href="https://ai.Booktax.com/register" className="pointer-events-auto px-5 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition font-medium text-sm flex items-center gap-2">
                                         Launch Full App <HiArrowRight />
                                     </a>
                                 </div>
@@ -219,7 +219,7 @@ const PedigreeAnalystClient: React.FC = () => {
                         <div className="mt-6 flex justify-center">
                             <p className="text-sm text-slate-500 dark:text-slate-400 flex items-center gap-2">
                                 <HiSparkles className="text-emerald-500" />
-                                <span>Powered by the unified <strong>Zygotrix Engine</strong></span>
+                                <span>Powered by the unified <strong>Booktax Engine</strong></span>
                             </p>
                         </div>
                     </div>
@@ -242,7 +242,7 @@ const PedigreeAnalystClient: React.FC = () => {
                         </h2>
 
                         <p className="text-lg text-slate-600 dark:text-slate-400">
-                            Zygotrix provides a complete suite of high-performance tools for genetic analysis,
+                            Booktax provides a complete suite of high-performance tools for genetic analysis,
                             available for free to researchers and students.
                         </p>
                     </div>

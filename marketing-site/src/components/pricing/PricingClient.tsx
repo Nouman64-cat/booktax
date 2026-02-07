@@ -111,7 +111,7 @@ const PricingClient: React.FC = () => {
                         <div className="h-full">
                             <div className="mb-6">
                                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                                    Zygotrix PRO
+                                    Booktax PRO
                                 </h3>
                                 <div className="flex items-baseline gap-2 mb-4">
                                     <span className="text-5xl font-bold text-emerald-500">

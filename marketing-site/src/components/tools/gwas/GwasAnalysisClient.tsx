@@ -117,7 +117,7 @@ const GwasAnalysisClient: React.FC<GwasAnalysisClientProps> = () => {
             const data = await response.json();
 
             // Data likely needs some mapping if it doesn't perfectly match props, but let's assume it does based on backend
-            // We might need to construct the shape `messageMetadata.gwas_data` usually has in zygotrix_ai
+            // We might need to construct the shape `messageMetadata.gwas_data` usually has in Booktax_ai
 
             // Backend returns GwasResultResponse which has associations.
             // It might NOT have pre-calculated manhattan/qq data if the backend endpoint computes it on fly or if it's stored differently.
@@ -486,7 +486,7 @@ const GwasAnalysisClient: React.FC<GwasAnalysisClientProps> = () => {
                             Explore More <span className="text-emerald-500 dark:text-emerald-400">Genetics Tools</span>
                         </h2>
                         <p className="text-lg text-slate-600 dark:text-slate-400">
-                            Zygotrix offers a comprehensive suite of tools for researchers and students.
+                            Booktax offers a comprehensive suite of tools for researchers and students.
                         </p>
                     </div>
 

@@ -615,10 +615,10 @@ const DnaGeneratorClient: React.FC = () => {
             <section className="py-12 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
                 <div className="mx-auto max-w-4xl px-6 text-center">
                     <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-                        Why Zygotrix?
+                        Why Booktax?
                     </h3>
                     <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                        Zygotrix is a comprehensive genetics research platform designed for researchers, educators, and students.
+                        Booktax is a comprehensive genetics research platform designed for researchers, educators, and students.
                         Our tools are built with performance in mind, using C++ engines for computationally intensive tasks.
                         Start with our free DNA generator, and explore our full suite of tools when you're ready to dive deeper into genetics research.
                     </p>

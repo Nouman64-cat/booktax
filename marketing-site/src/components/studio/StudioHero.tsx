@@ -74,7 +74,7 @@ const StudioHero: React.FC = () => {
                                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
                             </a>
                             <a
-                                href="https://calendly.com/working-nouman-ejaz/zygotrix-demo"
+                                href="https://calendly.com/working-nouman-ejaz/Booktax-demo"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="px-8 py-3.5 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 font-semibold hover:bg-gray-50 dark:hover:bg-slate-800 transition-all"

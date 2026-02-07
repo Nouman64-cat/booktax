@@ -1,12 +1,12 @@
 /**
  * SEO metadata keywords for the application pages
- * Updated based on Zygotrix.com analysis (Jan 2026)
+ * Updated based on Booktax.com analysis (Jan 2026)
  */
 
 export const SEO_KEYWORDS = {
   // Global/Home keywords - Focused on the "Engine" and "Precision"
   HOME: [
-    "Zygotrix",
+    "Booktax",
     "precision genetics platform",
     "genetic engineering simulation",
     "high-performance DNA generation",
@@ -88,7 +88,7 @@ export const SEO_KEYWORDS = {
   // About/Team - Establishing Authority
   ABOUT: [
     "Nouman Ejaz",
-    "Zygotrix founder",
+    "Booktax founder",
     "software architecture for biology",
     "genetic engineering startup",
     "bioinformatics engineering team",
