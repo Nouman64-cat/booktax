@@ -57,9 +57,9 @@ const Navbar: React.FC = () => {
                 <div className="flex h-16 items-center justify-between">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2">
-                        <img src={LOGO_URL} alt="Booktax" className="w-6 h-6 object-contain" />
+                        <img src={LOGO_URL} alt="Booktax Solution" className="w-6 h-6 object-contain" />
                         <span className="text-base font-semibold text-gray-900 dark:text-white">
-                            Booktax
+                            Booktax Solution
                         </span>
                     </Link>
 
@@ -111,7 +111,7 @@ const Navbar: React.FC = () => {
                                             <div className="px-4 py-2 border-b border-gray-100 dark:border-gray-700">
                                                 <span className="text-xs font-semibold text-gray-500 uppercase">Choose product</span>
                                             </div>
-                                            <a href="https://ai.Booktax.com/register" className="flex items-center gap-3 px-4 py-3 text-sm text-gray-600 dark:text-gray-400 hover:bg-primary-50 dark:hover:bg-primary-900/10 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                                            <a href="https://ai.booktaxsolution.com/register" className="flex items-center gap-3 px-4 py-3 text-sm text-gray-600 dark:text-gray-400 hover:bg-primary-50 dark:hover:bg-primary-900/10 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                                                 <MdOutlineAutoAwesome className="w-4 h-4" /> Booktax AI
                                             </a>
                                             <a href={`${STUDIO_URL}/signup`} className="flex items-center gap-3 px-4 py-3 text-sm text-gray-600 dark:text-gray-400 hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
@@ -184,7 +184,7 @@ const Navbar: React.FC = () => {
                                         </button>
                                         {mobileGetStartedOpen && (
                                             <div className="mt-2 space-y-2 px-2 border-l-2 border-gray-100 dark:border-gray-800 ml-2">
-                                                <a href="https://ai.Booktax.com/register" className="flex items-center gap-2 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                                                <a href="https://ai.booktaxsolution.com/register" className="flex items-center gap-2 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                                     <FiCpu className="w-4 h-4" />
                                                     <span>Booktax AI</span>
                                                 </a>

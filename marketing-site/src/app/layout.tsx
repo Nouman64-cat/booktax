@@ -38,17 +38,20 @@ const axiforma = localFont({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL('https://Booktax.com'),
-    title: "Booktax - Genetics Intelligence Engine",
-    description: "Uniting Mendelian ratios, polygenic scores, and expressive trait registries in a toolkit designed for the future of genetic research.",
+    metadataBase: new URL('https://booktaxsolution.com'),
+    title: {
+        template: '%s | Booktax Solution',
+        default: 'Booktax Solution - Financial Clarity for Startups',
+    },
+    description: "Expert bookkeeping, strategic tax planning, and automated financial insights for startups and small businesses.",
     alternates: {
         canonical: './',
     },
     openGraph: {
-        title: "Booktax - Genetics Intelligence Engine",
-        description: "Uniting Mendelian ratios, polygenic scores, and expressive trait registries in a toolkit designed for the future of genetic research.",
+        title: "Booktax Solution - Financial Clarity",
+        description: "Expert bookkeeping, strategic tax planning, and automated financial insights for startups and small businesses.",
         type: "website",
-        images: ["https://ap-south-1.graphassets.com/cmg0d4awz0abu07pfgv3s80hg/cmg0o8wb80r7d07pd9fu2aywz"],
+        images: ["https://cdn-booktax.s3.us-east-1.amazonaws.com/booktax-logo.png"],
     },
 };
 

@@ -10,7 +10,7 @@ import CommunitySectionClient from "../components/home/CommunitySectionClient";
 import AppSelectionSection from "../components/home/AppSelectionSection";
 
 export const metadata: Metadata = {
-  title: "Booktax - Financial Clarity for Startups & Small Businesses",
+  title: "Booktax Solution - Financial Clarity for Startups & Small Businesses",
   description: "Booktax provides expert bookkeeping, strategic tax planning, and automated financial insights for startups and small businesses. Stop worrying about your books and focus on scaling.",
   keywords: SEO_KEYWORDS.HOME,
   openGraph: {
