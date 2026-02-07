@@ -3,6 +3,7 @@ import React from "react";
 import { SEO_KEYWORDS } from "../config/seo";
 import { LOGO_URL } from "../config";
 import HeroSection from "../components/home/HeroSection";
+import ServicesOverview from "../components/home/ServicesOverview";
 
 export const metadata: Metadata = {
   title: "Booktax Solution - Financial Clarity for Startups & Small Businesses",
@@ -42,6 +43,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <HeroSection />
+      <ServicesOverview />
     </main>
   );
 }
