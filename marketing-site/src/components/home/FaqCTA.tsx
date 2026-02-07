@@ -83,16 +83,16 @@ const FaqCTA: React.FC = () => {
                             <p className="mx-auto mt-6 max-w-xl text-center text-lg leading-8 text-gray-300">
                                 Stop drowning in paperwork. Get expert bookkeeping and tax strategy today.
                             </p>
-                            <div className="mt-10 flex items-center justify-center gap-x-6">
+                            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-x-6">
                                 <Link
                                     href="/contact"
-                                    className="rounded-xl bg-emerald-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all transform hover:scale-105"
+                                    className="w-full sm:w-auto text-center rounded-xl bg-emerald-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all transform hover:scale-105"
                                 >
                                     Book a Consultation
                                 </Link>
                                 <Link
                                     href="/services"
-                                    className="text-sm font-semibold leading-6 text-white flex items-center gap-1 group opacity-80 hover:opacity-100 transition-opacity"
+                                    className="text-sm font-semibold leading-6 text-white flex items-center gap-1 group opacity-80 hover:opacity-100 transition-opacity mt-2 sm:mt-0"
                                 >
                                     Our Services <FiArrowRight className="transition-transform group-hover:translate-x-1" />
                                 </Link>

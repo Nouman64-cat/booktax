@@ -21,22 +21,22 @@ const HeroSection: React.FC = () => {
                             Stop worrying about your books. We provide expert accounting, automated bookkeeping, and strategic tax planning so you can focus on scaling.
                         </p>
 
-                        <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                        <div className="flex flex-col sm:flex-row gap-4 pt-4 w-full sm:w-auto">
                             <Link
                                 href="/contact"
-                                className="px-8 py-4 rounded-xl bg-emerald-600 text-white text-base font-semibold hover:bg-emerald-700 hover:shadow-lg hover:shadow-emerald-500/20 transition-all duration-300 flex items-center justify-center gap-2"
+                                className="w-full sm:w-auto px-8 py-4 rounded-xl bg-emerald-600 text-white text-base font-semibold hover:bg-emerald-700 hover:shadow-lg hover:shadow-emerald-500/20 transition-all duration-300 flex items-center justify-center gap-2"
                             >
                                 Get Started <FaArrowRight className="w-4 h-4" />
                             </Link>
                             <Link
                                 href="/services"
-                                className="px-8 py-4 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white text-base font-semibold hover:bg-gray-200 dark:hover:bg-gray-700 transition-all flex items-center justify-center"
+                                className="w-full sm:w-auto px-8 py-4 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white text-base font-semibold hover:bg-gray-200 dark:hover:bg-gray-700 transition-all flex items-center justify-center"
                             >
                                 View Services
                             </Link>
                         </div>
 
-                        <div className="pt-8 flex items-center gap-8 text-sm text-gray-500 dark:text-gray-400">
+                        <div className="pt-8 flex flex-wrap items-center gap-4 sm:gap-8 text-sm text-gray-500 dark:text-gray-400">
                             <div className="flex items-center gap-2">
                                 <svg className="w-5 h-5 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
                                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -107,7 +107,7 @@ const HeroSection: React.FC = () => {
 
                         {/* Floating Cards */}
                         {/* Card 1: Expert Accounting */}
-                        <div className="absolute -left-4 top-12 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-xl border border-gray-100 dark:border-gray-700 max-w-[180px] animate-float-up" style={{ animationDelay: '0s' }}>
+                        <div className="hidden sm:block absolute -left-4 top-12 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-xl border border-gray-100 dark:border-gray-700 max-w-[180px] animate-float-up" style={{ animationDelay: '0s' }}>
                             <div className="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center mb-3 text-blue-600 dark:text-blue-400">
                                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 3.659c0 3.074-1.813 5.702-4.847 7.03-3.032-1.328-4.846-3.956-4.846-7.03 0-3.075 1.813-5.703 4.846-7.03 3.033 1.328 4.847 3.956 4.847 7.03zm0 3.659V18" /></svg>
                             </div>
@@ -116,7 +116,7 @@ const HeroSection: React.FC = () => {
                         </div>
 
                         {/* Card 2: Strategic Tax Planning */}
-                        <div className="absolute -right-4 top-32 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-xl border border-gray-100 dark:border-gray-700 max-w-[180px] animate-float-up" style={{ animationDelay: '1.5s' }}>
+                        <div className="hidden sm:block absolute -right-4 top-32 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-xl border border-gray-100 dark:border-gray-700 max-w-[180px] animate-float-up" style={{ animationDelay: '1.5s' }}>
                             <div className="w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mb-3 text-emerald-600 dark:text-emerald-400">
                                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                             </div>
@@ -125,7 +125,7 @@ const HeroSection: React.FC = () => {
                         </div>
 
                         {/* Card 3: Automated Bookkeeping */}
-                        <div className="absolute left-8 -bottom-6 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-xl border border-gray-100 dark:border-gray-700 max-w-[200px] animate-float-up" style={{ animationDelay: '2.5s' }}>
+                        <div className="hidden sm:block absolute left-8 -bottom-6 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-xl border border-gray-100 dark:border-gray-700 max-w-[200px] animate-float-up" style={{ animationDelay: '2.5s' }}>
                             <div className="flex items-center gap-3 mb-2">
                                 <div className="w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400">
                                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>

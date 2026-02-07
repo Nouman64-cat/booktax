@@ -59,46 +59,50 @@ const ServicesOverview: React.FC = () => {
                                     Live Sync
                                 </div>
                             </div>
+                            {/* Scrollable Table Container */}
+                            <div className="overflow-x-auto">
+                                <div className="min-w-[600px]">
+                                    {/* Table Header */}
+                                    <div className="grid grid-cols-12 gap-4 px-4 py-2 bg-gray-50/50 dark:bg-gray-900/30 text-xs font-semibold text-gray-500 dark:text-gray-400 border-b border-gray-200 dark:border-gray-800">
+                                        <div className="col-span-2">DATE</div>
+                                        <div className="col-span-4">DESCRIPTION</div>
+                                        <div className="col-span-3">CATEGORY</div>
+                                        <div className="col-span-3 text-right">AMOUNT</div>
+                                    </div>
 
-                            {/* Table Header */}
-                            <div className="grid grid-cols-12 gap-4 px-4 py-2 bg-gray-50/50 dark:bg-gray-900/30 text-xs font-semibold text-gray-500 dark:text-gray-400 border-b border-gray-200 dark:border-gray-800">
-                                <div className="col-span-2">DATE</div>
-                                <div className="col-span-4">DESCRIPTION</div>
-                                <div className="col-span-3">CATEGORY</div>
-                                <div className="col-span-3 text-right">AMOUNT</div>
-                            </div>
-
-                            {/* Table Rows */}
-                            <div className="divide-y divide-gray-100 dark:divide-gray-800">
-                                <div className="grid grid-cols-12 gap-4 px-4 py-3 items-center hover:bg-emerald-50/50 dark:hover:bg-emerald-900/10 transition-colors cursor-default">
-                                    <div className="col-span-2 text-gray-500 dark:text-gray-400 font-mono text-xs">Jan 14</div>
-                                    <div className="col-span-4 font-medium text-gray-900 dark:text-white truncate">Stripe Payout #9921</div>
-                                    <div className="col-span-3">
-                                        <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700 dark:bg-blue-500/10 dark:text-blue-400">
-                                            Revenue
-                                        </span>
+                                    {/* Table Rows */}
+                                    <div className="divide-y divide-gray-100 dark:divide-gray-800">
+                                        <div className="grid grid-cols-12 gap-4 px-4 py-3 items-center hover:bg-emerald-50/50 dark:hover:bg-emerald-900/10 transition-colors cursor-default">
+                                            <div className="col-span-2 text-gray-500 dark:text-gray-400 font-mono text-xs">Jan 14</div>
+                                            <div className="col-span-4 font-medium text-gray-900 dark:text-white truncate">Stripe Payout #9921</div>
+                                            <div className="col-span-3">
+                                                <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700 dark:bg-blue-500/10 dark:text-blue-400">
+                                                    Revenue
+                                                </span>
+                                            </div>
+                                            <div className="col-span-3 text-right font-medium text-gray-900 dark:text-white">+$4,250.00</div>
+                                        </div>
+                                        <div className="grid grid-cols-12 gap-4 px-4 py-3 items-center hover:bg-emerald-50/50 dark:hover:bg-emerald-900/10 transition-colors cursor-default">
+                                            <div className="col-span-2 text-gray-500 dark:text-gray-400 font-mono text-xs">Jan 12</div>
+                                            <div className="col-span-4 font-medium text-gray-900 dark:text-white truncate">AWS Web Services</div>
+                                            <div className="col-span-3">
+                                                <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300">
+                                                    Hosting
+                                                </span>
+                                            </div>
+                                            <div className="col-span-3 text-right font-medium text-gray-900 dark:text-white">-$245.20</div>
+                                        </div>
+                                        <div className="grid grid-cols-12 gap-4 px-4 py-3 items-center hover:bg-emerald-50/50 dark:hover:bg-emerald-900/10 transition-colors cursor-default">
+                                            <div className="col-span-2 text-gray-500 dark:text-gray-400 font-mono text-xs">Jan 10</div>
+                                            <div className="col-span-4 font-medium text-gray-900 dark:text-white truncate">WeWork NYC</div>
+                                            <div className="col-span-3">
+                                                <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300">
+                                                    Rent
+                                                </span>
+                                            </div>
+                                            <div className="col-span-3 text-right font-medium text-gray-900 dark:text-white">-$1,200.00</div>
+                                        </div>
                                     </div>
-                                    <div className="col-span-3 text-right font-medium text-gray-900 dark:text-white">+$4,250.00</div>
-                                </div>
-                                <div className="grid grid-cols-12 gap-4 px-4 py-3 items-center hover:bg-emerald-50/50 dark:hover:bg-emerald-900/10 transition-colors cursor-default">
-                                    <div className="col-span-2 text-gray-500 dark:text-gray-400 font-mono text-xs">Jan 12</div>
-                                    <div className="col-span-4 font-medium text-gray-900 dark:text-white truncate">AWS Web Services</div>
-                                    <div className="col-span-3">
-                                        <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300">
-                                            Hosting
-                                        </span>
-                                    </div>
-                                    <div className="col-span-3 text-right font-medium text-gray-900 dark:text-white">-$245.20</div>
-                                </div>
-                                <div className="grid grid-cols-12 gap-4 px-4 py-3 items-center hover:bg-emerald-50/50 dark:hover:bg-emerald-900/10 transition-colors cursor-default">
-                                    <div className="col-span-2 text-gray-500 dark:text-gray-400 font-mono text-xs">Jan 10</div>
-                                    <div className="col-span-4 font-medium text-gray-900 dark:text-white truncate">WeWork NYC</div>
-                                    <div className="col-span-3">
-                                        <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300">
-                                            Rent
-                                        </span>
-                                    </div>
-                                    <div className="col-span-3 text-right font-medium text-gray-900 dark:text-white">-$1,200.00</div>
                                 </div>
                             </div>
                         </div>
