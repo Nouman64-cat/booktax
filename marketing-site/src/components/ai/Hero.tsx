@@ -7,25 +7,25 @@ const Hero = () => {
         <section className="relative min-h-[calc(100vh-4rem)] flex items-center overflow-hidden bg-white dark:bg-gray-900 pt-10">
             {/* Background Effects */}
             <div className="absolute inset-0 z-0">
-                <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-emerald-50 to-transparent dark:from-emerald-900/10" />
-                <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-emerald-50 to-transparent dark:from-emerald-900/10" />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-emerald-500/10 dark:bg-emerald-500/5 rounded-full blur-3xl animate-pulse-glow" />
+                <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary-50 to-transparent dark:from-primary-900/10" />
+                <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-primary-50 to-transparent dark:from-primary-900/10" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary-500/10 dark:bg-primary-500/5 rounded-full blur-3xl animate-pulse-glow" />
             </div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
                 {/* Left Content */}
                 <div className="text-center lg:text-left space-y-8 animate-slide-in-left">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-100 dark:border-emerald-800 text-emerald-700 dark:text-emerald-400 text-sm font-medium">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary-50 dark:bg-primary-900/20 border border-primary-100 dark:border-primary-800 text-primary-700 dark:text-primary-400 text-sm font-medium">
                         <span className="relative flex h-2 w-2">
-                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
                         </span>
                         Your Personal AI Geneticist
                     </div>
 
                     <h1 className="text-5xl lg:text-7xl font-bold tracking-tight text-slate-800 dark:text-white leading-tight">
                         Research Faster with <br />
-                        <span className="inline-block bg-gradient-to-r from-emerald-600 to-teal-500 dark:from-emerald-400 dark:to-teal-300 bg-clip-text text-transparent animate-gradient-shift">
+                        <span className="inline-block bg-gradient-to-r from-primary-600 to-primary-500 dark:from-primary-400 dark:to-primary-300 bg-clip-text text-transparent animate-gradient-shift">
                             Your AI Geneticist
                         </span>
                     </h1>
@@ -49,7 +49,7 @@ const Hero = () => {
 
                     <div className="pt-8 flex items-center justify-center lg:justify-start gap-8 text-slate-400 dark:text-slate-500 text-sm font-medium">
                         <div className="flex items-center gap-2">
-                            <div className="w-2 h-2 rounded-full bg-green-500" />
+                            <div className="w-2 h-2 rounded-full bg-primary-500" />
                             Deep Research
                         </div>
                         <div className="flex items-center gap-2">
@@ -70,14 +70,14 @@ const Hero = () => {
                     <div className="relative w-[500px] h-[500px] perspective-1000">
 
                         {/* Background Gradients/Glows */}
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-emerald-100/30 dark:bg-emerald-900/10 rounded-full blur-[100px]" />
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary-100/30 dark:bg-primary-900/10 rounded-full blur-[100px]" />
 
                         {/* Central "Deep Research" Hub */}
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 relative z-10">
                             {/* Rotating Rings */}
                             <div className="absolute inset-0 border border-slate-200 dark:border-slate-700 rounded-full animate-[spin_10s_linear_infinite]" />
                             <div className="absolute inset-4 border border-dashed border-slate-300 dark:border-slate-600 rounded-full animate-[spin_15s_linear_infinite_reverse]" />
-                            <div className="absolute inset-12 border border-emerald-100 dark:border-emerald-800 rounded-full animate-pulse" />
+                            <div className="absolute inset-12 border border-primary-100 dark:border-primary-800 rounded-full animate-pulse" />
 
                             {/* Core Element */}
                             <div className="absolute inset-0 flex items-center justify-center">
@@ -86,7 +86,7 @@ const Hero = () => {
 
                                     {/* Scanning Beam effect */}
                                     <div className="absolute inset-0 rounded-full overflow-hidden">
-                                        <div className="w-full h-1/2 bg-gradient-to-b from-transparent to-emerald-500/10 absolute top-0 animate-scan" />
+                                        <div className="w-full h-1/2 bg-gradient-to-b from-transparent to-primary-500/10 absolute top-0 animate-scan" />
                                     </div>
                                 </div>
                             </div>
@@ -111,7 +111,7 @@ const Hero = () => {
                             {/* Card 2: Paper Analysis */}
                             <div className="absolute top-1/2 -right-24 -translate-y-1/2 w-52 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md p-3 rounded-xl border border-white/50 dark:border-slate-600 shadow-xl animate-float" style={{ animationDelay: '1.5s' }}>
                                 <div className="flex items-center gap-3">
-                                    <div className="w-8 h-8 rounded-lg bg-emerald-50 dark:bg-emerald-900/20 flex items-center justify-center text-emerald-500">
+                                    <div className="w-8 h-8 rounded-lg bg-primary-50 dark:bg-primary-900/20 flex items-center justify-center text-primary-500">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
                                             <path d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.965 3.129V2.75z" />
                                             <path d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z" />
@@ -121,7 +121,7 @@ const Hero = () => {
                                         <div className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Deep Research</div>
                                         <div className="text-xs font-semibold text-slate-700 dark:text-slate-200">142 Papers Processed</div>
                                         <div className="w-full bg-slate-100 dark:bg-slate-700 h-1 mt-1.5 rounded-full overflow-hidden">
-                                            <div className="bg-emerald-500 w-3/4 h-full" />
+                                            <div className="bg-primary-500 w-3/4 h-full" />
                                         </div>
                                     </div>
                                 </div>

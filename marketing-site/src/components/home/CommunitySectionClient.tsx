@@ -65,7 +65,7 @@ const CommunitySectionClient: React.FC = () => {
                     </div>
 
                     <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-                        Join Our <span className="text-emerald-500 dark:text-emerald-400">Growing Community</span>
+                        Join Our <span className="text-primary-500 dark:text-primary-400">Growing Community</span>
                     </h2>
 
                     <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
@@ -147,7 +147,7 @@ const CommunitySectionClient: React.FC = () => {
 
                         <div className="relative text-center">
                             <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
-                                Ready to <span className="text-emerald-400">Connect?</span>
+                                Ready to <span className="text-primary-400">Connect?</span>
                             </h3>
                             <p className="text-gray-300 text-base md:text-lg mb-6 max-w-xl mx-auto">
                                 Explore the full community page to learn more about events, contributions, and how to get involved.
@@ -160,7 +160,7 @@ const CommunitySectionClient: React.FC = () => {
                                 className="inline-flex items-center gap-3 px-8 py-4 bg-white text-gray-900 rounded-full font-semibold shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
                             >
                                 <span>Explore Community</span>
-                                <FaUsers className="w-5 h-5 text-emerald-600" />
+                                <FaUsers className="w-5 h-5 text-primary-600" />
                             </a>
                         </div>
                     </div>

@@ -27,8 +27,8 @@ const VideoSection = () => {
                 </div>
 
                 {/* Decorative Elements */}
-                <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-emerald-500/5 dark:bg-emerald-500/10 rounded-full blur-3xl -z-10" />
-                <div className="absolute bottom-0 right-0 w-80 h-80 bg-emerald-500/5 dark:bg-emerald-500/10 rounded-full blur-3xl -z-10" />
+                <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary-500/5 dark:bg-primary-500/10 rounded-full blur-3xl -z-10" />
+                <div className="absolute bottom-0 right-0 w-80 h-80 bg-primary-500/5 dark:bg-primary-500/10 rounded-full blur-3xl -z-10" />
             </div>
         </section>
     );

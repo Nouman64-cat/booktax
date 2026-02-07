@@ -154,24 +154,24 @@ const DnaGeneratorClient: React.FC = () => {
             title: "Protein Fold Generation",
             description: "Convert DNA to RNA and identify all Open Reading Frames (ORFs) with our C++ engine.",
             path: "/studio/protein-fold-generation",
-            gradient: "from-emerald-500 to-teal-600",
-            color: "emerald",
+            gradient: "from-primary-500 to-primary-600",
+            color: "primary",
         },
         {
             icon: BiTestTube,
             title: "Simulation Studio",
             description: "Run Mendelian genetics simulations with visual Punnett squares and inheritance patterns.",
             path: "/studio/simulation-studio",
-            gradient: "from-teal-500 to-cyan-600",
-            color: "teal",
+            gradient: "from-primary-500 to-cyan-600",
+            color: "primary",
         },
         {
             icon: FaUsers,
             title: "Population Genetics",
             description: "Simulate population dynamics with Hardy-Weinberg equilibrium and genetic drift.",
             path: "/studio/population",
-            gradient: "from-green-500 to-emerald-600",
-            color: "green",
+            gradient: "from-primary-500 to-primary-600",
+            color: "primary",
         },
         {
             icon: FaChartLine,
@@ -186,16 +186,16 @@ const DnaGeneratorClient: React.FC = () => {
             title: "Browse Traits",
             description: "Explore our comprehensive database of genetic traits with detailed information.",
             path: "/studio/browse-traits",
-            gradient: "from-teal-500 to-emerald-600",
-            color: "teal",
+            gradient: "from-primary-500 to-primary-600",
+            color: "primary",
         },
         {
             icon: FaProjectDiagram,
             title: "Project Management",
             description: "Create and manage your genetics projects with collaborative features.",
             path: "/studio/projects",
-            gradient: "from-emerald-500 to-green-600",
-            color: "emerald",
+            gradient: "from-primary-500 to-primary-600",
+            color: "primary",
         },
     ];
 
@@ -206,9 +206,9 @@ const DnaGeneratorClient: React.FC = () => {
             <section className="relative pt-20 pb-16 overflow-hidden">
                 {/* Animated Background */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                    <div className="absolute top-20 left-10 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl animate-pulse"></div>
-                    <div className="absolute top-40 right-20 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }}></div>
-                    <div className="absolute bottom-20 left-1/3 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "2s" }}></div>
+                    <div className="absolute top-20 left-10 w-72 h-72 bg-primary-500/10 rounded-full blur-3xl animate-pulse"></div>
+                    <div className="absolute top-40 right-20 w-96 h-96 bg-primary-500/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }}></div>
+                    <div className="absolute bottom-20 left-1/3 w-64 h-64 bg-primary-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "2s" }}></div>
                 </div>
 
                 <div className="relative mx-auto max-w-7xl px-6">
@@ -222,12 +222,12 @@ const DnaGeneratorClient: React.FC = () => {
                         </div>
 
                         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                            Generate <span className="text-emerald-500 dark:text-emerald-400">DNA Sequences</span>
+                            Generate <span className="text-primary-500 dark:text-primary-400">DNA Sequences</span>
                         </h1>
 
                         <p className="text-xl text-slate-700 dark:text-slate-300 leading-relaxed max-w-3xl mx-auto">
                             Create random DNA sequences with customizable GC content. Our high-performance
-                            <span className="font-semibold text-emerald-600 dark:text-emerald-400"> C++ engine </span>
+                            <span className="font-semibold text-primary-600 dark:text-primary-400"> C++ engine </span>
                             can generate sequences up to <span className="font-bold">10 million base pairs</span> in seconds.
                         </p>
                     </div>
@@ -235,7 +235,7 @@ const DnaGeneratorClient: React.FC = () => {
                     {/* Stats */}
                     <div className="flex flex-wrap justify-center gap-8 mb-16">
                         <div className="text-center px-6">
-                            <p className="text-4xl font-bold text-emerald-600 dark:text-emerald-400">10M</p>
+                            <p className="text-4xl font-bold text-primary-600 dark:text-primary-400">10M</p>
                             <p className="text-sm text-slate-600 dark:text-slate-400">Max Base Pairs</p>
                         </div>
                         <div className="text-center px-6 border-l border-slate-200 dark:border-slate-700">
@@ -243,7 +243,7 @@ const DnaGeneratorClient: React.FC = () => {
                             <p className="text-sm text-slate-600 dark:text-slate-400">Generation Time</p>
                         </div>
                         <div className="text-center px-6 border-l border-slate-200 dark:border-slate-700">
-                            <p className="text-4xl font-bold text-emerald-600 dark:text-emerald-400">100%</p>
+                            <p className="text-4xl font-bold text-primary-600 dark:text-primary-400">100%</p>
                             <p className="text-sm text-slate-600 dark:text-slate-400">Free to Use</p>
                         </div>
                     </div>
@@ -271,7 +271,7 @@ const DnaGeneratorClient: React.FC = () => {
                                             step={3}
                                             value={length}
                                             onChange={(e) => setLength(Math.max(3, parseInt(e.target.value) || 3))}
-                                            className="w-full px-5 py-4 border-2 border-slate-200 dark:border-slate-600 rounded-xl focus:ring-4 focus:ring-emerald-500/20 focus:border-emerald-500 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-xl font-mono transition-all"
+                                            className="w-full px-5 py-4 border-2 border-slate-200 dark:border-slate-600 rounded-xl focus:ring-4 focus:ring-primary-500/20 focus:border-primary-500 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-xl font-mono transition-all"
                                             disabled={loading}
                                         />
                                         <p className="text-sm text-slate-500 dark:text-slate-400 mt-2">
@@ -302,7 +302,7 @@ const DnaGeneratorClient: React.FC = () => {
                                     {/* GC Content */}
                                     <div>
                                         <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-3">
-                                            GC Content: <span className="text-emerald-600 dark:text-emerald-400">{(gcContent * 100).toFixed(0)}%</span>
+                                            GC Content: <span className="text-primary-600 dark:text-primary-400">{(gcContent * 100).toFixed(0)}%</span>
                                         </label>
                                         <input
                                             type="range"
@@ -311,7 +311,7 @@ const DnaGeneratorClient: React.FC = () => {
                                             step={0.01}
                                             value={gcContent}
                                             onChange={(e) => setGcContent(parseFloat(e.target.value))}
-                                            className="w-full h-4 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-emerald-500"
+                                            className="w-full h-4 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary-500"
                                             disabled={loading}
                                         />
                                         <div className="flex justify-between text-xs text-slate-500 dark:text-slate-400 mt-2">
@@ -341,7 +341,7 @@ const DnaGeneratorClient: React.FC = () => {
                                         <div className="px-6 py-5 border-b border-slate-200 dark:border-slate-700">
                                             <div className="flex items-center justify-between mb-3">
                                                 <div className="flex items-center gap-3">
-                                                    <div className="w-8 h-8 border-3 border-emerald-600 border-t-transparent rounded-full animate-spin"></div>
+                                                    <div className="w-8 h-8 border-3 border-primary-600 border-t-transparent rounded-full animate-spin"></div>
                                                     <div>
                                                         <h4 className="font-semibold text-slate-900 dark:text-white">
                                                             {length >= 10000000 ? "Generating & Transferring" : "Generating"} {length >= 1000000 ? `${(length / 1000000).toFixed(1)}M` : length.toLocaleString()} bp
@@ -355,7 +355,7 @@ const DnaGeneratorClient: React.FC = () => {
                                                 </div>
                                                 <div className="text-right">
                                                     <p className="text-sm text-slate-500 dark:text-slate-400">Elapsed</p>
-                                                    <p className="text-lg font-mono font-semibold text-emerald-600 dark:text-emerald-400">
+                                                    <p className="text-lg font-mono font-semibold text-primary-600 dark:text-primary-400">
                                                         {formatTime(elapsedTime)}
                                                     </p>
                                                 </div>
@@ -364,7 +364,7 @@ const DnaGeneratorClient: React.FC = () => {
                                             {/* Progress Bar */}
                                             <div className="relative h-3 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
                                                 <div
-                                                    className="absolute inset-y-0 left-0 bg-emerald-500 rounded-full transition-all duration-300 ease-out"
+                                                    className="absolute inset-y-0 left-0 bg-primary-500 rounded-full transition-all duration-300 ease-out"
                                                     style={{ width: `${progress}%` }}
                                                 >
                                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse"></div>
@@ -377,7 +377,7 @@ const DnaGeneratorClient: React.FC = () => {
                                                     {progress < 95 ? (
                                                         <>Est. remaining: <span className="font-semibold text-slate-700 dark:text-slate-300">{formatTime(remainingTime)}</span></>
                                                     ) : (
-                                                        <span className="text-emerald-600 dark:text-emerald-400">Almost done...</span>
+                                                        <span className="text-primary-600 dark:text-primary-400">Almost done...</span>
                                                     )}
                                                 </span>
                                                 <span className="text-slate-500 dark:text-slate-400">
@@ -388,11 +388,11 @@ const DnaGeneratorClient: React.FC = () => {
 
                                         {/* Tips Section - only show for longer generations */}
                                         {estimatedTime > 5 && (
-                                            <div className="px-6 py-4 bg-emerald-50/50 dark:bg-emerald-950/20">
+                                            <div className="px-6 py-4 bg-primary-50/50 dark:bg-primary-950/20">
                                                 <div className="flex items-start gap-3">
-                                                    <HiSparkles className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" />
+                                                    <HiSparkles className="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0" />
                                                     <div>
-                                                        <p className="text-xs font-semibold text-emerald-700 dark:text-emerald-400 uppercase tracking-wider mb-1">
+                                                        <p className="text-xs font-semibold text-primary-700 dark:text-primary-400 uppercase tracking-wider mb-1">
                                                             Did you know?
                                                         </p>
                                                         <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
@@ -418,7 +418,7 @@ const DnaGeneratorClient: React.FC = () => {
                                             </div>
                                             <div>
                                                 <span className="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider">Actual GC</span>
-                                                <p className="text-2xl font-bold text-emerald-600 dark:text-emerald-400">{(result.actual_gc * 100).toFixed(2)}%</p>
+                                                <p className="text-2xl font-bold text-primary-600 dark:text-primary-400">{(result.actual_gc * 100).toFixed(2)}%</p>
                                             </div>
                                         </div>
                                         <button
@@ -473,9 +473,9 @@ const DnaGeneratorClient: React.FC = () => {
 
                                     {/* RNA Sequence */}
                                     <div className="border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden">
-                                        <div className="flex items-center justify-between px-5 py-4 bg-green-50 dark:bg-green-900/20 border-b border-slate-200 dark:border-slate-700">
+                                        <div className="flex items-center justify-between px-5 py-4 bg-primary-50 dark:bg-primary-900/20 border-b border-slate-200 dark:border-slate-700">
                                             <h3 className="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-3">
-                                                <span className="w-4 h-4 rounded-full bg-green-500"></span>
+                                                <span className="w-4 h-4 rounded-full bg-primary-500"></span>
                                                 RNA Sequence (Transcribed)
                                             </h3>
                                             <div className="flex gap-2">
@@ -490,7 +490,7 @@ const DnaGeneratorClient: React.FC = () => {
                                                 )}
                                                 <button
                                                     onClick={() => handleDownload(result.rna_sequence, "rna")}
-                                                    className="flex items-center gap-1.5 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg text-sm transition-colors font-medium"
+                                                    className="flex items-center gap-1.5 px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg text-sm transition-colors font-medium"
                                                 >
                                                     <HiDownload className="w-4 h-4" />
                                                     Download .txt
@@ -499,7 +499,7 @@ const DnaGeneratorClient: React.FC = () => {
                                         </div>
                                         {displayResult ? (
                                             <div className="bg-slate-50 dark:bg-slate-900 p-5 max-h-48 overflow-auto">
-                                                <code className="text-sm text-green-600 dark:text-green-400 font-mono break-all leading-relaxed">
+                                                <code className="text-sm text-primary-600 dark:text-primary-400 font-mono break-all leading-relaxed">
                                                     {result.rna_sequence}
                                                 </code>
                                             </div>
@@ -526,9 +526,9 @@ const DnaGeneratorClient: React.FC = () => {
                     {/* Info Badge */}
                     <div className="flex justify-center mt-8">
                         <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-white dark:bg-slate-800 rounded-full border border-slate-200 dark:border-slate-700 shadow-lg">
-                            <HiSparkles className="w-5 h-5 text-emerald-500" />
+                            <HiSparkles className="w-5 h-5 text-primary-500" />
                             <span className="text-sm text-slate-600 dark:text-slate-400">
-                                Powered by our <span className="font-semibold text-emerald-600 dark:text-emerald-400">C++ engine</span> • No signup required
+                                Powered by our <span className="font-semibold text-primary-600 dark:text-primary-400">C++ engine</span> • No signup required
                             </span>
                         </div>
                     </div>
@@ -540,14 +540,14 @@ const DnaGeneratorClient: React.FC = () => {
                 <div className="mx-auto max-w-7xl px-6">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <div className="inline-flex items-center gap-2 rounded-full bg-gray-900 px-5 py-2 mb-6 border border-gray-800">
-                            <HiLockClosed className="w-4 h-4 text-emerald-400" />
+                            <HiLockClosed className="w-4 h-4 text-primary-400" />
                             <span className="text-xs font-semibold uppercase tracking-wider text-white">
                                 Pro Features
                             </span>
                         </div>
 
                         <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-6">
-                            Unlock Powerful <span className="text-emerald-500 dark:text-emerald-400">Studio Tools</span>
+                            Unlock Powerful <span className="text-primary-500 dark:text-primary-400">Studio Tools</span>
                         </h2>
 
                         <p className="text-lg text-slate-600 dark:text-slate-400">
@@ -570,7 +570,7 @@ const DnaGeneratorClient: React.FC = () => {
                                 </div>
 
                                 {/* Title */}
-                                <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                                <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
                                     {feature.title}
                                 </h3>
 
@@ -580,7 +580,7 @@ const DnaGeneratorClient: React.FC = () => {
                                 </p>
 
                                 {/* Link Arrow */}
-                                <div className="flex items-center gap-2 text-emerald-600 dark:text-emerald-400 font-medium">
+                                <div className="flex items-center gap-2 text-primary-600 dark:text-primary-400 font-medium">
                                     <span>Try Now</span>
                                     <HiArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform" />
                                 </div>

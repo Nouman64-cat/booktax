@@ -82,7 +82,7 @@ export const ManhattanPlot: React.FC<ManhattanPlotProps> = ({ data }) => {
         if (isSignificant) {
             return '#DC2626'; // red-600
         }
-        return chr % 2 === 0 ? '#10B981' : '#94A3B8'; // emerald-500 : slate-400
+        return chr % 2 === 0 ? '#10B981' : '#94A3B8'; // primary-500 : slate-400
     };
 
     return (

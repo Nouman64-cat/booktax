@@ -210,7 +210,7 @@ const Navbar: React.FC = () => {
                             <>
                                 <a
                                     href={STUDIO_URL}
-                                    className="px-4 py-2 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-sm font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-all hover:ring-2 hover:ring-emerald-500/50 shadow-sm hover:shadow-emerald-500/20"
+                                    className="px-4 py-2 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-sm font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-all hover:ring-2 hover:ring-primary-500/50 shadow-sm hover:shadow-primary-500/20"
                                 >
                                     Open Studio
                                 </a>
@@ -234,7 +234,7 @@ const Navbar: React.FC = () => {
                                             <div className="px-4 py-2 border-b border-gray-100 dark:border-gray-700">
                                                 <span className="text-xs font-semibold text-gray-500 uppercase">Choose product</span>
                                             </div>
-                                            <a href="https://ai.Booktax.com/register" className="flex items-center gap-3 px-4 py-3 text-sm text-gray-600 dark:text-gray-400 hover:bg-emerald-50 dark:hover:bg-emerald-900/10 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                                            <a href="https://ai.Booktax.com/register" className="flex items-center gap-3 px-4 py-3 text-sm text-gray-600 dark:text-gray-400 hover:bg-primary-50 dark:hover:bg-primary-900/10 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                                                 <MdOutlineAutoAwesome className="w-4 h-4" /> Booktax AI
                                             </a>
                                             <a href={`${STUDIO_URL}/signup`} className="flex items-center gap-3 px-4 py-3 text-sm text-gray-600 dark:text-gray-400 hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
@@ -347,7 +347,7 @@ const Navbar: React.FC = () => {
                                         </button>
                                         {mobileGetStartedOpen && (
                                             <div className="mt-2 space-y-2 px-2 border-l-2 border-gray-100 dark:border-gray-800 ml-2">
-                                                <a href="https://ai.Booktax.com/register" className="flex items-center gap-2 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400">
+                                                <a href="https://ai.Booktax.com/register" className="flex items-center gap-2 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                                     <FiCpu className="w-4 h-4" />
                                                     <span>Booktax AI</span>
                                                 </a>

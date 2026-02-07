@@ -239,8 +239,8 @@ const GwasAnalysisClient: React.FC<GwasAnalysisClientProps> = () => {
         <div className="max-w-2xl mx-auto bg-white dark:bg-slate-900 rounded-2xl shadow-xl overflow-hidden border border-slate-200 dark:border-slate-800 relative z-10">
             <div className="p-8">
                 <div className="flex items-center gap-3 mb-6 text-slate-900 dark:text-white">
-                    <div className="p-3 bg-emerald-50 dark:bg-emerald-900/20 rounded-xl">
-                        <HiChartBar className="w-8 h-8 text-emerald-600 dark:text-emerald-400" />
+                    <div className="p-3 bg-primary-50 dark:bg-primary-900/20 rounded-xl">
+                        <HiChartBar className="w-8 h-8 text-primary-600 dark:text-primary-400" />
                     </div>
                     <div>
                         <h2 className="text-2xl font-bold">New Analysis</h2>
@@ -257,24 +257,24 @@ const GwasAnalysisClient: React.FC<GwasAnalysisClientProps> = () => {
                         </label>
                         <div className="flex items-center justify-center w-full">
                             <label className={`flex flex-col items-center justify-center w-full h-40 border-2 border-dashed rounded-xl cursor-pointer transition-all ${file
-                                ? "border-emerald-500 bg-emerald-50/50 dark:bg-emerald-900/10"
+                                ? "border-primary-500 bg-primary-50/50 dark:bg-primary-900/10"
                                 : "border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700/50"
                                 }`}>
                                 <div className="flex flex-col items-center justify-center pt-5 pb-6">
-                                    <HiCloudUpload className={`w-10 h-10 mb-3 ${file ? "text-emerald-600" : "text-slate-400"}`} />
+                                    <HiCloudUpload className={`w-10 h-10 mb-3 ${file ? "text-primary-600" : "text-slate-400"}`} />
                                     {file ? (
                                         <div className="text-center">
-                                            <p className="text-sm font-semibold text-emerald-700 dark:text-emerald-400 mb-1">
+                                            <p className="text-sm font-semibold text-primary-700 dark:text-primary-400 mb-1">
                                                 {file.name}
                                             </p>
-                                            <p className="text-xs text-emerald-600/80 dark:text-emerald-500/80">
+                                            <p className="text-xs text-primary-600/80 dark:text-primary-500/80">
                                                 {(file.size / (1024 * 1024)).toFixed(2)} MB
                                             </p>
                                         </div>
                                     ) : (
                                         <>
                                             <p className="mb-2 text-sm text-slate-500 dark:text-slate-400">
-                                                <span className="font-semibold text-emerald-600 dark:text-emerald-400">Click to upload</span> or drag and drop
+                                                <span className="font-semibold text-primary-600 dark:text-primary-400">Click to upload</span> or drag and drop
                                             </p>
                                             <p className="text-xs text-slate-400 dark:text-slate-500">
                                                 VCF, VCF.GZ (MAX. 100MB)
@@ -290,7 +290,7 @@ const GwasAnalysisClient: React.FC<GwasAnalysisClientProps> = () => {
                     <button
                         onClick={handleAnalyze}
                         disabled={!file}
-                        className="w-full py-3.5 px-4 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-xl transition-all shadow-lg hover:shadow-emerald-500/20 disabled:opacity-50 disabled:cursor-not-allowed disabled:shadow-none flex items-center justify-center gap-2"
+                        className="w-full py-3.5 px-4 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-xl transition-all shadow-lg hover:shadow-primary-500/20 disabled:opacity-50 disabled:cursor-not-allowed disabled:shadow-none flex items-center justify-center gap-2"
                     >
                         {loading ? (
                             <span className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
@@ -312,9 +312,9 @@ const GwasAnalysisClient: React.FC<GwasAnalysisClientProps> = () => {
         <div className="max-w-xl mx-auto text-center py-20 relative z-10">
             <div className="mb-8 relative flex justify-center">
                 <div className="relative">
-                    <div className="w-24 h-24 border-4 border-emerald-100 dark:border-emerald-900 border-t-emerald-500 rounded-full animate-spin"></div>
+                    <div className="w-24 h-24 border-4 border-primary-100 dark:border-primary-900 border-t-primary-500 rounded-full animate-spin"></div>
                     <div className="absolute inset-0 flex items-center justify-center">
-                        <HiChartBar className="w-8 h-8 text-emerald-500 animate-pulse" />
+                        <HiChartBar className="w-8 h-8 text-primary-500 animate-pulse" />
                     </div>
                 </div>
             </div>
@@ -363,7 +363,7 @@ const GwasAnalysisClient: React.FC<GwasAnalysisClientProps> = () => {
                 {/* Header */}
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
                     <div>
-                        <div className="flex items-center gap-2 text-emerald-600 dark:text-emerald-400 mb-1 text-sm font-medium uppercase tracking-wider">
+                        <div className="flex items-center gap-2 text-primary-600 dark:text-primary-400 mb-1 text-sm font-medium uppercase tracking-wider">
                             <HiChartBar /> GWAS Analysis Results
                         </div>
                         <h1 className="text-3xl font-bold text-slate-900 dark:text-white">
@@ -392,13 +392,13 @@ const GwasAnalysisClient: React.FC<GwasAnalysisClientProps> = () => {
                             className={cn(
                                 "px-6 py-4 text-sm font-medium transition-colors relative",
                                 activeTab === tab.id
-                                    ? "text-emerald-600 dark:text-emerald-400"
+                                    ? "text-primary-600 dark:text-primary-400"
                                     : "text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200"
                             )}
                         >
                             {tab.label}
                             {activeTab === tab.id && (
-                                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-emerald-600 dark:bg-emerald-400" />
+                                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary-600 dark:bg-primary-400" />
                             )}
                         </button>
                     ))}
@@ -432,18 +432,18 @@ const GwasAnalysisClient: React.FC<GwasAnalysisClientProps> = () => {
             {/* Hero Section */}
             <section className="relative pt-20 pb-16 overflow-hidden">
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                    <div className="absolute top-20 left-10 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl animate-pulse"></div>
-                    <div className="absolute top-40 right-20 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }}></div>
+                    <div className="absolute top-20 left-10 w-72 h-72 bg-primary-500/10 rounded-full blur-3xl animate-pulse"></div>
+                    <div className="absolute top-40 right-20 w-96 h-96 bg-primary-500/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }}></div>
                 </div>
 
                 <div className="relative mx-auto max-w-7xl px-6">
                     <div className="text-center max-w-4xl mx-auto mb-12">
                         <div className="inline-flex items-center gap-2 rounded-full bg-gray-900 px-6 py-2.5 mb-8 shadow-lg shadow-gray-900/25">
-                            <HiChartBar className="w-5 h-5 text-emerald-400" />
+                            <HiChartBar className="w-5 h-5 text-primary-400" />
                             <span className="text-sm font-semibold uppercase tracking-[0.2em] text-white">GWAS Analysis Tool</span>
                         </div>
                         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                            Visualize <span className="text-emerald-500 dark:text-emerald-400">Genetics Data</span>
+                            Visualize <span className="text-primary-500 dark:text-primary-400">Genetics Data</span>
                         </h1>
                         <p className="text-xl text-slate-700 dark:text-slate-300 leading-relaxed max-w-3xl mx-auto">
                             Upload your VCF files to instantly generate interactive Manhattan and Q-Q plots.
@@ -453,7 +453,7 @@ const GwasAnalysisClient: React.FC<GwasAnalysisClientProps> = () => {
 
                     <div className="flex flex-wrap justify-center gap-8 mb-16">
                         <div className="text-center px-6">
-                            <p className="text-4xl font-bold text-emerald-600 dark:text-emerald-400">VCF</p>
+                            <p className="text-4xl font-bold text-primary-600 dark:text-primary-400">VCF</p>
                             <p className="text-sm text-slate-600 dark:text-slate-400">Format Support</p>
                         </div>
                         <div className="text-center px-6 border-l border-slate-200 dark:border-slate-700">
@@ -461,7 +461,7 @@ const GwasAnalysisClient: React.FC<GwasAnalysisClientProps> = () => {
                             <p className="text-sm text-slate-600 dark:text-slate-400">Visualization</p>
                         </div>
                         <div className="text-center px-6 border-l border-slate-200 dark:border-slate-700">
-                            <p className="text-4xl font-bold text-emerald-600 dark:text-emerald-400">100%</p>
+                            <p className="text-4xl font-bold text-primary-600 dark:text-primary-400">100%</p>
                             <p className="text-sm text-slate-600 dark:text-slate-400">Free to Use</p>
                         </div>
                     </div>
@@ -483,7 +483,7 @@ const GwasAnalysisClient: React.FC<GwasAnalysisClientProps> = () => {
                 <div className="mx-auto max-w-7xl px-6">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mb-6">
-                            Explore More <span className="text-emerald-500 dark:text-emerald-400">Genetics Tools</span>
+                            Explore More <span className="text-primary-500 dark:text-primary-400">Genetics Tools</span>
                         </h2>
                         <p className="text-lg text-slate-600 dark:text-slate-400">
                             Booktax offers a comprehensive suite of tools for researchers and students.
@@ -496,9 +496,9 @@ const GwasAnalysisClient: React.FC<GwasAnalysisClientProps> = () => {
                                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gray-900 text-white shadow-lg mb-5 group-hover:scale-110 transition-transform">
                                     <feature.icon className="w-6 h-6" />
                                 </div>
-                                <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2 group-hover:text-emerald-600 transition-colors">{feature.title}</h3>
+                                <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2 group-hover:text-primary-600 transition-colors">{feature.title}</h3>
                                 <p className="text-slate-600 dark:text-slate-400 mb-4">{feature.description}</p>
-                                <div className="flex items-center gap-2 text-emerald-600 dark:text-emerald-400 font-medium">
+                                <div className="flex items-center gap-2 text-primary-600 dark:text-primary-400 font-medium">
                                     <span>Try Now</span> <HiArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform" />
                                 </div>
                             </Link>

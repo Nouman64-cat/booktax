@@ -30,7 +30,7 @@ export const QQPlot: React.FC<QQPlotProps> = ({ data }) => {
     // Genomic inflation interpretation
     const getInflationInterpretation = (lambda: number) => {
         if (lambda < 0.95) return { text: 'Deflated', color: 'text-orange-600 dark:text-orange-400' };
-        if (lambda <= 1.05) return { text: 'Ideal', color: 'text-green-600 dark:text-green-400' };
+        if (lambda <= 1.05) return { text: 'Ideal', color: 'text-primary-600 dark:text-primary-400' };
         if (lambda <= 1.10) return { text: 'Mild Inflation', color: 'text-yellow-600 dark:text-yellow-400' };
         return { text: 'Inflated', color: 'text-red-600 dark:text-red-400' };
     };
@@ -197,7 +197,7 @@ export const QQPlot: React.FC<QQPlotProps> = ({ data }) => {
 
             {/* Statistics Panel */}
             <div className="mt-4 w-full max-w-md grid grid-cols-2 gap-4">
-                <div className="bg-gradient-to-br from-emerald-50 to-slate-50 dark:from-emerald-900/20 dark:to-slate-900/20 rounded-lg p-4 border border-emerald-200 dark:border-emerald-800">
+                <div className="bg-gradient-to-br from-primary-50 to-slate-50 dark:from-primary-900/20 dark:to-slate-900/20 rounded-lg p-4 border border-primary-200 dark:border-primary-800">
                     <div className="text-sm text-gray-600 dark:text-gray-400 mb-1">
                         Genomic Inflation (λ<sub>GC</sub>)
                     </div>

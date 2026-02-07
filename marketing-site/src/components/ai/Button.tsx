@@ -17,11 +17,11 @@ const Button = ({
     const baseStyles = "relative inline-flex items-center justify-center rounded-lg font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none cursor-pointer overflow-hidden group";
 
     const variants = {
-        primary: "bg-slate-900 text-white hover:bg-slate-800 hover:shadow-lg hover:scale-105 border border-transparent dark:bg-emerald-600 dark:hover:bg-emerald-700",
+        primary: "bg-slate-900 text-white hover:bg-slate-800 hover:shadow-lg hover:scale-105 border border-transparent dark:bg-primary-600 dark:hover:bg-primary-700",
         secondary: "bg-slate-200 text-slate-800 hover:bg-slate-300 hover:scale-105 border border-slate-300 dark:bg-slate-700 dark:text-white dark:border-slate-600",
-        outline: "bg-transparent border-2 border-slate-300 text-slate-700 hover:border-emerald-500 hover:text-emerald-600 dark:border-slate-600 dark:text-slate-300 dark:hover:border-emerald-400 dark:hover:text-emerald-400",
-        ghost: "bg-transparent text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 dark:text-slate-300 dark:hover:bg-slate-800",
-        glow: "bg-slate-900 text-white border border-emerald-500/50 shadow-[0_0_15px_rgba(16,185,129,0.5)] hover:shadow-[0_0_25px_rgba(16,185,129,0.8)] hover:border-emerald-400"
+        outline: "bg-transparent border-2 border-slate-300 text-slate-700 hover:border-primary-500 hover:text-primary-600 dark:border-slate-600 dark:text-slate-300 dark:hover:border-primary-400 dark:hover:text-primary-400",
+        ghost: "bg-transparent text-slate-700 hover:bg-primary-50 hover:text-primary-600 dark:text-slate-300 dark:hover:bg-slate-800",
+        glow: "bg-slate-900 text-white border border-primary-500/50 shadow-[0_0_15px_rgba(16,185,129,0.5)] hover:shadow-[0_0_25px_rgba(16,185,129,0.8)] hover:border-primary-400"
     };
 
     const sizes = {

@@ -153,7 +153,7 @@ const DnaToProteinClient: React.FC = () => {
                         <span className="text-xs font-semibold uppercase tracking-wider text-white">Free Tool</span>
                     </div>
                     <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
-                        DNA / RNA to <span className="text-emerald-500 dark:text-emerald-400">Protein Translator</span>
+                        DNA / RNA to <span className="text-primary-500 dark:text-primary-400">Protein Translator</span>
                     </h1>
                     <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
                         Paste any DNA or RNA sequence — we'll auto-detect the type
@@ -170,7 +170,7 @@ const DnaToProteinClient: React.FC = () => {
                                     <span className={`text-xs font-medium px-2 py-1 rounded-full ${detectedType.type === "dna"
                                         ? "bg-cyan-100 dark:bg-cyan-900/50 text-cyan-600 dark:text-cyan-400"
                                         : detectedType.type === "rna"
-                                            ? "bg-emerald-100 dark:bg-emerald-900/50 text-emerald-600 dark:text-emerald-400"
+                                            ? "bg-primary-100 dark:bg-primary-900/50 text-primary-600 dark:text-primary-400"
                                             : "bg-red-100 dark:bg-red-900/50 text-red-600 dark:text-red-400"
                                         }`}>
                                         {detectedType.type === "dna" ? "🧬 DNA" : detectedType.type === "rna" ? "🔬 RNA" : "❌ Invalid"}
@@ -178,7 +178,7 @@ const DnaToProteinClient: React.FC = () => {
                                 )}
                                 <button
                                     onClick={loadExample}
-                                    className="text-xs text-emerald-600 dark:text-emerald-400 hover:underline cursor-pointer"
+                                    className="text-xs text-primary-600 dark:text-primary-400 hover:underline cursor-pointer"
                                 >
                                     Load Example
                                 </button>
@@ -197,7 +197,7 @@ const DnaToProteinClient: React.FC = () => {
                             value={inputSequence}
                             onChange={(e) => setInputSequence(e.target.value)}
                             placeholder="Paste your DNA or RNA sequence here (e.g., ATGGCCATTGTAATG... or AUGGCCAUUGUAAUG...)"
-                            className="w-full h-28 px-3 py-2 font-mono text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 resize-none"
+                            className="w-full h-28 px-3 py-2 font-mono text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 resize-none"
                         />
 
                         <div className="flex items-center justify-between mt-2">
@@ -255,7 +255,7 @@ const DnaToProteinClient: React.FC = () => {
                                             DNA (5' → 3') {result.detectedType === "rna" && <span className="font-normal text-slate-400">(reverse-transcribed)</span>}
                                         </span>
                                         <button onClick={() => handleCopy(result.dna, "dna")} className="p-1 hover:bg-slate-100 dark:hover:bg-slate-700 rounded cursor-pointer">
-                                            <HiClipboardCopy className={`w-4 h-4 ${copied === "dna" ? "text-emerald-500" : "text-slate-400"}`} />
+                                            <HiClipboardCopy className={`w-4 h-4 ${copied === "dna" ? "text-primary-500" : "text-slate-400"}`} />
                                         </button>
                                     </div>
                                     <div className="font-mono text-sm text-cyan-700 dark:text-cyan-300 bg-cyan-50 dark:bg-cyan-900/30 px-3 py-2 rounded-lg break-all max-h-24 overflow-y-auto">
@@ -273,14 +273,14 @@ const DnaToProteinClient: React.FC = () => {
                                 {/* RNA */}
                                 <div>
                                     <div className="flex items-center justify-between mb-1">
-                                        <span className="text-xs font-semibold text-emerald-600 dark:text-emerald-400 uppercase tracking-wide">
+                                        <span className="text-xs font-semibold text-primary-600 dark:text-primary-400 uppercase tracking-wide">
                                             mRNA Sequence {result.detectedType === "rna" && <span className="font-normal text-slate-400">(original input)</span>}
                                         </span>
                                         <button onClick={() => handleCopy(result.rna, "rna")} className="p-1 hover:bg-slate-100 dark:hover:bg-slate-700 rounded cursor-pointer">
-                                            <HiClipboardCopy className={`w-4 h-4 ${copied === "rna" ? "text-emerald-500" : "text-slate-400"}`} />
+                                            <HiClipboardCopy className={`w-4 h-4 ${copied === "rna" ? "text-primary-500" : "text-slate-400"}`} />
                                         </button>
                                     </div>
-                                    <div className="font-mono text-sm text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-900/30 px-3 py-2 rounded-lg break-all max-h-24 overflow-y-auto">
+                                    <div className="font-mono text-sm text-primary-700 dark:text-primary-300 bg-primary-50 dark:bg-primary-900/30 px-3 py-2 rounded-lg break-all max-h-24 overflow-y-auto">
                                         {result.rna}
                                     </div>
                                 </div>
@@ -296,24 +296,24 @@ const DnaToProteinClient: React.FC = () => {
                                 {result.proteinResult.orfs.length > 0 ? (
                                     <div className="space-y-3">
                                         {result.proteinResult.orfs.slice(0, 5).map((orf, index) => (
-                                            <div key={index} className="bg-emerald-50 dark:bg-emerald-900/20 rounded-lg p-3 border border-emerald-200 dark:border-emerald-800">
+                                            <div key={index} className="bg-primary-50 dark:bg-primary-900/20 rounded-lg p-3 border border-primary-200 dark:border-primary-800">
                                                 <div className="flex items-center justify-between mb-2">
-                                                    <span className="text-xs font-semibold text-emerald-600 dark:text-emerald-400">
+                                                    <span className="text-xs font-semibold text-primary-600 dark:text-primary-400">
                                                         ORF {index + 1} (Position {orf.start_position + 1} - {orf.end_position}, {orf.length} aa)
                                                     </span>
                                                     <div className="flex gap-1">
-                                                        <button onClick={() => handleCopy(orf.protein_1letter, `orf-${index}`)} className="p-1 hover:bg-emerald-100 dark:hover:bg-emerald-800/50 rounded cursor-pointer">
-                                                            <HiClipboardCopy className={`w-4 h-4 ${copied === `orf-${index}` ? "text-emerald-500" : "text-emerald-400"}`} />
+                                                        <button onClick={() => handleCopy(orf.protein_1letter, `orf-${index}`)} className="p-1 hover:bg-primary-100 dark:hover:bg-primary-800/50 rounded cursor-pointer">
+                                                            <HiClipboardCopy className={`w-4 h-4 ${copied === `orf-${index}` ? "text-primary-500" : "text-primary-400"}`} />
                                                         </button>
-                                                        <button onClick={() => handleDownload(orf.protein_1letter, `orf_${index + 1}_protein.txt`)} className="p-1 hover:bg-emerald-100 dark:hover:bg-emerald-800/50 rounded cursor-pointer">
-                                                            <HiDownload className="w-4 h-4 text-emerald-400" />
+                                                        <button onClick={() => handleDownload(orf.protein_1letter, `orf_${index + 1}_protein.txt`)} className="p-1 hover:bg-primary-100 dark:hover:bg-primary-800/50 rounded cursor-pointer">
+                                                            <HiDownload className="w-4 h-4 text-primary-400" />
                                                         </button>
                                                     </div>
                                                 </div>
-                                                <div className="font-mono text-sm text-emerald-700 dark:text-emerald-300 break-all tracking-wider">
+                                                <div className="font-mono text-sm text-primary-700 dark:text-primary-300 break-all tracking-wider">
                                                     {orf.protein_1letter}
                                                 </div>
-                                                <div className="font-mono text-xs text-emerald-500 dark:text-emerald-400 mt-1 break-all">
+                                                <div className="font-mono text-xs text-primary-500 dark:text-primary-400 mt-1 break-all">
                                                     {orf.protein_3letter}
                                                 </div>
                                             </div>
@@ -357,12 +357,12 @@ const DnaToProteinClient: React.FC = () => {
                 </div>
 
                 {/* Info Card */}
-                <div className="mt-4 bg-emerald-50 dark:bg-emerald-900/20 rounded-xl p-4 border border-emerald-200 dark:border-emerald-800">
-                    <h3 className="text-sm font-semibold text-emerald-800 dark:text-emerald-300 mb-2 flex items-center gap-2">
+                <div className="mt-4 bg-primary-50 dark:bg-primary-900/20 rounded-xl p-4 border border-primary-200 dark:border-primary-800">
+                    <h3 className="text-sm font-semibold text-primary-800 dark:text-primary-300 mb-2 flex items-center gap-2">
                         <HiSwitchHorizontal className="w-4 h-4" />
                         The Central Dogma
                     </h3>
-                    <p className="text-xs text-emerald-700 dark:text-emerald-400 leading-relaxed">
+                    <p className="text-xs text-primary-700 dark:text-primary-400 leading-relaxed">
                         <strong>DNA → RNA → Protein</strong>: During transcription, DNA is converted to mRNA (T becomes U).
                         During translation, each 3-nucleotide codon is read by ribosomes and matched to an amino acid.
                         This tool finds all Open Reading Frames (ORFs) - sequences that start with AUG (Methionine) and end with a stop codon (UAA, UAG, UGA).
@@ -377,7 +377,7 @@ const DnaToProteinClient: React.FC = () => {
 
                     <div className="relative">
                         <div className="flex items-center gap-2 mb-2">
-                            <span className="text-xs font-semibold uppercase tracking-wider text-emerald-400">Pro Features</span>
+                            <span className="text-xs font-semibold uppercase tracking-wider text-primary-400">Pro Features</span>
                             <span className="px-2 py-0.5 bg-white/20 rounded-full text-[10px] font-bold">FREE</span>
                         </div>
 
@@ -391,26 +391,26 @@ const DnaToProteinClient: React.FC = () => {
                         </p>
 
                         <div className="flex flex-wrap gap-3 mb-4">
-                            <div className="flex items-center gap-1.5 text-xs text-emerald-400">
-                                <svg className="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div className="flex items-center gap-1.5 text-xs text-primary-400">
+                                <svg className="w-4 h-4 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                 </svg>
                                 <span>Amino Acid Composition</span>
                             </div>
-                            <div className="flex items-center gap-1.5 text-xs text-emerald-400">
-                                <svg className="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div className="flex items-center gap-1.5 text-xs text-primary-400">
+                                <svg className="w-4 h-4 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                 </svg>
                                 <span>Hydrophobicity Plots</span>
                             </div>
-                            <div className="flex items-center gap-1.5 text-xs text-emerald-400">
-                                <svg className="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div className="flex items-center gap-1.5 text-xs text-primary-400">
+                                <svg className="w-4 h-4 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                 </svg>
                                 <span>Sequence Comparison</span>
                             </div>
-                            <div className="flex items-center gap-1.5 text-xs text-emerald-400">
-                                <svg className="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div className="flex items-center gap-1.5 text-xs text-primary-400">
+                                <svg className="w-4 h-4 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                 </svg>
                                 <span>Export to FASTA</span>
@@ -427,7 +427,7 @@ const DnaToProteinClient: React.FC = () => {
                             </a>
                             <a
                                 href="/studio/protein-fold-generation"
-                                className="text-sm text-emerald-400 hover:text-white underline"
+                                className="text-sm text-primary-400 hover:text-white underline"
                             >
                                 Learn more →
                             </a>

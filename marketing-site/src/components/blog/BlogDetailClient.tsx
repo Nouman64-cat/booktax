@@ -64,7 +64,7 @@ const markdownComponents = {
         <ol className="list-decimal list-outside ml-6 text-base text-gray-600 dark:text-gray-300 mb-6 space-y-2">{children}</ol>
     ),
     blockquote: ({ children }: any) => (
-        <blockquote className="border-l-4 border-emerald-500 pl-6 py-2 italic text-gray-600 dark:text-gray-300 bg-gray-50 dark:bg-gray-800/50 rounded-r-lg mb-6">
+        <blockquote className="border-l-4 border-primary-500 pl-6 py-2 italic text-gray-600 dark:text-gray-300 bg-gray-50 dark:bg-gray-800/50 rounded-r-lg mb-6">
             {children}
         </blockquote>
     ),
@@ -184,14 +184,14 @@ const BlogDetailClient: React.FC<BlogDetailClientProps> = ({ slug }) => {
         <div className="relative bg-white dark:bg-gray-950 pb-24 transition-colors duration-300">
             {/* Background decoration */}
             <div className="pointer-events-none absolute inset-0 overflow-hidden opacity-30">
-                <div className="absolute top-0 right-0 -mr-20 -mt-20 w-[600px] h-[600px] bg-gradient-to-bl from-emerald-50/40 via-teal-50/20 to-transparent dark:from-emerald-900/10 dark:via-teal-900/5 dark:to-transparent rounded-full blur-3xl opacity-50" />
+                <div className="absolute top-0 right-0 -mr-20 -mt-20 w-[600px] h-[600px] bg-gradient-to-bl from-primary-50/40 via-primary-50/20 to-transparent dark:from-primary-900/10 dark:via-primary-900/5 dark:to-transparent rounded-full blur-3xl opacity-50" />
             </div>
 
             {/* Hero Image */}
             <div>
                 {blog?.imageUrl && (
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 mt-10">
-                        <div className="aspect-video rounded-2xl overflow-hidden ring-4 ring-emerald-500/10 shadow-2xl shadow-emerald-500/20">
+                        <div className="aspect-video rounded-2xl overflow-hidden ring-4 ring-primary-500/10 shadow-2xl shadow-primary-500/20">
                             <img
                                 src={blog?.imageUrl}
                                 alt={blog?.title}
@@ -222,7 +222,7 @@ const BlogDetailClient: React.FC<BlogDetailClientProps> = ({ slug }) => {
                         <h2 className="text-xl font-semibold">{error}</h2>
                         <p className="mt-4 text-sm text-red-400">
                             Return to the{" "}
-                            <Link href="/blogs" className="font-semibold text-emerald-600 dark:text-emerald-400">
+                            <Link href="/blogs" className="font-semibold text-primary-600 dark:text-primary-400">
                                 blog index
                             </Link>{" "}
                             for other stories.
@@ -251,13 +251,13 @@ const BlogDetailClient: React.FC<BlogDetailClientProps> = ({ slug }) => {
                         <div className="flex items-center space-x-3">
                             <button
                                 onClick={handleShare}
-                                className="inline-flex cursor-pointer items-center gap-2 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700/50 px-3 py-1 text-sm text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-600/50 hover:border-emerald-400 transition-all"
+                                className="inline-flex cursor-pointer items-center gap-2 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700/50 px-3 py-1 text-sm text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-600/50 hover:border-primary-400 transition-all"
                             >
                                 <FiShare2 className="h-4 w-4" />
                                 <span>Share</span>
                             </button>
                             {copied && (
-                                <span className="text-sm text-green-600 dark:text-green-400">Link copied</span>
+                                <span className="text-sm text-primary-600 dark:text-primary-400">Link copied</span>
                             )}
                         </div>
                     </div>
@@ -266,7 +266,7 @@ const BlogDetailClient: React.FC<BlogDetailClientProps> = ({ slug }) => {
                         <div className="mb-4">
                             <Link
                                 href="/blogs"
-                                className="inline-flex items-center text-sm text-gray-500 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
+                                className="inline-flex items-center text-sm text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
                             >
                                 <FiArrowLeft className="mr-2 h-4 w-4" /> Back to all articles
                             </Link>
@@ -336,17 +336,17 @@ const BlogDetailClient: React.FC<BlogDetailClientProps> = ({ slug }) => {
                                 </svg>
                             </div>
 
-                            <div className="relative bg-gradient-to-br from-white via-gray-50 to-gray-100 dark:from-gray-800/60 dark:via-gray-800/50 dark:to-gray-900/50 rounded-2xl p-6 border border-emerald-100 dark:border-emerald-900 shadow-lg">
+                            <div className="relative bg-gradient-to-br from-white via-gray-50 to-gray-100 dark:from-gray-800/60 dark:via-gray-800/50 dark:to-gray-900/50 rounded-2xl p-6 border border-primary-100 dark:border-primary-900 shadow-lg">
                                 <div className="flex items-start gap-4">
                                     <div className="flex flex-wrap gap-4 flex-1">
                                         {blog.authors.map((author, idx) => (
                                             <div
                                                 key={idx}
-                                                className="flex items-start gap-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-xl p-4 flex-1 min-w-[250px] border border-gray-100 dark:border-gray-800 hover:border-emerald-400 transition-all hover:shadow-md group"
+                                                className="flex items-start gap-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-xl p-4 flex-1 min-w-[250px] border border-gray-100 dark:border-gray-800 hover:border-primary-400 transition-all hover:shadow-md group"
                                             >
                                                 {author.imageUrl && (
                                                     <div className="relative">
-                                                        <div className="w-16 h-16 rounded-full overflow-hidden ring-2 ring-emerald-400 group-hover:ring-emerald-500 transition-all">
+                                                        <div className="w-16 h-16 rounded-full overflow-hidden ring-2 ring-primary-400 group-hover:ring-primary-500 transition-all">
                                                             <img
                                                                 src={author.imageUrl}
                                                                 alt={author.name}
@@ -354,7 +354,7 @@ const BlogDetailClient: React.FC<BlogDetailClientProps> = ({ slug }) => {
                                                             />
                                                         </div>
                                                         {/* DNA strand decoration */}
-                                                        <div className="absolute -top-1 -right-1 w-5 h-5 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-full flex items-center justify-center text-white text-xs font-bold shadow-lg">
+                                                        <div className="absolute -top-1 -right-1 w-5 h-5 bg-gradient-to-br from-primary-500 to-primary-500 rounded-full flex items-center justify-center text-white text-xs font-bold shadow-lg">
                                                             <svg
                                                                 className="w-3 h-3"
                                                                 fill="currentColor"
@@ -372,7 +372,7 @@ const BlogDetailClient: React.FC<BlogDetailClientProps> = ({ slug }) => {
                                                         </span>
                                                     </div>
                                                     {author.role && (
-                                                        <p className="text-xs text-emerald-600 dark:text-emerald-400 font-medium mb-2 uppercase tracking-wide">
+                                                        <p className="text-xs text-primary-600 dark:text-primary-400 font-medium mb-2 uppercase tracking-wide">
                                                             {author.role}
                                                         </p>
                                                     )}
@@ -445,7 +445,7 @@ const BlogDetailClient: React.FC<BlogDetailClientProps> = ({ slug }) => {
                             {blog.tags.map((tag) => (
                                 <span
                                     key={tag.slug}
-                                    className="rounded-full bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-100 dark:border-emerald-800 px-4 py-2 text-xs font-semibold text-emerald-600 dark:text-emerald-400 hover:border-emerald-400 hover:shadow-md transition-all"
+                                    className="rounded-full bg-primary-50 dark:bg-primary-900/20 border border-primary-100 dark:border-primary-800 px-4 py-2 text-xs font-semibold text-primary-600 dark:text-primary-400 hover:border-primary-400 hover:shadow-md transition-all"
                                 >
                                     #{tag.title}
                                 </span>
@@ -456,7 +456,7 @@ const BlogDetailClient: React.FC<BlogDetailClientProps> = ({ slug }) => {
                     <div className="mt-10 flex justify-between text-sm text-gray-500 dark:text-gray-400">
                         <Link
                             href="/blogs"
-                            className="font-semibold text-emerald-600 dark:text-emerald-400 hover:text-emerald-500 dark:hover:text-emerald-300 transition-colors"
+                            className="font-semibold text-primary-600 dark:text-primary-400 hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
                         >
                             Back to all articles
                         </Link>

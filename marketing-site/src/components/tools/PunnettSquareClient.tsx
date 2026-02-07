@@ -62,7 +62,7 @@ const PunnettSquareClient: React.FC = () => {
                         <span className="text-xs font-semibold uppercase tracking-wider text-white">Free Genetics Tool</span>
                     </div>
                     <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
-                        Punnett Square <span className="text-emerald-500 dark:text-emerald-400">Calculator</span>
+                        Punnett Square <span className="text-primary-500 dark:text-primary-400">Calculator</span>
                     </h1>
                     <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">Click the headers to edit parent alleles</p>
                 </div>
@@ -83,7 +83,7 @@ const PunnettSquareClient: React.FC = () => {
                                         type="text"
                                         value={topLeft}
                                         onChange={(e) => handleInputChange(setTopLeft, e.target.value)}
-                                        className="w-10 h-10 text-center text-xl font-bold rounded-lg bg-emerald-100 dark:bg-emerald-900/50 border-2 border-emerald-300 dark:border-emerald-600 text-emerald-700 dark:text-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 cursor-pointer"
+                                        className="w-10 h-10 text-center text-xl font-bold rounded-lg bg-primary-100 dark:bg-primary-900/50 border-2 border-primary-300 dark:border-primary-600 text-primary-700 dark:text-primary-300 focus:outline-none focus:ring-2 focus:ring-primary-500 cursor-pointer"
                                         title="Parent 2 - Allele 1"
                                     />
                                 </div>
@@ -92,7 +92,7 @@ const PunnettSquareClient: React.FC = () => {
                                         type="text"
                                         value={topRight}
                                         onChange={(e) => handleInputChange(setTopRight, e.target.value)}
-                                        className="w-10 h-10 text-center text-xl font-bold rounded-lg bg-emerald-100 dark:bg-emerald-900/50 border-2 border-emerald-300 dark:border-emerald-600 text-emerald-700 dark:text-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 cursor-pointer"
+                                        className="w-10 h-10 text-center text-xl font-bold rounded-lg bg-primary-100 dark:bg-primary-900/50 border-2 border-primary-300 dark:border-primary-600 text-primary-700 dark:text-primary-300 focus:outline-none focus:ring-2 focus:ring-primary-500 cursor-pointer"
                                         title="Parent 2 - Allele 2"
                                     />
                                 </div>
@@ -116,7 +116,7 @@ const PunnettSquareClient: React.FC = () => {
                                         <div
                                             key={`0-${j}`}
                                             className={`w-16 h-16 flex items-center justify-center text-xl font-bold border-2 transition-all hover:scale-105 ${isDom
-                                                ? "bg-teal-100 dark:bg-teal-900/50 border-teal-300 dark:border-teal-600 text-teal-700 dark:text-teal-300"
+                                                ? "bg-primary-100 dark:bg-primary-900/50 border-primary-300 dark:border-primary-600 text-primary-700 dark:text-primary-300"
                                                 : "bg-amber-100 dark:bg-amber-900/50 border-amber-300 dark:border-amber-600 text-amber-700 dark:text-amber-300"
                                                 }`}
                                         >
@@ -143,7 +143,7 @@ const PunnettSquareClient: React.FC = () => {
                                         <div
                                             key={`1-${j}`}
                                             className={`w-16 h-16 flex items-center justify-center text-xl font-bold border-2 transition-all hover:scale-105 ${isDom
-                                                ? "bg-teal-100 dark:bg-teal-900/50 border-teal-300 dark:border-teal-600 text-teal-700 dark:text-teal-300"
+                                                ? "bg-primary-100 dark:bg-primary-900/50 border-primary-300 dark:border-primary-600 text-primary-700 dark:text-primary-300"
                                                 : "bg-amber-100 dark:bg-amber-900/50 border-amber-300 dark:border-amber-600 text-amber-700 dark:text-amber-300"
                                                 }`}
                                         >
@@ -178,7 +178,7 @@ const PunnettSquareClient: React.FC = () => {
                             <h3 className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wide mb-3">Phenotype Ratio</h3>
                             <div className="space-y-2">
                                 <div className="flex items-center gap-2">
-                                    <div className="w-3 h-3 rounded-full bg-teal-500"></div>
+                                    <div className="w-3 h-3 rounded-full bg-primary-500"></div>
                                     <span className="text-sm text-slate-700 dark:text-slate-300">Dominant:</span>
                                     <span className="font-bold text-slate-900 dark:text-white">{gridData.phenotypeCounts.dominant}/4</span>
                                     <span className="text-xs text-slate-500">({(gridData.phenotypeCounts.dominant / 4 * 100)}%)</span>
@@ -210,11 +210,11 @@ const PunnettSquareClient: React.FC = () => {
                         <span>Parent 1</span>
                     </div>
                     <div className="flex items-center gap-1.5">
-                        <div className="w-4 h-4 rounded bg-emerald-100 dark:bg-emerald-900/50 border border-emerald-300 dark:border-emerald-600"></div>
+                        <div className="w-4 h-4 rounded bg-primary-100 dark:bg-primary-900/50 border border-primary-300 dark:border-primary-600"></div>
                         <span>Parent 2</span>
                     </div>
                     <div className="flex items-center gap-1.5">
-                        <div className="w-4 h-4 rounded bg-teal-100 dark:bg-teal-900/50 border border-teal-300 dark:border-teal-600"></div>
+                        <div className="w-4 h-4 rounded bg-primary-100 dark:bg-primary-900/50 border border-primary-300 dark:border-primary-600"></div>
                         <span>Dominant</span>
                     </div>
                     <div className="flex items-center gap-1.5">

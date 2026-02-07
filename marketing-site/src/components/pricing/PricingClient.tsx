@@ -65,25 +65,25 @@ const PricingClient: React.FC = () => {
 
                         <ul className="space-y-4 mb-8">
                             <li className="flex items-start gap-3">
-                                <FaCheck className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
+                                <FaCheck className="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5" />
                                 <span className="text-gray-700 dark:text-gray-300">
                                     Basic AI chat with standard rate limits
                                 </span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <FaCheck className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
+                                <FaCheck className="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5" />
                                 <span className="text-gray-700 dark:text-gray-300">
                                     DNA sequence generator
                                 </span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <FaCheck className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
+                                <FaCheck className="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5" />
                                 <span className="text-gray-700 dark:text-gray-300">
                                     Community access
                                 </span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <FaCheck className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
+                                <FaCheck className="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5" />
                                 <span className="text-gray-700 dark:text-gray-300">
                                     Basic analysis tools
                                 </span>
@@ -99,7 +99,7 @@ const PricingClient: React.FC = () => {
                     </div>
 
                     {/* PRO Tier */}
-                    <div className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl border-2 border-emerald-500 p-8 hover:shadow-2xl transition-all duration-300">
+                    <div className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl border-2 border-primary-500 p-8 hover:shadow-2xl transition-all duration-300">
                         {/* Recommended Badge */}
                         <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
                             <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-bold bg-yellow-400 text-gray-900 shadow-lg">
@@ -114,7 +114,7 @@ const PricingClient: React.FC = () => {
                                     Booktax PRO
                                 </h3>
                                 <div className="flex items-baseline gap-2 mb-4">
-                                    <span className="text-5xl font-bold text-emerald-500">
+                                    <span className="text-5xl font-bold text-primary-500">
                                         {isPakistan ? "Rs. 3,000" : "$20"}
                                     </span>
                                     <span className="text-gray-500 dark:text-gray-400">/month</span>

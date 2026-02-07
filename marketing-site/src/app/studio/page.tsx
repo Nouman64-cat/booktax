@@ -19,7 +19,7 @@ const studioFeatureCards: { title: string; description: string; icon: IconKey; a
         description:
             "Simulate dominant, recessive, and codominant traits with high-precision Punnett square logic engine.",
         icon: "dna",
-        accent: "from-emerald-400 to-green-600",
+        accent: "from-primary-400 to-primary-600",
     },
     {
         title: "Polygenic Traits",
@@ -52,7 +52,7 @@ const studioFeatureCards: { title: string; description: string; icon: IconKey; a
         title: "Multi-Omics",
         description: "Integrate genomics, transcriptomics, and proteomics data for holistic analysis.",
         icon: "layers",
-        accent: "from-teal-400 to-cyan-600",
+        accent: "from-primary-400 to-cyan-600",
     }
 ];
 
@@ -74,7 +74,7 @@ export default function StudioPage() {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
                             href={`${STUDIO_URL}/signup`}
-                            className="px-8 py-3.5 rounded-lg bg-emerald-600 text-white font-semibold hover:bg-emerald-500 transition-all shadow-lg hover:shadow-emerald-500/30"
+                            className="px-8 py-3.5 rounded-lg bg-primary-600 text-white font-semibold hover:bg-primary-500 transition-all shadow-lg hover:shadow-primary-500/30"
                         >
                             Get Started for Free
                         </a>

@@ -74,24 +74,24 @@ const PedigreeAnalystClient: React.FC = () => {
             title: "Protein Fold Generation",
             description: "Convert DNA to RNA and identify all Open Reading Frames (ORFs) with our C++ engine.",
             path: "/studio/protein-fold-generation",
-            gradient: "from-emerald-500 to-teal-600",
-            color: "emerald",
+            gradient: "from-primary-500 to-primary-600",
+            color: "primary",
         },
         {
             icon: BiTestTube,
             title: "Simulation Studio",
             description: "Run Mendelian genetics simulations with visual Punnett squares and inheritance patterns.",
             path: "/studio/simulation-studio",
-            gradient: "from-teal-500 to-cyan-600",
-            color: "teal",
+            gradient: "from-primary-500 to-cyan-600",
+            color: "primary",
         },
         {
             icon: FaUsers,
             title: "Population Genetics",
             description: "Simulate population dynamics with Hardy-Weinberg equilibrium and genetic drift.",
             path: "/studio/population",
-            gradient: "from-green-500 to-emerald-600",
-            color: "green",
+            gradient: "from-primary-500 to-primary-600",
+            color: "primary",
         },
         {
             icon: FaChartLine,
@@ -106,16 +106,16 @@ const PedigreeAnalystClient: React.FC = () => {
             title: "Browse Traits",
             description: "Explore our comprehensive database of genetic traits with detailed information.",
             path: "/studio/browse-traits",
-            gradient: "from-teal-500 to-emerald-600",
-            color: "teal",
+            gradient: "from-primary-500 to-primary-600",
+            color: "primary",
         },
         {
             icon: FaProjectDiagram,
             title: "Project Management",
             description: "Create and manage your genetics projects with collaborative features.",
             path: "/studio/projects",
-            gradient: "from-emerald-500 to-green-600",
-            color: "emerald",
+            gradient: "from-primary-500 to-primary-600",
+            color: "primary",
         },
     ];
 
@@ -125,35 +125,35 @@ const PedigreeAnalystClient: React.FC = () => {
             <section className="relative pt-20 pb-16 overflow-hidden">
                 {/* Animated Background */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                    <div className="absolute top-20 right-10 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl animate-pulse"></div>
-                    <div className="absolute top-40 left-20 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }}></div>
-                    <div className="absolute bottom-20 right-1/3 w-64 h-64 bg-teal-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "2s" }}></div>
+                    <div className="absolute top-20 right-10 w-72 h-72 bg-primary-500/10 rounded-full blur-3xl animate-pulse"></div>
+                    <div className="absolute top-40 left-20 w-96 h-96 bg-primary-500/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }}></div>
+                    <div className="absolute bottom-20 right-1/3 w-64 h-64 bg-primary-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "2s" }}></div>
                 </div>
 
                 <div className="relative mx-auto max-w-7xl px-6">
                     {/* Header */}
                     <div className="text-center max-w-4xl mx-auto mb-12">
                         <div className="inline-flex items-center gap-2 rounded-full bg-gray-900 px-6 py-2.5 mb-8 shadow-lg shadow-gray-900/25">
-                            <TbBinaryTree className="w-5 h-5 text-emerald-400" />
+                            <TbBinaryTree className="w-5 h-5 text-primary-400" />
                             <span className="text-sm font-semibold uppercase tracking-[0.2em] text-white">
                                 Visual Pedigree Builder
                             </span>
                         </div>
 
                         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                            Map <span className="text-emerald-500 dark:text-emerald-400">Genetic Ancestry</span>
+                            Map <span className="text-primary-500 dark:text-primary-400">Genetic Ancestry</span>
                         </h1>
 
                         <p className="text-xl text-slate-700 dark:text-slate-300 leading-relaxed max-w-3xl mx-auto">
                             Trace traits, predict inheritance patterns, and visualize family potential.
-                            Powered by Booktax's specialized <span className="font-semibold text-emerald-600 dark:text-emerald-400">genetic inference engine</span>.
+                            Powered by Booktax's specialized <span className="font-semibold text-primary-600 dark:text-primary-400">genetic inference engine</span>.
                         </p>
                     </div>
 
                     {/* Stats */}
                     <div className="flex flex-wrap justify-center gap-8 mb-16">
                         <div className="text-center px-6">
-                            <p className="text-4xl font-bold text-emerald-600 dark:text-emerald-400">Instant</p>
+                            <p className="text-4xl font-bold text-primary-600 dark:text-primary-400">Instant</p>
                             <p className="text-sm text-slate-600 dark:text-slate-400">Visualisation</p>
                         </div>
                         <div className="text-center px-6 border-l border-slate-200 dark:border-slate-700">
@@ -161,7 +161,7 @@ const PedigreeAnalystClient: React.FC = () => {
                             <p className="text-sm text-slate-600 dark:text-slate-400">Layout Engine</p>
                         </div>
                         <div className="text-center px-6 border-l border-slate-200 dark:border-slate-700">
-                            <p className="text-4xl font-bold text-emerald-600 dark:text-emerald-400">100%</p>
+                            <p className="text-4xl font-bold text-primary-600 dark:text-primary-400">100%</p>
                             <p className="text-sm text-slate-600 dark:text-slate-400">Free to Use</p>
                         </div>
                     </div>
@@ -176,7 +176,7 @@ const PedigreeAnalystClient: React.FC = () => {
                         {/* Simulation Header Mock */}
                         <div className="flex items-center justify-between mb-4 px-2">
                             <div className="flex items-center gap-3">
-                                <div className="p-2 bg-emerald-50 dark:bg-emerald-900/20 rounded-lg text-emerald-600 dark:text-emerald-400">
+                                <div className="p-2 bg-primary-50 dark:bg-primary-900/20 rounded-lg text-primary-600 dark:text-primary-400">
                                     <FiActivity className="w-5 h-5" />
                                 </div>
                                 <div>
@@ -186,7 +186,7 @@ const PedigreeAnalystClient: React.FC = () => {
                             </div>
 
                             <div className="hidden sm:flex items-center gap-2">
-                                <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-full text-xs font-medium flex items-center gap-1.5">
+                                <span className="px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-400 rounded-full text-xs font-medium flex items-center gap-1.5">
                                     <FiCheckCircle className="w-3.5 h-3.5" /> Mendelian Pattern
                                 </span>
                             </div>
@@ -197,7 +197,7 @@ const PedigreeAnalystClient: React.FC = () => {
                             <div className="absolute inset-0 z-20 flex items-center justify-center bg-white/30 dark:bg-black/30 backdrop-blur-[1px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                                 <div className="bg-white dark:bg-gray-900 px-6 py-4 rounded-xl shadow-xl border border-slate-200 dark:border-slate-700 flex flex-col items-center gap-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                                     <p className="font-semibold text-slate-900 dark:text-white">Start Building Your Tree</p>
-                                    <a href="https://ai.Booktax.com/register" className="pointer-events-auto px-5 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition font-medium text-sm flex items-center gap-2">
+                                    <a href="https://ai.Booktax.com/register" className="pointer-events-auto px-5 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition font-medium text-sm flex items-center gap-2">
                                         Launch Full App <HiArrowRight />
                                     </a>
                                 </div>
@@ -218,7 +218,7 @@ const PedigreeAnalystClient: React.FC = () => {
 
                         <div className="mt-6 flex justify-center">
                             <p className="text-sm text-slate-500 dark:text-slate-400 flex items-center gap-2">
-                                <HiSparkles className="text-emerald-500" />
+                                <HiSparkles className="text-primary-500" />
                                 <span>Powered by the unified <strong>Booktax Engine</strong></span>
                             </p>
                         </div>
@@ -231,14 +231,14 @@ const PedigreeAnalystClient: React.FC = () => {
                 <div className="mx-auto max-w-7xl px-6">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <div className="inline-flex items-center gap-2 rounded-full bg-gray-900 px-5 py-2 mb-6 border border-gray-800">
-                            <HiLockClosed className="w-4 h-4 text-emerald-400" />
+                            <HiLockClosed className="w-4 h-4 text-primary-400" />
                             <span className="text-xs font-semibold uppercase tracking-wider text-white">
                                 Free Suite
                             </span>
                         </div>
 
                         <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-6">
-                            Explore More <span className="text-emerald-500 dark:text-emerald-400">Genetic Tools</span>
+                            Explore More <span className="text-primary-500 dark:text-primary-400">Genetic Tools</span>
                         </h2>
 
                         <p className="text-lg text-slate-600 dark:text-slate-400">
@@ -286,7 +286,7 @@ const PedigreeAnalystClient: React.FC = () => {
                                 </div>
 
                                 {/* Title */}
-                                <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                                <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
                                     {tool.title}
                                 </h3>
 
@@ -296,7 +296,7 @@ const PedigreeAnalystClient: React.FC = () => {
                                 </p>
 
                                 {/* Link Arrow */}
-                                <div className="flex items-center gap-2 text-emerald-600 dark:text-emerald-400 font-medium text-sm">
+                                <div className="flex items-center gap-2 text-primary-600 dark:text-primary-400 font-medium text-sm">
                                     <span>Open Tool</span>
                                     <HiArrowRight className="w-3.5 h-3.5 group-hover:translate-x-2 transition-transform" />
                                 </div>

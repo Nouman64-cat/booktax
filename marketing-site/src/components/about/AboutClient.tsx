@@ -32,7 +32,7 @@ const values = [
         icon: HiCog,
         description:
             "Traits, weights, and downstream pipelines are modular so teams can adapt Booktax to bespoke research programs.",
-        color: "from-emerald-500 to-teal-500",
+        color: "from-primary-500 to-primary-500",
     },
 ];
 
@@ -43,14 +43,14 @@ const AboutClient: React.FC = () => {
         <div className="bg-white dark:bg-gray-950 min-h-screen transition-colors duration-300">
             {/* Background decoration - optional, subtle */}
             <div className="pointer-events-none absolute inset-0 overflow-hidden opacity-30">
-                <div className="absolute top-0 right-0 -mr-20 -mt-20 w-[600px] h-[600px] bg-gradient-to-bl from-emerald-50/40 via-teal-50/20 to-transparent dark:from-emerald-900/10 dark:via-teal-900/5 dark:to-transparent rounded-full blur-3xl opacity-50" />
+                <div className="absolute top-0 right-0 -mr-20 -mt-20 w-[600px] h-[600px] bg-gradient-to-bl from-primary-50/40 via-primary-50/20 to-transparent dark:from-primary-900/10 dark:via-primary-900/5 dark:to-transparent rounded-full blur-3xl opacity-50" />
             </div>
 
             <div className="relative z-10 mx-auto max-w-7xl px-6 pb-20 pt-24">
                 <div className="grid gap-16 lg:grid-cols-[1.2fr,1fr] lg:items-center">
                     <div className="space-y-8">
-                        <div className="inline-flex items-center gap-3 rounded-full bg-emerald-50 dark:bg-emerald-900/20 px-4 py-2 border border-emerald-100 dark:border-emerald-800">
-                            <span className="text-sm font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
+                        <div className="inline-flex items-center gap-3 rounded-full bg-primary-50 dark:bg-primary-900/20 px-4 py-2 border border-primary-100 dark:border-primary-800">
+                            <span className="text-sm font-semibold uppercase tracking-wider text-primary-600 dark:text-primary-400">
                                 Our Story
                             </span>
                         </div>
@@ -58,7 +58,7 @@ const AboutClient: React.FC = () => {
                         <h1 className="text-5xl font-bold leading-tight text-gray-900 dark:text-white sm:text-6xl">
                             Booktax is crafted for teams who translate
                             <span className="relative whitespace-nowrap px-2">
-                                <span className="relative z-10 text-emerald-500">genetics</span>
+                                <span className="relative z-10 text-primary-500">genetics</span>
                             </span>
                             into action.
                         </h1>
@@ -109,8 +109,8 @@ const AboutClient: React.FC = () => {
                                 </p>
 
                                 <div className="mt-6 flex justify-center gap-2">
-                                    <div className="w-2 h-2 bg-emerald-500 rounded-full animate-bounce" />
-                                    <div className="w-2 h-2 bg-teal-500 rounded-full animate-bounce delay-100" />
+                                    <div className="w-2 h-2 bg-primary-500 rounded-full animate-bounce" />
+                                    <div className="w-2 h-2 bg-primary-500 rounded-full animate-bounce delay-100" />
                                     <div className="w-2 h-2 bg-gray-500 rounded-full animate-bounce delay-200" />
                                 </div>
                             </div>
@@ -121,9 +121,9 @@ const AboutClient: React.FC = () => {
 
                 <div className="mt-20">
                     <div className="text-center mb-16">
-                        <div className="inline-flex items-center gap-3 rounded-full bg-emerald-50 dark:bg-emerald-900/20 px-4 py-2 border border-emerald-100 dark:border-emerald-800 mb-6">
-                            <div className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
-                            <span className="text-sm font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
+                        <div className="inline-flex items-center gap-3 rounded-full bg-primary-50 dark:bg-primary-900/20 px-4 py-2 border border-primary-100 dark:border-primary-800 mb-6">
+                            <div className="h-2 w-2 rounded-full bg-primary-400 animate-pulse" />
+                            <span className="text-sm font-semibold uppercase tracking-wider text-primary-600 dark:text-primary-400">
                                 Our Values
                             </span>
                         </div>
@@ -141,7 +141,7 @@ const AboutClient: React.FC = () => {
                                     className="group relative overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-8 shadow-lg transition-all hover:shadow-xl hover:scale-[1.02]"
                                     style={{ animationDelay: `${index * 200}ms` }}
                                 >
-                                    <div className="absolute inset-0 bg-gradient-to-br from-emerald-50/20 via-blue-50/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                                    <div className="absolute inset-0 bg-gradient-to-br from-primary-50/20 via-blue-50/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                                     <div className="relative">
                                         <div
@@ -150,7 +150,7 @@ const AboutClient: React.FC = () => {
                                             <Icon className="w-8 h-8" />
                                         </div>
 
-                                        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 group-hover:text-emerald-600 dark:group-hover:text-emerald-300 transition-colors">
+                                        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-colors">
                                             {value.name}
                                         </h3>
 
@@ -167,9 +167,9 @@ const AboutClient: React.FC = () => {
                 {/* Community Section */}
                 <div className="mt-20">
                     <div className="text-center mb-12">
-                        <div className="inline-flex items-center gap-3 rounded-full bg-emerald-50 dark:bg-emerald-900/20 px-4 py-2 border border-emerald-100 dark:border-emerald-800 mb-6">
-                            <FaUsers className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-                            <span className="text-sm font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
+                        <div className="inline-flex items-center gap-3 rounded-full bg-primary-50 dark:bg-primary-900/20 px-4 py-2 border border-primary-100 dark:border-primary-800 mb-6">
+                            <FaUsers className="w-4 h-4 text-primary-600 dark:text-primary-400" />
+                            <span className="text-sm font-semibold uppercase tracking-wider text-primary-600 dark:text-primary-400">
                                 Our Community
                             </span>
                         </div>

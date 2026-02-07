@@ -295,10 +295,10 @@ const AiClient: React.FC = () => {
                 {/* Use Cases Section */}
                 <div className="mb-24">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <span className="inline-block rounded-full bg-[#10B981]/10 dark:bg-[#10B981]/20 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-[#10B981] dark:text-emerald-400 mb-6">
+                        <span className="inline-block rounded-full bg-[#10B981]/10 dark:bg-[#10B981]/20 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-[#10B981] dark:text-primary-400 mb-6">
                             Use Cases
                         </span>
-                        <h2 className="text-4xl font-bold bg-gradient-to-r from-slate-900 to-[#10B981] dark:from-white dark:to-emerald-300 bg-clip-text text-transparent mb-6">
+                        <h2 className="text-4xl font-bold bg-gradient-to-r from-slate-900 to-[#10B981] dark:from-white dark:to-primary-300 bg-clip-text text-transparent mb-6">
                             Who Benefits from {botName}?
                         </h2>
                         <p className="text-lg text-slate-600 dark:text-slate-400">
@@ -335,7 +335,7 @@ const AiClient: React.FC = () => {
                                             key={example}
                                             className="flex items-start gap-2 text-sm text-slate-600 dark:text-slate-400"
                                         >
-                                            <span className="text-[#10B981] dark:text-emerald-400 mt-1">
+                                            <span className="text-[#10B981] dark:text-primary-400 mt-1">
                                                 •
                                             </span>
                                             <span className="italic">"{example}"</span>

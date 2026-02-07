@@ -23,8 +23,8 @@ const FloatingCard: React.FC<{
                 <div className="text-sm font-bold text-slate-900 dark:text-white">{value}</div>
             </div>
         </div>
-        <div className="text-[10px] text-emerald-500 font-medium flex items-center gap-1">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+        <div className="text-[10px] text-primary-500 font-medium flex items-center gap-1">
+            <span className="w-1.5 h-1.5 rounded-full bg-primary-500"></span>
             {sub}
         </div>
     </div>
@@ -36,7 +36,7 @@ const StudioHero: React.FC = () => {
     return (
         <section className="relative bg-slate-50 dark:bg-slate-950 overflow-hidden pt-16 pb-20 lg:min-h-[90vh] flex items-center border-b border-slate-200 dark:border-slate-800">
             {/* Background Gradients */}
-            <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+            <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[500px] h-[500px] bg-primary-500/10 rounded-full blur-[100px] pointer-events-none"></div>
             <div className="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/4 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[100px] pointer-events-none"></div>
 
             <div className="container mx-auto px-4 lg:px-6 relative z-10">
@@ -47,15 +47,15 @@ const StudioHero: React.FC = () => {
                         <div className="space-y-4">
                             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium">
                                 <span className="relative flex h-2 w-2">
-                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
                                 </span>
                                 Live Simulation Engine v2.0
                             </div>
 
                             <h1 className="text-4xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.1]">
                                 Your entire lab, <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500">
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-primary-500">
                                     in one workspace.
                                 </span>
                             </h1>
@@ -68,7 +68,7 @@ const StudioHero: React.FC = () => {
                         <div className="flex flex-wrap gap-4">
                             <a
                                 href={`${customLink}/signup`}
-                                className="px-8 py-3.5 rounded-lg bg-emerald-600 text-white font-semibold hover:bg-emerald-500 transition-all shadow-lg hover:shadow-emerald-500/30 flex items-center gap-2"
+                                className="px-8 py-3.5 rounded-lg bg-primary-600 text-white font-semibold hover:bg-primary-500 transition-all shadow-lg hover:shadow-primary-500/30 flex items-center gap-2"
                             >
                                 Start for free
                                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
@@ -98,12 +98,12 @@ const StudioHero: React.FC = () => {
                                     {/* Sidebar */}
                                     <div className="w-[240px] bg-[#1e293b] border-r border-slate-700/50 hidden md:flex flex-col p-4 gap-6 shrink-0">
                                         <div className="flex items-center gap-2 px-2">
-                                            <div className="w-6 h-6 rounded-lg bg-emerald-500"></div>
+                                            <div className="w-6 h-6 rounded-lg bg-primary-500"></div>
                                             <div className="h-3 w-20 bg-slate-700 rounded"></div>
                                         </div>
 
                                         <div className="space-y-1">
-                                            <div className="flex items-center gap-3 px-3 py-2 bg-emerald-500/10 text-emerald-400 rounded-lg text-sm font-medium border border-emerald-500/20 whitespace-nowrap">
+                                            <div className="flex items-center gap-3 px-3 py-2 bg-primary-500/10 text-primary-400 rounded-lg text-sm font-medium border border-primary-500/20 whitespace-nowrap">
                                                 <FiGrid /> Dashboard
                                             </div>
                                             {[
@@ -143,7 +143,7 @@ const StudioHero: React.FC = () => {
                                             </div>
                                             <div className="flex gap-3">
                                                 <div className="w-8 h-8 rounded-full bg-slate-800"></div>
-                                                <div className="w-8 h-8 rounded-full bg-emerald-500/20"></div>
+                                                <div className="w-8 h-8 rounded-full bg-primary-500/20"></div>
                                             </div>
                                         </div>
 
@@ -153,7 +153,7 @@ const StudioHero: React.FC = () => {
                                             <div className="col-span-2 bg-[#1e293b]/50 rounded-xl p-4 border border-slate-800 h-48 relative overflow-hidden">
                                                 <div className="flex justify-between mb-4">
                                                     <div className="h-3 w-24 bg-slate-700 rounded"></div>
-                                                    <div className="h-3 w-12 bg-emerald-500/20 rounded text-emerald-500 text-[10px] flex items-center justify-center">LIVE</div>
+                                                    <div className="h-3 w-12 bg-primary-500/20 rounded text-primary-500 text-[10px] flex items-center justify-center">LIVE</div>
                                                 </div>
                                                 {/* Mock Chart Line */}
                                                 <div className="absolute bottom-0 left-0 right-0 h-32 opacity-50">
@@ -212,7 +212,7 @@ const StudioHero: React.FC = () => {
                             title="Job Status"
                             value="Complete"
                             sub="0.4s exec time"
-                            color="bg-emerald-500"
+                            color="bg-primary-500"
                             icon={<FiActivity className="w-5 h-5" />}
                         />
 

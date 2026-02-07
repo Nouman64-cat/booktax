@@ -54,9 +54,9 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
         }
     };
     return (
-        <article className="group relative flex flex-col overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-emerald-500/30 hover:shadow-xl hover:shadow-emerald-500/10">
+        <article className="group relative flex flex-col overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-primary-500/30 hover:shadow-xl hover:shadow-primary-500/10">
             {/* Decorative gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-br from-emerald-50/0 via-transparent to-teal-50/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary-50/0 via-transparent to-primary-50/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none" />
 
             <Link
                 href={`/blogs/${blog.slug}`}
@@ -78,7 +78,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
                     ) : (
                         <div className="flex h-full w-full items-center justify-center bg-gray-50 dark:bg-gray-800 relative">
                             {/* Animated background pattern */}
-                            <div className="absolute inset-0 opacity-10 text-emerald-500">
+                            <div className="absolute inset-0 opacity-10 text-primary-500">
                                 <svg
                                     className="h-full w-full"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -101,12 +101,12 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
                                 </svg>
                             </div>
                             <div className="relative z-10 text-center">
-                                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white dark:bg-gray-900 shadow-sm mb-2 border border-emerald-100 dark:border-emerald-900">
-                                    <span className="text-2xl font-bold text-emerald-600">
+                                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white dark:bg-gray-900 shadow-sm mb-2 border border-primary-100 dark:border-primary-900">
+                                    <span className="text-2xl font-bold text-primary-600">
                                         {blog.title.charAt(0)}
                                     </span>
                                 </div>
-                                <p className="text-xs font-medium text-emerald-600 dark:text-emerald-400">Article</p>
+                                <p className="text-xs font-medium text-primary-600 dark:text-primary-400">Article</p>
                             </div>
                         </div>
                     )}
@@ -143,7 +143,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
                     </div>
                     <button
                         onClick={handleShare}
-                        className="inline-flex items-center gap-1.5 rounded-full border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50 px-3 py-1.5 text-xs font-medium text-gray-600 dark:text-gray-300 transition-all hover:border-emerald-500 hover:text-emerald-600 dark:hover:text-emerald-400 hover:shadow-sm"
+                        className="inline-flex items-center gap-1.5 rounded-full border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50 px-3 py-1.5 text-xs font-medium text-gray-600 dark:text-gray-300 transition-all hover:border-primary-500 hover:text-primary-600 dark:hover:text-primary-400 hover:shadow-sm"
                         aria-label={`Share ${blog.title}`}
                     >
                         <FiShare2 className="h-3 w-3" />
@@ -155,7 +155,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
 
                 {/* Enhanced content area */}
                 <div className="space-y-3 flex-1">
-                    <h3 className="text-xl font-bold leading-tight text-gray-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-200">
+                    <h3 className="text-xl font-bold leading-tight text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-200">
                         <Link href={`/blogs/${blog.slug}`} className="line-clamp-2">
                             {blog.title}
                         </Link>
@@ -170,7 +170,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
                             {blog.categories.slice(0, 2).map((category) => (
                                 <span
                                     key={category.slug}
-                                    className="inline-flex items-center rounded-md bg-emerald-50 dark:bg-emerald-900/20 px-2 py-0.5 text-xs font-medium text-emerald-700 dark:text-emerald-400 border border-emerald-100 dark:border-emerald-800"
+                                    className="inline-flex items-center rounded-md bg-primary-50 dark:bg-primary-900/20 px-2 py-0.5 text-xs font-medium text-primary-700 dark:text-primary-400 border border-primary-100 dark:border-primary-800"
                                 >
                                     {category.title}
                                 </span>
@@ -196,7 +196,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
                                             className="h-9 w-9 rounded-full object-cover ring-2 ring-white dark:ring-gray-800 shadow-sm"
                                         />
                                     ) : (
-                                        <div className="flex h-9 w-9 items-center justify-center rounded-full bg-emerald-50 dark:bg-emerald-900/20 text-xs font-bold text-emerald-600 dark:text-emerald-400 ring-2 ring-white dark:ring-gray-800 shadow-sm border border-emerald-100 dark:border-emerald-800">
+                                        <div className="flex h-9 w-9 items-center justify-center rounded-full bg-primary-50 dark:bg-primary-900/20 text-xs font-bold text-primary-600 dark:text-primary-400 ring-2 ring-white dark:ring-gray-800 shadow-sm border border-primary-100 dark:border-primary-800">
                                             {author.name
                                                 .split(" ")
                                                 .map((part) => part.charAt(0))
@@ -226,7 +226,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
                         {/* Read more arrow */}
                         <Link
                             href={`/blogs/${blog.slug}`}
-                            className="flex items-center justify-center w-8 h-8 rounded-full bg-emerald-50 dark:bg-emerald-900/20 text-emerald-600 dark:text-emerald-400 opacity-0 group-hover:opacity-100 transition-all duration-200 hover:bg-emerald-100 dark:hover:bg-emerald-900/40 hover:scale-110"
+                            className="flex items-center justify-center w-8 h-8 rounded-full bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400 opacity-0 group-hover:opacity-100 transition-all duration-200 hover:bg-primary-100 dark:hover:bg-primary-900/40 hover:scale-110"
                             aria-label={`Read ${blog.title}`}
                         >
                             <svg

@@ -39,11 +39,11 @@ const Features = () => {
         <section id="features" className="py-24 bg-slate-50 dark:bg-gray-900/50 relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center max-w-3xl mx-auto mb-16">
-                    <h2 className="text-emerald-600 dark:text-emerald-400 font-semibold tracking-wide uppercase text-sm mb-3">
+                    <h2 className="text-primary-600 dark:text-primary-400 font-semibold tracking-wide uppercase text-sm mb-3">
                         Core Technology
                     </h2>
                     <h3 className="text-3xl md:text-4xl font-bold text-slate-800 dark:text-white mb-6">
-                        Intelligence That Adapts and <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500">Expands</span>
+                        Intelligence That Adapts and <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-primary-500">Expands</span>
                     </h3>
                     <p className="text-lg text-slate-600 dark:text-slate-300">
                         Booktax isn't just another AI. It's a living system that learns from its environment to provide unparalleled results.
@@ -54,9 +54,9 @@ const Features = () => {
                     {features.map((feature, index) => (
                         <div
                             key={index}
-                            className="group p-8 rounded-2xl bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 hover:border-emerald-500 dark:hover:border-emerald-500 shadow-sm hover:shadow-xl transition-all duration-300"
+                            className="group p-8 rounded-2xl bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 hover:border-primary-500 dark:hover:border-primary-500 shadow-sm hover:shadow-xl transition-all duration-300"
                         >
-                            <div className="w-12 h-12 rounded-lg bg-emerald-50 dark:bg-emerald-900/20 flex items-center justify-center text-2xl text-emerald-600 dark:text-emerald-400 mb-6 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
+                            <div className="w-12 h-12 rounded-lg bg-primary-50 dark:bg-primary-900/20 flex items-center justify-center text-2xl text-primary-600 dark:text-primary-400 mb-6 group-hover:scale-110 group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
                                 {feature.icon}
                             </div>
                             <h4 className="text-xl font-bold text-slate-800 dark:text-white mb-3">

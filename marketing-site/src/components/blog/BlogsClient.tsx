@@ -73,21 +73,21 @@ const BlogsClient: React.FC = () => {
         <div className="relative bg-white dark:bg-gray-950 pb-24 pt-16 transition-colors duration-300">
             {/* Simple Emerald Glow Background */}
             <div className="pointer-events-none absolute inset-0 overflow-hidden opacity-30">
-                <div className="absolute top-20 left-10 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl" />
-                <div className="absolute top-40 right-20 w-80 h-80 bg-teal-500/10 rounded-full blur-3xl" />
+                <div className="absolute top-20 left-10 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl" />
+                <div className="absolute top-40 right-20 w-80 h-80 bg-primary-500/10 rounded-full blur-3xl" />
             </div>
 
             <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col gap-12 px-4 sm:px-6 lg:px-8">
                 <header className="space-y-4 text-center">
-                    <div className="inline-flex items-center gap-2 rounded-full bg-emerald-50 dark:bg-emerald-900/20 px-4 py-2 mb-2 border border-emerald-100 dark:border-emerald-800">
+                    <div className="inline-flex items-center gap-2 rounded-full bg-primary-50 dark:bg-primary-900/20 px-4 py-2 mb-2 border border-primary-100 dark:border-primary-800">
                         <svg
-                            className="w-4 h-4 text-emerald-600 dark:text-emerald-400"
+                            className="w-4 h-4 text-primary-600 dark:text-primary-400"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                         >
                             <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z" />
                         </svg>
-                        <p className="text-xs font-semibold uppercase tracking-[0.35em] text-emerald-600 dark:text-emerald-400">
+                        <p className="text-xs font-semibold uppercase tracking-[0.35em] text-primary-600 dark:text-primary-400">
                             Insights & Research
                         </p>
                     </div>
@@ -103,7 +103,7 @@ const BlogsClient: React.FC = () => {
                         {categories.slice(0, 6).map((category) => (
                             <span
                                 key={category.slug}
-                                className="rounded-full border border-emerald-100 dark:border-emerald-800 bg-emerald-50 dark:bg-emerald-900/20 px-4 py-2 font-semibold text-emerald-700 dark:text-emerald-400 hover:border-emerald-300 dark:hover:border-emerald-600 hover:shadow-sm transition-all cursor-pointer"
+                                className="rounded-full border border-primary-100 dark:border-primary-800 bg-primary-50 dark:bg-primary-900/20 px-4 py-2 font-semibold text-primary-700 dark:text-primary-400 hover:border-primary-300 dark:hover:border-primary-600 hover:shadow-sm transition-all cursor-pointer"
                             >
                                 {category.title}
                             </span>
@@ -129,8 +129,8 @@ const BlogsClient: React.FC = () => {
                                         }
                                         aria-pressed={isActive}
                                         className={`inline-flex items-center gap-2 rounded-full border px-4 py-2 font-semibold transition-all ${isActive
-                                            ? "border-emerald-500 bg-emerald-600 text-white shadow-md shadow-emerald-500/20"
-                                            : "border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50 text-gray-600 dark:text-gray-300 hover:border-emerald-500 hover:text-emerald-600 dark:hover:text-emerald-400"
+                                            ? "border-primary-500 bg-primary-600 text-white shadow-md shadow-primary-500/20"
+                                            : "border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50 text-gray-600 dark:text-gray-300 hover:border-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                             }`}
                                     >
                                         <span>{author.name}</span>
@@ -160,7 +160,7 @@ const BlogsClient: React.FC = () => {
                     <div className="space-y-6">
                         {/* Loading header */}
                         <div className="text-center">
-                            <div className="inline-flex items-center gap-2 text-emerald-600 mb-4">
+                            <div className="inline-flex items-center gap-2 text-primary-600 mb-4">
                                 <svg
                                     className="w-5 h-5 animate-spin"
                                     fill="none"
@@ -360,7 +360,7 @@ const BlogsClient: React.FC = () => {
                                     <button
                                         type="button"
                                         onClick={() => setActiveAuthor(null)}
-                                        className="inline-flex items-center gap-1 rounded-full border border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-800/50 px-3 py-1 font-medium text-gray-600 dark:text-gray-300 transition hover:border-emerald-400 hover:text-emerald-600 dark:hover:text-emerald-300"
+                                        className="inline-flex items-center gap-1 rounded-full border border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-800/50 px-3 py-1 font-medium text-gray-600 dark:text-gray-300 transition hover:border-primary-400 hover:text-primary-600 dark:hover:text-primary-300"
                                     >
                                         <svg
                                             className="h-3 w-3"
@@ -399,14 +399,14 @@ const BlogsClient: React.FC = () => {
                             <div className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-8 text-center text-sm text-gray-600 dark:text-gray-300 shadow-sm">
                                 <p>
                                     We couldn&apos;t find any articles for{" "}
-                                    <span className="font-semibold text-emerald-600 dark:text-emerald-400">
+                                    <span className="font-semibold text-primary-600 dark:text-primary-400">
                                         {activeAuthor}
                                     </span>{" "}
                                     just yet. Try another author or{" "}
                                     <button
                                         type="button"
                                         onClick={() => setActiveAuthor(null)}
-                                        className="font-semibold text-emerald-600 dark:text-emerald-400 hover:text-emerald-500 dark:hover:text-emerald-300 underline"
+                                        className="font-semibold text-primary-600 dark:text-primary-400 hover:text-primary-500 dark:hover:text-primary-300 underline"
                                     >
                                         clear the filter
                                     </button>
@@ -421,7 +421,7 @@ const BlogsClient: React.FC = () => {
                     <footer className="rounded-3xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-8 shadow-sm">
                         <div className="flex items-center gap-2 mb-4">
                             <svg
-                                className="w-5 h-5 text-emerald-500"
+                                className="w-5 h-5 text-primary-500"
                                 fill="currentColor"
                                 viewBox="0 0 20 20"
                             >
@@ -439,7 +439,7 @@ const BlogsClient: React.FC = () => {
                             {tags.map((tag) => (
                                 <span
                                     key={tag.slug}
-                                    className="rounded-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-4 py-2 text-xs font-medium text-gray-600 dark:text-gray-300 hover:border-emerald-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-all cursor-pointer"
+                                    className="rounded-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-4 py-2 text-xs font-medium text-gray-600 dark:text-gray-300 hover:border-primary-300 hover:text-primary-600 dark:hover:text-primary-400 transition-all cursor-pointer"
                                 >
                                     #{tag.title}
                                 </span>
@@ -453,7 +453,7 @@ const BlogsClient: React.FC = () => {
                         Looking for something specific? Explore all research on our{" "}
                         <Link
                             href="/contact"
-                            className="font-semibold text-emerald-600 dark:text-emerald-400 hover:text-emerald-500 dark:hover:text-emerald-300 transition-colors underline"
+                            className="font-semibold text-primary-600 dark:text-primary-400 hover:text-primary-500 dark:hover:text-primary-300 transition-colors underline"
                         >
                             contact page
                         </Link>{" "}

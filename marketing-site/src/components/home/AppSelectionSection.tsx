@@ -70,7 +70,7 @@ const AppSelectionSection: React.FC = () => {
             <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="text-center max-w-3xl mx-auto mb-16 relative z-10">
                     <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                        Two Powerful Engines. <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500">One Ecosystem.</span>
+                        Two Powerful Engines. <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-primary-500">One Ecosystem.</span>
                     </h2>
                     <p className="text-lg text-gray-600 dark:text-gray-400">
                         Choose the specific workspace tailored to your immediate research needs.
@@ -86,52 +86,52 @@ const AppSelectionSection: React.FC = () => {
                         <svg className="absolute -inset-[50%] w-[200%] h-[200%] pointer-events-none z-0 overflow-visible" viewBox="0 0 200 200" preserveAspectRatio="none">
                             {/* Traces feeding IN to the card center area */}
                             {/* Top Inputs - BUS 1 */}
-                            <path d="M 100,0 V 30 H 80 V 50" className="circuit-trace stroke-emerald-500" />
-                            <path d="M 100,0 V 30 H 80 V 50" className="circuit-active stroke-emerald-500" />
-                            <path d="M 105,0 V 25 H 85 V 50" className="circuit-trace stroke-emerald-500" />
-                            <path d="M 105,0 V 25 H 85 V 50" className="circuit-active stroke-emerald-500" style={{ animationDelay: '0.2s' }} />
+                            <path d="M 100,0 V 30 H 80 V 50" className="circuit-trace stroke-primary-500" />
+                            <path d="M 100,0 V 30 H 80 V 50" className="circuit-active stroke-primary-500" />
+                            <path d="M 105,0 V 25 H 85 V 50" className="circuit-trace stroke-primary-500" />
+                            <path d="M 105,0 V 25 H 85 V 50" className="circuit-active stroke-primary-500" style={{ animationDelay: '0.2s' }} />
 
-                            <path d="M 60,0 V 20 H 90 V 50" className="circuit-trace stroke-emerald-500" />
-                            <path d="M 60,0 V 20 H 90 V 50" className="circuit-active stroke-emerald-500" style={{ animationDelay: '0.5s' }} />
-                            <path d="M 55,0 V 15 H 75 V 50" className="circuit-trace stroke-emerald-500" />
-                            <path d="M 55,0 V 15 H 75 V 50" className="circuit-active stroke-emerald-500" style={{ animationDelay: '0.7s' }} />
+                            <path d="M 60,0 V 20 H 90 V 50" className="circuit-trace stroke-primary-500" />
+                            <path d="M 60,0 V 20 H 90 V 50" className="circuit-active stroke-primary-500" style={{ animationDelay: '0.5s' }} />
+                            <path d="M 55,0 V 15 H 75 V 50" className="circuit-trace stroke-primary-500" />
+                            <path d="M 55,0 V 15 H 75 V 50" className="circuit-active stroke-primary-500" style={{ animationDelay: '0.7s' }} />
 
                             {/* Left Inputs - BUS 2 */}
-                            <path d="M 0,80 H 30 V 100 H 50" className="circuit-trace stroke-emerald-500" />
-                            <path d="M 0,80 H 30 V 100 H 50" className="circuit-active stroke-emerald-500" style={{ animationDelay: '1s' }} />
-                            <path d="M 0,85 H 35 V 105 H 50" className="circuit-trace stroke-emerald-500" />
-                            <path d="M 0,85 H 35 V 105 H 50" className="circuit-active stroke-emerald-500" style={{ animationDelay: '1.2s' }} />
+                            <path d="M 0,80 H 30 V 100 H 50" className="circuit-trace stroke-primary-500" />
+                            <path d="M 0,80 H 30 V 100 H 50" className="circuit-active stroke-primary-500" style={{ animationDelay: '1s' }} />
+                            <path d="M 0,85 H 35 V 105 H 50" className="circuit-trace stroke-primary-500" />
+                            <path d="M 0,85 H 35 V 105 H 50" className="circuit-active stroke-primary-500" style={{ animationDelay: '1.2s' }} />
 
-                            <path d="M 0,120 H 20 V 100 H 50" className="circuit-trace stroke-emerald-500" />
-                            <path d="M 0,120 H 20 V 100 H 50" className="circuit-active stroke-emerald-500" style={{ animationDelay: '1.5s' }} />
-                            <path d="M 0,125 H 25 V 110 H 50" className="circuit-trace stroke-emerald-500" />
-                            <path d="M 0,125 H 25 V 110 H 50" className="circuit-active stroke-emerald-500" style={{ animationDelay: '1.7s' }} />
-                            <path d="M 0,135 H 15 V 150 H 50" className="circuit-trace stroke-emerald-500" />
-                            <path d="M 0,135 H 15 V 150 H 50" className="circuit-active stroke-emerald-500" style={{ animationDelay: '1.9s' }} />
+                            <path d="M 0,120 H 20 V 100 H 50" className="circuit-trace stroke-primary-500" />
+                            <path d="M 0,120 H 20 V 100 H 50" className="circuit-active stroke-primary-500" style={{ animationDelay: '1.5s' }} />
+                            <path d="M 0,125 H 25 V 110 H 50" className="circuit-trace stroke-primary-500" />
+                            <path d="M 0,125 H 25 V 110 H 50" className="circuit-active stroke-primary-500" style={{ animationDelay: '1.7s' }} />
+                            <path d="M 0,135 H 15 V 150 H 50" className="circuit-trace stroke-primary-500" />
+                            <path d="M 0,135 H 15 V 150 H 50" className="circuit-active stroke-primary-500" style={{ animationDelay: '1.9s' }} />
 
                             {/* Bottom Inputs - BUS 3 */}
-                            <path d="M 80,200 V 170 H 100 V 150" className="circuit-trace stroke-emerald-500" />
-                            <path d="M 80,200 V 170 H 100 V 150" className="circuit-active stroke-emerald-500" style={{ animationDelay: '0.8s' }} />
-                            <path d="M 75,200 V 165 H 95 V 150" className="circuit-trace stroke-emerald-500" />
-                            <path d="M 75,200 V 165 H 95 V 150" className="circuit-active stroke-emerald-500" style={{ animationDelay: '1s' }} />
-                            <path d="M 120,200 V 180 H 110 V 150" className="circuit-trace stroke-emerald-500" />
-                            <path d="M 120,200 V 180 H 110 V 150" className="circuit-active stroke-emerald-500" style={{ animationDelay: '1.3s' }} />
+                            <path d="M 80,200 V 170 H 100 V 150" className="circuit-trace stroke-primary-500" />
+                            <path d="M 80,200 V 170 H 100 V 150" className="circuit-active stroke-primary-500" style={{ animationDelay: '0.8s' }} />
+                            <path d="M 75,200 V 165 H 95 V 150" className="circuit-trace stroke-primary-500" />
+                            <path d="M 75,200 V 165 H 95 V 150" className="circuit-active stroke-primary-500" style={{ animationDelay: '1s' }} />
+                            <path d="M 120,200 V 180 H 110 V 150" className="circuit-trace stroke-primary-500" />
+                            <path d="M 120,200 V 180 H 110 V 150" className="circuit-active stroke-primary-500" style={{ animationDelay: '1.3s' }} />
                         </svg>
 
                         {/* Glowing Border when Active */}
-                        <div className="absolute -inset-0.5 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-3xl opacity-30 group-hover:opacity-100 group-hover:blur-md transition-all duration-500"></div>
+                        <div className="absolute -inset-0.5 bg-gradient-to-r from-primary-500 to-primary-500 rounded-3xl opacity-30 group-hover:opacity-100 group-hover:blur-md transition-all duration-500"></div>
 
-                        <div className="relative bg-slate-50 dark:bg-slate-900 rounded-3xl p-8 sm:p-10 border border-emerald-500/20 shadow-2xl shadow-emerald-500/5 group-hover:shadow-emerald-500/20 transition-all duration-300 overflow-hidden z-20">
+                        <div className="relative bg-slate-50 dark:bg-slate-900 rounded-3xl p-8 sm:p-10 border border-primary-500/20 shadow-2xl shadow-primary-500/5 group-hover:shadow-primary-500/20 transition-all duration-300 overflow-hidden z-20">
                             {/* Internal Chips/Grid */}
-                            <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'linear-gradient(emerald 1px, transparent 1px), linear-gradient(90deg, emerald 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
+                            <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'linear-gradient(primary 1px, transparent 1px), linear-gradient(90deg, primary 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
 
                             <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-40">
-                                <path d="M 20,50 H 80 V 150 H 200" className="circuit-active stroke-emerald-500" style={{ strokeWidth: 0.2 }} />
-                                <path d="M 300,50 H 200 V 100 H 100" className="circuit-active stroke-emerald-500" style={{ strokeWidth: 0.2, animationDirection: 'reverse' }} />
+                                <path d="M 20,50 H 80 V 150 H 200" className="circuit-active stroke-primary-500" style={{ strokeWidth: 0.2 }} />
+                                <path d="M 300,50 H 200 V 100 H 100" className="circuit-active stroke-primary-500" style={{ strokeWidth: 0.2, animationDirection: 'reverse' }} />
                             </svg>
 
                             <div className="relative z-10 flex flex-col h-full">
-                                <div className="w-16 h-16 rounded-2xl bg-emerald-500/10 flex items-center justify-center text-emerald-500 mb-6 border border-emerald-500/20 shadow-[0_0_30px_rgba(16,185,129,0.2)]">
+                                <div className="w-16 h-16 rounded-2xl bg-primary-500/10 flex items-center justify-center text-primary-500 mb-6 border border-primary-500/20 shadow-[0_0_30px_rgba(16,185,129,0.2)]">
                                     <FaBrain className="w-8 h-8" />
                                 </div>
 
@@ -142,7 +142,7 @@ const AppSelectionSection: React.FC = () => {
 
                                 <Link
                                     href="https://ai.Booktax.com/register"
-                                    className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-emerald-600 text-white font-bold hover:bg-emerald-500 transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(16,185,129,0.5)]"
+                                    className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-primary-600 text-white font-bold hover:bg-primary-500 transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(16,185,129,0.5)]"
                                 >
                                     Launch Booktax AI <FaArrowRight className="w-4 h-4" />
                                 </Link>

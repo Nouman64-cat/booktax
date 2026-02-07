@@ -41,7 +41,7 @@ const RelatedBlogs: React.FC<RelatedBlogsProps> = ({
                     <Link
                         key={r.slug}
                         href={`/blogs/${r.slug}`}
-                        className="block overflow-hidden rounded-lg bg-white dark:bg-gray-800 shadow-sm hover:shadow-md transition-transform duration-150 ease-out dark:border dark:border-gray-700 hover:ring-2 hover:ring-emerald-500/20"
+                        className="block overflow-hidden rounded-lg bg-white dark:bg-gray-800 shadow-sm hover:shadow-md transition-transform duration-150 ease-out dark:border dark:border-gray-700 hover:ring-2 hover:ring-primary-500/20"
                     >
                         <div className="h-40 w-full overflow-hidden bg-gray-100 dark:bg-gray-700">
                             {r.imageUrl ? (
@@ -52,7 +52,7 @@ const RelatedBlogs: React.FC<RelatedBlogsProps> = ({
                                 />
                             ) : (
                                 <div className="flex h-full w-full items-center justify-center text-gray-500 dark:text-gray-400 bg-gray-50 dark:bg-gray-800">
-                                    <span className="font-semibold text-lg text-emerald-600 dark:text-emerald-400">
+                                    <span className="font-semibold text-lg text-primary-600 dark:text-primary-400">
                                         {r.title.charAt(0)}
                                     </span>
                                 </div>

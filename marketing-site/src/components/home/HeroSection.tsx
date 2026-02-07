@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
                     <div className="space-y-6 max-w-xl">
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
                             <span className="text-gray-900 dark:text-white">Genetics Ecosystem </span>
-                            <span className="text-emerald-500 dark:text-emerald-400">for Everyone</span>
+                            <span className="text-primary-500 dark:text-primary-400">for Everyone</span>
                         </h1>
 
                         <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
@@ -24,7 +24,7 @@ const HeroSection: React.FC = () => {
                         <div className="flex flex-wrap items-center gap-4 pt-2">
                             <Link
                                 href="https://ai.Booktax.com/register"
-                                className="px-6 py-3 rounded-lg bg-emerald-600 text-white text-sm font-semibold hover:bg-emerald-500 hover:shadow-lg hover:shadow-emerald-500/30 transition-all duration-300 flex items-center gap-2"
+                                className="px-6 py-3 rounded-lg bg-primary-600 text-white text-sm font-semibold hover:bg-primary-500 hover:shadow-lg hover:shadow-primary-500/30 transition-all duration-300 flex items-center gap-2"
                             >
                                 <FaBrain className="w-5 h-5" /> Launch Booktax AI
                             </Link>
