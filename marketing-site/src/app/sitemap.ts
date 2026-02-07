@@ -4,7 +4,7 @@ import { fetchBlogs } from "../services/hygraphApi";
 export const dynamic = "force-static";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = "https://Booktax.com";
+  const baseUrl = "https://booktaxsolution.com";
 
   // Static routes
   const routes = [
@@ -13,9 +13,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/contact",
     "/pricing",
     "/product/ai",
-    "/tools/dna-generator",
-    "/tools/dna-to-protein",
-    "/tools/punnett-square",
+    "/services",
+    "/tools/tax-calculator",
+    "/tools/bookkeeping-estimator",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),

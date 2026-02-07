@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import React from "react";
 import { SEO_KEYWORDS } from "../config/seo";
+import { LOGO_URL } from "../config";
 import HeroSection from "../components/home/HeroSection";
 import YouTubeVideo from "../components/home/YouTubeVideo";
 import PricingClient from "../components/pricing/PricingClient";
@@ -9,13 +10,13 @@ import CommunitySectionClient from "../components/home/CommunitySectionClient";
 import AppSelectionSection from "../components/home/AppSelectionSection";
 
 export const metadata: Metadata = {
-  title: "Booktax - Genetic Analysis & Simulation Platform",
-  description: "Booktax is a comprehensive platform for genetic analysis, DNA sequencing simulation, and inheritance pattern modeling. Built for researchers and teams.",
+  title: "Booktax - Financial Clarity for Startups & Small Businesses",
+  description: "Booktax provides expert bookkeeping, strategic tax planning, and automated financial insights for startups and small businesses. Stop worrying about your books and focus on scaling.",
   keywords: SEO_KEYWORDS.HOME,
   openGraph: {
-    title: "Booktax - Genetic Analysis Platform",
-    description: "Advanced tools for genetic analysis and simulation.",
-    images: ["https://ap-south-1.graphassets.com/cmg0d4awz0abu07pfgv3s80hg/cmg0o8wb80r7d07pd9fu2aywz"],
+    title: "Booktax - Expert Bookkeeping & Tax Services",
+    description: "Automated bookkeeping and strategic tax planning for modern businesses.",
+    images: [LOGO_URL],
   },
 };
 
@@ -24,19 +25,19 @@ export default function Home() {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
     name: 'Booktax',
-    applicationCategory: 'ScientificApplication',
+    applicationCategory: 'FinanceApplication',
     operatingSystem: 'Web browser',
     offers: {
       '@type': 'Offer',
       price: '0',
       priceCurrency: 'USD',
     },
-    description: 'Comprehensive platform for genetic analysis and simulation.',
+    description: 'Expert bookkeeping, strategic tax planning, and automated financial insights for startups.',
     publisher: {
       '@type': 'Organization',
       name: 'Booktax',
-      logo: 'https://cdn-Booktax.s3.us-east-1.amazonaws.com/Booktax-logo.png',
-      url: 'https://Booktax.com'
+      logo: LOGO_URL,
+      url: 'https://booktaxsolution.com'
     }
   }
   return (

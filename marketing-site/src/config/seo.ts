@@ -1,131 +1,125 @@
 /**
  * SEO metadata keywords for the application pages
- * Updated based on Booktax.com analysis (Jan 2026)
+ * Updated based on Booktax.com analysis (Feb 2026)
  */
 
 export const SEO_KEYWORDS = {
-  // Global/Home keywords - Focused on the "Engine" and "Precision"
+  // Global/Home keywords - Focused on "Financial Clarity" and "Bookkeeping"
   HOME: [
     "Booktax",
-    "precision genetics platform",
-    "genetic engineering simulation",
-    "high-performance DNA generation",
-    "C++ genetics engine", // Your USP: Speed
-    "Mendelian inheritance modeling",
-    "polygenic trait simulation",
-    "automated genetic research",
-    "complex inheritance patterns",
-    "synthetic biology tools",
-    "variant calling pipeline",
-    "genomic data visualization",
-    "online genetics lab",
-    "CRISPR-Cas9 simulation",
+    "automated bookkeeping",
+    "tax planning for startups",
+    "small business accounting",
+    "financial clarity expert",
+    "CPA-reviewed financials",
+    "strategic tax planning",
+    "professional bookkeeping services",
+    "online accounting platform",
+    "virtual CFO for small business",
+    "tax filing automation",
+    "cloud accounting solutions",
+    "Xero experts",
+    "QuickBooks consultants",
   ],
 
-  // AI & Deep Research - Focused on "Agentic" and "Scholar" capabilities
+  // AI & Tech - Focused on "Automation" and "Accuracy"
   AI: [
-    "agentic genetics automation", // High value keyword
-    "AI-powered genome analysis",
-    "deep research agents",
-    "scholar mode genetics",
-    "generative biology model",
-    "voice-controlled lab assistant", // Reflecting your new voice feature
-    "GWAS analysis automation",
-    "protein structure prediction AI",
-    "biomedical RAG pipeline", // Technical keyword for devs/researchers
-    "scientific literature mining",
-    "natural language simulation control",
-    "real-time genetic insights",
+    "AI bookkeeping automation",
+    "automated expense categorization",
+    "OCR receipt scanning",
+    "intelligent financial insights",
+    "cash flow forecasting AI",
+    "tax deduction finder",
+    "automated reconciliation",
+    "real-time financial dashboard",
+    "smart accounting software",
+    "machine learning auditing",
   ],
 
-  // Specific Tools - New category for your specific utilities
-  // Specific Tools - Keywords grounded in your actual page features
+  // Specific Tools - Keywords grounded in actual financial features
   TOOLS: [
-    // 1. DNA Generator (Based on your "GC Content" & "10M bp" features)
-    "random DNA sequence generator",
-    "GC content calculator", // High search volume
-    "synthetic DNA builder",
-    "high-performance DNA engine", // Your USP (C++)
-    "AT-rich sequence generator",
-    "custom base pair sequencer",
+    // 1. Bookkeeping & Accounting
+    "monthly bookkeeping service",
+    "financial statement preparation",
+    "balance sheet analysis",
+    "income statement generator",
+    "bank reconciliation tool",
+    "ledger management",
 
-    // 2. Punnett Square (Based on your "Genotype/Phenotype Ratio" features)
-    "interactive punnett square",
-    "genotype ratio calculator",
-    "phenotype probability solver",
-    "Mendelian cross simulator",
-    "dominant recessive trait calculator",
-    "monohybrid cross generator",
+    // 2. Tax Services
+    "business tax filing",
+    "sales tax compliance",
+    "estimated tax calculator",
+    "tax liability estimator",
+    "R&D tax credit tools",
+    "1099 filing services",
 
-    // 3. DNA to Protein (Based on your "ORF" & "Auto-detect" features)
-    "DNA to protein converter",
-    "RNA translation tool",
-    "ORF finder online", // "Open Reading Frame" is a key researcher term
-    "codon to amino acid translator",
-    "reverse complement generator",
-    "nucleotide transcription tool",
-    "central dogma simulator",
-
-    // 4. GWAS Analysis
-    "GWAS analysis online",
-    "Manhattan plot generator",
-    "Q-Q plot visualizer",
-    "genome-wide association study tool",
-    "VCF analysis online",
-    "SNP association viewer",
-    "association mapping tool",
-
-    // 5. Pedigree Analyst
-    "pedigree chart maker",
-    "family tree genetic analysis",
-    "mendelian inheritance calculator",
-    "visual pedigree builder",
-    "genetic trait tracking tool",
-    "auto-generated pedigree",
-    "inheritance pattern solver",
+    // 3. Financial Planning
+    "financial forecasting tool",
+    "budgeting for startups",
+    "burn rate calculator",
+    "runway analysis",
+    "profit margin calculator",
   ],
 
   // About/Team - Establishing Authority
   ABOUT: [
-    "Nouman Ejaz",
-    "Booktax founder",
-    "software architecture for biology",
-    "genetic engineering startup",
-    "bioinformatics engineering team",
-    "open source genetics",
+    "Booktax team",
+    "licensed CPAs",
+    "tax strategy experts",
+    "accounting integration specialists",
+    "small business financial advisors",
+    "bookkeeping professionals",
   ],
 
-  // Pricing - Targeting "Accessible" and "Student" markets
+  // Pricing - Targeting "Accessible" and "Business" markets
   PRICING: [
-    "affordable bioinformatics tools",
-    "student genetics software",
-    "research lab subscription",
-    "free DNA analysis tools",
-    "genomics platform pricing",
+    "affordable bookkeeping packages",
+    "startup accounting pricing",
+    "flat-rate tax services",
+    "monthly accounting subscription",
+    "small business tax plans",
   ],
 
-  // Studio - Professional & Enterprise keywords
+  // Studio/Platform - Professional & Enterprise keywords
   STUDIO: [
-    // Core Functionality (The "Workbench")
-    "visual DNA editor",
-    "in-silico genetic breeding",
-    "CRISPR design workspace",
-    "plasmid map visualization",
-    "high-throughput screening simulation",
+    // Core Functionality
+    "client financial portal",
+    "document management system",
+    "secure file sharing",
+    "collaboration workspace",
+    "auditor access controls",
 
-    // Enterprise & Infrastructure (The "Backend" Value)
-    "secure genomic data pipeline",
-    "on-premise bioinformatics deployment",
-    "team collaboration genetics platform",
-    "audit-ready research logs",
-    "scalabel genetic simulation engine",
+    // Enterprise & Infrastructure
+    "multi-entity accounting",
+    "consolidated financial reporting",
+    "enterprise tax compliance",
+    "custom API integrations",
+    "bank-grade security platform",
+  ],
 
-    // Advanced Analysis (The "Science")
-    "phenotype prediction models",
-    "variant effect predictor",
-    "multi-omics data integration",
-    "synthetic biology workflow",
-    "real-time inheritance modeling",
+  // Services Page Keywords
+  SERVICES: [
+    "bookkeeping services for startups",
+    "outsourced accounting firm",
+    "small business tax preparation",
+    "fractional CFO services",
+    "payroll management services",
+    "financial reporting and analysis",
+    "catch up bookkeeping",
+    "tax advisory services",
+  ],
+
+  // Blogs Page Keywords
+  BLOGS: [
+    "small business finance blog",
+    "tax tips for startups",
+    "accounting best practices",
+    "financial planning advice",
+    "tax law updates",
+    "bookkeeping guides",
+    "startup funding news",
+    "CFO insights",
   ],
 };
 

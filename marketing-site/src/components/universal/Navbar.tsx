@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useMemo, useState, useRef } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FiSun, FiMoon, FiChevronDown, FiCpu, FiLayout } from "react-icons/fi";
@@ -9,42 +9,18 @@ import { useAuth } from "../../context/AuthContext";
 import { useTheme } from "../../context/ThemeContext";
 import { LOGO_URL, STUDIO_URL } from "../../config";
 
-import { PiDna } from "react-icons/pi";
-import { TbGrid4X4, TbBinaryTree } from "react-icons/tb";
-import { FaDna } from "react-icons/fa";
-
-import { HiChartBar } from "react-icons/hi";
 import { MdOutlineAutoAwesome } from "react-icons/md";
 import { LuLayoutDashboard } from "react-icons/lu";
 
 const baseNavItems = [
+    { label: "Services", to: "/services" },
     { label: "About", to: "/about" },
-    { label: "Resources", to: "/blogs" },
-    { label: "Pricing", to: "/pricing" },
-];
-
-const appsDropdownItems = [
-    { label: "Booktax AI", to: "/ai", icon: MdOutlineAutoAwesome },
-    { label: "Booktax Studio", to: "/studio", icon: LuLayoutDashboard },
-];
-
-const toolsDropdownItems = [
-    { label: "DNA Generator", to: "/tools/dna-generator", icon: PiDna },
-    { label: "Punnett Square", to: "/tools/punnett-square", icon: TbGrid4X4 },
-    { label: "DNA to Protein", to: "/tools/dna-to-protein", icon: FaDna },
-    { label: "GWAS Analysis", to: "/tools/gwas-analysis", icon: HiChartBar },
-    { label: "Pedigree Analyst", to: "/tools/pedigree-analyst", icon: TbBinaryTree },
+    { label: "Blogs", to: "/blogs" },
 ];
 
 const Navbar: React.FC = () => {
     const [mobileOpen, setMobileOpen] = useState(false);
-    const [appsDropdownOpen, setAppsDropdownOpen] = useState(false);
-    const [toolsDropdownOpen, setToolsDropdownOpen] = useState(false);
-    const [mobileAppsOpen, setMobileAppsOpen] = useState(false);
-    const [mobileToolsOpen, setMobileToolsOpen] = useState(false);
     const [mobileGetStartedOpen, setMobileGetStartedOpen] = useState(false);
-    const appsDropdownRef = useRef<HTMLDivElement>(null);
-    const toolsDropdownRef = useRef<HTMLDivElement>(null);
 
     const pathname = usePathname();
     const { user, signOut } = useAuth();
@@ -56,26 +32,8 @@ const Navbar: React.FC = () => {
 
     useEffect(() => {
         setMobileOpen(false);
-        setAppsDropdownOpen(false);
-        setToolsDropdownOpen(false);
-        setMobileAppsOpen(false);
-        setMobileToolsOpen(false);
         setMobileGetStartedOpen(false);
     }, [pathname]);
-
-    useEffect(() => {
-        const handleClickOutside = (event: MouseEvent) => {
-            if (toolsDropdownRef.current && !toolsDropdownRef.current.contains(event.target as Node)) {
-                setToolsDropdownOpen(false);
-            }
-            if (appsDropdownRef.current && !appsDropdownRef.current.contains(event.target as Node)) {
-                setAppsDropdownOpen(false);
-            }
-        };
-
-        document.addEventListener("mousedown", handleClickOutside);
-        return () => document.removeEventListener("mousedown", handleClickOutside);
-    }, []);
 
     const navItems = useMemo(() => {
         return baseNavItems;
@@ -88,9 +46,6 @@ const Navbar: React.FC = () => {
             : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
             }`;
     };
-
-    const isToolsActive = toolsDropdownItems.some(item => pathname === item.to);
-    const isAppsActive = appsDropdownItems.some(item => pathname === item.to);
 
     const handleSignOut = () => {
         signOut();
@@ -110,89 +65,11 @@ const Navbar: React.FC = () => {
 
                     {/* Desktop Navigation - Centered */}
                     <nav className="hidden lg:flex items-center gap-8 absolute left-1/2 transform -translate-x-1/2">
-                        {/* Apps Dropdown */}
-                        <div
-                            className="relative"
-                            ref={appsDropdownRef}
-                            onMouseEnter={() => setAppsDropdownOpen(true)}
-                            onMouseLeave={() => setAppsDropdownOpen(false)}
-                        >
-                            <button
-                                onClick={() => setAppsDropdownOpen(!appsDropdownOpen)}
-                                className={`flex items-center gap-1 text-sm font-normal transition-colors ${isAppsActive
-                                    ? "text-gray-900 dark:text-white"
-                                    : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
-                                    }`}
-                            >
-                                <span>Apps</span>
-                                <FiChevronDown className={`w-3.5 h-3.5 transition-transform ${appsDropdownOpen ? 'rotate-180' : ''}`} />
-                            </button>
-
-                            {appsDropdownOpen && (
-                                <div className="absolute top-full left-0 pt-2 w-52 z-[100]">
-                                    <div className="rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-lg py-1">
-                                        {appsDropdownItems.map((item) => (
-                                            <Link
-                                                key={item.to}
-                                                href={item.to}
-                                                className={`flex items-center gap-3 px-4 py-2 text-sm transition-colors ${pathname === item.to
-                                                    ? "text-gray-900 dark:text-white bg-gray-50 dark:bg-gray-700"
-                                                    : "text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700"
-                                                    }`}
-                                            >
-                                                <item.icon className="w-4 h-4" />
-                                                <span>{item.label}</span>
-                                            </Link>
-                                        ))}
-                                    </div>
-                                </div>
-                            )}
-                        </div>
-
                         {navItems.map((item) => (
                             <Link key={item.to} href={item.to} className={getLinkClasses(item.to)}>
                                 {item.label}
                             </Link>
                         ))}
-
-                        {/* Tools Dropdown */}
-                        <div
-                            className="relative"
-                            ref={toolsDropdownRef}
-                            onMouseEnter={() => setToolsDropdownOpen(true)}
-                            onMouseLeave={() => setToolsDropdownOpen(false)}
-                        >
-                            <button
-                                onClick={() => setToolsDropdownOpen(!toolsDropdownOpen)}
-                                className={`flex items-center gap-1 text-sm font-normal transition-colors ${isToolsActive
-                                    ? "text-gray-900 dark:text-white"
-                                    : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
-                                    }`}
-                            >
-                                <span>Tools</span>
-                                <FiChevronDown className={`w-3.5 h-3.5 transition-transform ${toolsDropdownOpen ? 'rotate-180' : ''}`} />
-                            </button>
-
-                            {toolsDropdownOpen && (
-                                <div className="absolute top-full left-0 pt-2 w-52 z-[100]">
-                                    <div className="rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-lg py-1">
-                                        {toolsDropdownItems.map((item) => (
-                                            <Link
-                                                key={item.to}
-                                                href={item.to}
-                                                className={`flex items-center gap-3 px-4 py-2 text-sm transition-colors ${pathname === item.to
-                                                    ? "text-gray-900 dark:text-white bg-gray-50 dark:bg-gray-700"
-                                                    : "text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700"
-                                                    }`}
-                                            >
-                                                <item.icon className="w-4 h-4" />
-                                                <span>{item.label}</span>
-                                            </Link>
-                                        ))}
-                                    </div>
-                                </div>
-                            )}
-                        </div>
                     </nav>
 
                     {/* Desktop Actions */}
@@ -265,27 +142,6 @@ const Navbar: React.FC = () => {
             {mobileOpen && (
                 <div className="lg:hidden border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
                     <div className="px-6 py-4 space-y-1">
-                        {/* Mobile Apps Dropdown */}
-                        <div>
-                            <button
-                                onClick={() => setMobileAppsOpen(!mobileAppsOpen)}
-                                className="w-full flex items-center justify-between py-2 text-sm text-gray-600 dark:text-gray-400"
-                            >
-                                <span>Apps</span>
-                                <FiChevronDown className={`w-4 h-4 transition-transform ${mobileAppsOpen ? 'rotate-180' : ''}`} />
-                            </button>
-                            {mobileAppsOpen && (
-                                <div className="ml-4 space-y-1 mt-1">
-                                    {appsDropdownItems.map((item) => (
-                                        <Link key={item.to} href={item.to} className="flex items-center gap-2 py-2 text-sm text-gray-600 dark:text-gray-400">
-                                            <item.icon className="w-4 h-4" />
-                                            <span>{item.label}</span>
-                                        </Link>
-                                    ))}
-                                </div>
-                            )}
-                        </div>
-
                         {navItems.map((item) => (
                             <Link
                                 key={item.to}
@@ -295,25 +151,6 @@ const Navbar: React.FC = () => {
                                 {item.label}
                             </Link>
                         ))}
-                        <div>
-                            <button
-                                onClick={() => setMobileToolsOpen(!mobileToolsOpen)}
-                                className="w-full flex items-center justify-between py-2 text-sm text-gray-600 dark:text-gray-400"
-                            >
-                                <span>Tools</span>
-                                <FiChevronDown className={`w-4 h-4 transition-transform ${mobileToolsOpen ? 'rotate-180' : ''}`} />
-                            </button>
-                            {mobileToolsOpen && (
-                                <div className="ml-4 space-y-1 mt-1">
-                                    {toolsDropdownItems.map((item) => (
-                                        <Link key={item.to} href={item.to} className="flex items-center gap-2 py-2 text-sm text-gray-600 dark:text-gray-400">
-                                            <item.icon className="w-4 h-4" />
-                                            <span>{item.label}</span>
-                                        </Link>
-                                    ))}
-                                </div>
-                            )}
-                        </div>
 
                         {/* Mobile Theme Toggle */}
                         <button

@@ -7,8 +7,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/private/", "/studio/"], // Example disallowed paths
+      disallow: ["/api/", "/dashboard/"],
     },
-    sitemap: "https://Booktax.com/sitemap.xml",
+    sitemap: "https://booktaxsolution.com/sitemap.xml",
   };
 }

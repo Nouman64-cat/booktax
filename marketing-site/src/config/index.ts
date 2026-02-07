@@ -4,12 +4,12 @@
  */
 
 // API URL
-export const API_URL = "https://api.booktax.com";
+export const API_URL = "https://api.booktaxsolution.com";
 
 // External Apps
-export const STUDIO_URL = "https://studio.Booktax.com";
-export const UNIVERSITY_APP_URL = "https://university.Booktax.com/";
-export const AI_APP_URL = "https://ai.Booktax.com";
+export const STUDIO_URL = "https://studio.booktaxsolution.com";
+export const UNIVERSITY_APP_URL = "https://university.booktaxsolution.com/";
+export const AI_APP_URL = "https://ai.booktaxsolution.com";
 
 // Assets / CDN
 export const LOGO_URL =
@@ -17,7 +17,7 @@ export const LOGO_URL =
 
 // Brand Info
 export const BOT_NAME = "Booktax AI";
-export const CONTACT_EMAIL = "Booktax.work@gmail.com";
+export const CONTACT_EMAIL = "work@booktaxsolution.com";
 
 // Services
 // Export all config
