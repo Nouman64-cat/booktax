@@ -3,11 +3,6 @@ import React from "react";
 import { SEO_KEYWORDS } from "../config/seo";
 import { LOGO_URL } from "../config";
 import HeroSection from "../components/home/HeroSection";
-import YouTubeVideo from "../components/home/YouTubeVideo";
-import PricingClient from "../components/pricing/PricingClient";
-import ZygoAISectionClient from "../components/home/ZygoAISectionClient";
-import CommunitySectionClient from "../components/home/CommunitySectionClient";
-import AppSelectionSection from "../components/home/AppSelectionSection";
 
 export const metadata: Metadata = {
   title: "Booktax Solution - Financial Clarity for Startups & Small Businesses",
@@ -47,11 +42,6 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <HeroSection />
-      <AppSelectionSection />
-      <YouTubeVideo />
-      <ZygoAISectionClient />
-      <PricingClient />
-      <CommunitySectionClient />
     </main>
   );
 }
