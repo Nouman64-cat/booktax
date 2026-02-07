@@ -4,7 +4,7 @@
  */
 
 // API URL
-export const API_URL = "https://api.Booktax.com";
+export const API_URL = "https://api.booktax.com";
 
 // External Apps
 export const STUDIO_URL = "https://studio.Booktax.com";
@@ -13,7 +13,7 @@ export const AI_APP_URL = "https://ai.Booktax.com";
 
 // Assets / CDN
 export const LOGO_URL =
-  "https://cdn-Booktax.s3.us-east-1.amazonaws.com/Booktax-logo.png";
+  "https://cdn-zygotrix.s3.us-east-1.amazonaws.com/zygotrix-ai.png";
 
 // Brand Info
 export const BOT_NAME = "Booktax AI";
@@ -21,7 +21,7 @@ export const CONTACT_EMAIL = "Booktax.work@gmail.com";
 
 // Services
 export const HYGRAPH_ENDPOINT =
-  "https://ap-south-1.cdn.hygraph.com/content/cmg0d4ao2013r08wb95es4c0w/master";
+  "https://ap-south-1.cdn.hygraph.com/content/cmfz8yj9502n307um4gr9cu4w/master";
 
 // Export all config
 export const config = {
