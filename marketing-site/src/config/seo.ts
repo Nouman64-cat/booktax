@@ -22,46 +22,6 @@ export const SEO_KEYWORDS = {
     "QuickBooks consultants",
   ],
 
-  // AI & Tech - Focused on "Automation" and "Accuracy"
-  AI: [
-    "AI bookkeeping automation",
-    "automated expense categorization",
-    "OCR receipt scanning",
-    "intelligent financial insights",
-    "cash flow forecasting AI",
-    "tax deduction finder",
-    "automated reconciliation",
-    "real-time financial dashboard",
-    "smart accounting software",
-    "machine learning auditing",
-  ],
-
-  // Specific Tools - Keywords grounded in actual financial features
-  TOOLS: [
-    // 1. Bookkeeping & Accounting
-    "monthly bookkeeping service",
-    "financial statement preparation",
-    "balance sheet analysis",
-    "income statement generator",
-    "bank reconciliation tool",
-    "ledger management",
-
-    // 2. Tax Services
-    "business tax filing",
-    "sales tax compliance",
-    "estimated tax calculator",
-    "tax liability estimator",
-    "R&D tax credit tools",
-    "1099 filing services",
-
-    // 3. Financial Planning
-    "financial forecasting tool",
-    "budgeting for startups",
-    "burn rate calculator",
-    "runway analysis",
-    "profit margin calculator",
-  ],
-
   // About/Team - Establishing Authority
   ABOUT: [
     "Booktax team",
@@ -70,32 +30,6 @@ export const SEO_KEYWORDS = {
     "accounting integration specialists",
     "small business financial advisors",
     "bookkeeping professionals",
-  ],
-
-  // Pricing - Targeting "Accessible" and "Business" markets
-  PRICING: [
-    "affordable bookkeeping packages",
-    "startup accounting pricing",
-    "flat-rate tax services",
-    "monthly accounting subscription",
-    "small business tax plans",
-  ],
-
-  // Studio/Platform - Professional & Enterprise keywords
-  STUDIO: [
-    // Core Functionality
-    "client financial portal",
-    "document management system",
-    "secure file sharing",
-    "collaboration workspace",
-    "auditor access controls",
-
-    // Enterprise & Infrastructure
-    "multi-entity accounting",
-    "consolidated financial reporting",
-    "enterprise tax compliance",
-    "custom API integrations",
-    "bank-grade security platform",
   ],
 
   // Services Page Keywords

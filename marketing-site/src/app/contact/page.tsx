@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import ContactClient from "../../components/contact/ContactClient";
 
+import { LOGO_URL } from "../../config";
+
 export const metadata: Metadata = {
-    title: "Contact Us - Booktax",
-    description: "Reach out to Booktax for demos, integration guidance, or collaboration opportunities.",
+    title: "Contact Us - Booktax Solution",
+    description: "Get in touch with Booktax Solution for bookkeeping, tax planning, and financial advisory services.",
     openGraph: {
-        title: "Contact Us - Booktax",
-        description: "Reach out to Booktax for demos, integration guidance, or collaboration opportunities.",
+        title: "Contact Us - Booktax Solution",
+        description: "Get in touch with Booktax Solution for bookkeeping, tax planning, and financial advisory services.",
         type: "website",
-        images: ["https://ap-south-1.graphassets.com/cmg0d4awz0abu07pfgv3s80hg/cmg0o8wb80r7d07pd9fu2aywz"],
+        images: [LOGO_URL],
     },
 };
 

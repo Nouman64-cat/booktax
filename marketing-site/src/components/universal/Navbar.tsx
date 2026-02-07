@@ -20,7 +20,6 @@ const baseNavItems = [
 
 const Navbar: React.FC = () => {
     const [mobileOpen, setMobileOpen] = useState(false);
-    const [mobileGetStartedOpen, setMobileGetStartedOpen] = useState(false);
 
     const pathname = usePathname();
     const { user, signOut } = useAuth();
@@ -32,7 +31,6 @@ const Navbar: React.FC = () => {
 
     useEffect(() => {
         setMobileOpen(false);
-        setMobileGetStartedOpen(false);
     }, [pathname]);
 
     const navItems = useMemo(() => {
@@ -101,25 +99,13 @@ const Navbar: React.FC = () => {
                             </>
                         ) : (
                             <>
-                                {/* Get Started Dropdown */}
-                                <div className="relative group">
-                                    <button className="px-4 py-2 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-sm font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-all shadow-sm flex items-center gap-2">
-                                        Get started <FiChevronDown className="w-3.5 h-3.5" />
-                                    </button>
-                                    <div className="absolute top-full right-0 pt-2 w-48 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200">
-                                        <div className="rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-lg py-1 overflow-hidden">
-                                            <div className="px-4 py-2 border-b border-gray-100 dark:border-gray-700">
-                                                <span className="text-xs font-semibold text-gray-500 uppercase">Choose product</span>
-                                            </div>
-                                            <a href="https://ai.booktaxsolution.com/register" className="flex items-center gap-3 px-4 py-3 text-sm text-gray-600 dark:text-gray-400 hover:bg-primary-50 dark:hover:bg-primary-900/10 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-                                                <MdOutlineAutoAwesome className="w-4 h-4" /> Booktax AI
-                                            </a>
-                                            <a href={`${STUDIO_URL}/signup`} className="flex items-center gap-3 px-4 py-3 text-sm text-gray-600 dark:text-gray-400 hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                                                <LuLayoutDashboard className="w-4 h-4" /> Booktax Studio
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                                {/* Contact Us Button */}
+                                <Link
+                                    href="/contact"
+                                    className="px-4 py-2 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-sm font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-all shadow-sm"
+                                >
+                                    Contact Us
+                                </Link>
                             </>
                         )}
                     </div>
@@ -173,28 +159,13 @@ const Navbar: React.FC = () => {
                                 </>
                             ) : (
                                 <>
-                                    {/* Mobile Get Started Dropdown */}
-                                    <div>
-                                        <button
-                                            onClick={() => setMobileGetStartedOpen(!mobileGetStartedOpen)}
-                                            className="w-full flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-sm font-medium transition-colors mt-2"
-                                        >
-                                            <span>Get started</span>
-                                            <FiChevronDown className={`w-4 h-4 transition-transform ${mobileGetStartedOpen ? 'rotate-180' : ''}`} />
-                                        </button>
-                                        {mobileGetStartedOpen && (
-                                            <div className="mt-2 space-y-2 px-2 border-l-2 border-gray-100 dark:border-gray-800 ml-2">
-                                                <a href="https://ai.booktaxsolution.com/register" className="flex items-center gap-2 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
-                                                    <FiCpu className="w-4 h-4" />
-                                                    <span>Booktax AI</span>
-                                                </a>
-                                                <a href={`${STUDIO_URL}/signup`} className="flex items-center gap-2 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
-                                                    <FiLayout className="w-4 h-4" />
-                                                    <span>Booktax Studio</span>
-                                                </a>
-                                            </div>
-                                        )}
-                                    </div>
+                                    {/* Mobile Contact Button */}
+                                    <Link
+                                        href="/contact"
+                                        className="block w-full px-4 py-2 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-sm font-medium text-center mt-2"
+                                    >
+                                        Contact Us
+                                    </Link>
                                 </>
                             )}
                         </div>

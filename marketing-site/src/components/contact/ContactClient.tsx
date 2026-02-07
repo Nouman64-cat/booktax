@@ -75,45 +75,59 @@ const ContactClient: React.FC = () => {
     };
 
     return (
-        <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
-            <section className="mx-auto max-w-6xl px-6 pb-24 pt-24">
-                <div className="grid gap-12 lg:grid-cols-[2fr,3fr]">
+        <div className="bg-white dark:bg-gray-950 min-h-screen transition-colors duration-300">
+            <section className="mx-auto max-w-7xl px-6 pb-24 pt-24 lg:px-8">
+                <div className="grid gap-16 lg:grid-cols-[2fr,3fr]">
                     {/* Left Column - Info */}
                     <div>
-                        <span className="inline-block rounded-full bg-[#1E3A8A]/10 dark:bg-[#3B82F6]/20 px-4 py-1 text-xs font-semibold text-[#1E3A8A] dark:text-[#3B82F6]">
-                            Contact
+                        <span className="inline-block rounded-full bg-emerald-50 dark:bg-emerald-500/10 px-4 py-1.5 text-xs font-semibold text-emerald-600 dark:text-emerald-400 border border-emerald-100 dark:border-emerald-500/20">
+                            Contact Us
                         </span>
-                        <h1 className="mt-6 text-4xl font-bold text-[#1E3A8A] dark:text-white sm:text-5xl">
-                            We'd love to hear from you
+                        <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
+                            Let’s start a conversation
                         </h1>
-                        <p className="mt-6 text-base text-slate-600 dark:text-slate-300">
-                            Reach out for demos, integration guidance, or collaboration
-                            opportunities. We typically reply within two business days.
+                        <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
+                            Whether you need help with bookkeeping, tax planning, or financial strategy, our team is here to help your startup grow.
                         </p>
+
+                        <div className="mt-12 space-y-8">
+                            <div className="flex gap-4">
+                                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-600 text-white shadow-lg shadow-emerald-600/20">
+                                    <MdEmail className="h-6 w-6" aria-hidden="true" />
+                                </div>
+                                <div>
+                                    <h3 className="text-base font-semibold text-gray-900 dark:text-white">Email us</h3>
+                                    <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">
+                                        Reach out directly for general inquiries.
+                                    </p>
+                                    <a href="mailto:hello@booktaxsolution.com" className="mt-1 block text-sm font-semibold text-emerald-600 dark:text-emerald-400 hover:text-emerald-500">hello@booktaxsolution.com</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     {/* Right Column - Form */}
-                    <div className="rounded-3xl border border-white dark:border-slate-700 bg-white dark:bg-slate-800 p-8 lg:p-10 shadow-xl dark:shadow-slate-900/50">
-                        <h2 className="text-2xl font-bold text-[#1E3A8A] dark:text-white mb-6">
+                    <div className="rounded-3xl bg-gray-50 dark:bg-gray-900 p-8 lg:p-12 shadow-sm ring-1 ring-gray-900/5 dark:ring-white/10">
+                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
                             Send us a message
                         </h2>
 
                         {status && (
                             <div
                                 className={`mb-6 p-4 rounded-xl flex items-center gap-3 ${status.type === "success"
-                                        ? "bg-primary-50 dark:bg-primary-900/20 border border-primary-200 dark:border-primary-500/30"
-                                        : "bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-500/30"
+                                    ? "bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-500/30"
+                                    : "bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-500/30"
                                     }`}
                             >
                                 {status.type === "success" ? (
-                                    <MdCheckCircle className="w-5 h-5 text-primary-600 dark:text-primary-400 flex-shrink-0" />
+                                    <MdCheckCircle className="w-5 h-5 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
                                 ) : (
                                     <MdError className="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0" />
                                 )}
                                 <p
                                     className={`text-sm ${status.type === "success"
-                                            ? "text-primary-800 dark:text-primary-300"
-                                            : "text-red-800 dark:text-red-300"
+                                        ? "text-emerald-800 dark:text-emerald-300"
+                                        : "text-red-800 dark:text-red-300"
                                         }`}
                                 >
                                     {status.message}
@@ -124,59 +138,59 @@ const ContactClient: React.FC = () => {
                         <form onSubmit={handleSubmit} className="space-y-6">
                             {/* Name (Optional) */}
                             <div>
-                                <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-                                    Name <span className="text-slate-400 dark:text-slate-500">(optional)</span>
+                                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                    Name <span className="text-gray-400 dark:text-gray-500">(optional)</span>
                                 </label>
                                 <div className="relative">
-                                    <MdPerson className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 dark:text-slate-500" />
+                                    <MdPerson className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 dark:text-gray-500" />
                                     <input
                                         type="text"
                                         value={formData.name}
                                         onChange={(e) => handleChange("name", e.target.value)}
                                         placeholder="Your name"
-                                        className="w-full pl-12 pr-4 py-3 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700/50 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#1E3A8A] dark:focus:ring-[#3B82F6] focus:border-transparent transition-all"
+                                        className="w-full pl-12 pr-4 py-3 border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-600 dark:focus:ring-emerald-500 focus:border-transparent transition-all shadow-sm"
                                     />
                                 </div>
                             </div>
 
                             {/* Email (Required) */}
                             <div>
-                                <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+                                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                                     Email <span className="text-red-500 dark:text-red-400">*</span>
                                 </label>
                                 <div className="relative">
-                                    <MdEmail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 dark:text-slate-500" />
+                                    <MdEmail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 dark:text-gray-500" />
                                     <input
                                         type="email"
                                         value={formData.email}
                                         onChange={(e) => handleChange("email", e.target.value)}
                                         placeholder="your.email@example.com"
                                         required
-                                        className="w-full pl-12 pr-4 py-3 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700/50 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#1E3A8A] dark:focus:ring-[#3B82F6] focus:border-transparent transition-all"
+                                        className="w-full pl-12 pr-4 py-3 border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-600 dark:focus:ring-emerald-500 focus:border-transparent transition-all shadow-sm"
                                     />
                                 </div>
                             </div>
 
                             {/* Phone (Optional) */}
                             <div>
-                                <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-                                    Phone Number <span className="text-slate-400 dark:text-slate-500">(optional)</span>
+                                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                    Phone Number <span className="text-gray-400 dark:text-gray-500">(optional)</span>
                                 </label>
                                 <div className="relative">
-                                    <MdPhone className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 dark:text-slate-500" />
+                                    <MdPhone className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 dark:text-gray-500" />
                                     <input
                                         type="tel"
                                         value={formData.phone}
                                         onChange={(e) => handleChange("phone", e.target.value)}
                                         placeholder="+1 (555) 000-0000"
-                                        className="w-full pl-12 pr-4 py-3 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700/50 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#1E3A8A] dark:focus:ring-[#3B82F6] focus:border-transparent transition-all"
+                                        className="w-full pl-12 pr-4 py-3 border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-600 dark:focus:ring-emerald-500 focus:border-transparent transition-all shadow-sm"
                                     />
                                 </div>
                             </div>
 
                             {/* Message (Required) */}
                             <div>
-                                <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+                                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                                     Message <span className="text-red-500 dark:text-red-400">*</span>
                                 </label>
                                 <textarea
@@ -185,7 +199,7 @@ const ContactClient: React.FC = () => {
                                     placeholder="Tell us about your project or inquiry..."
                                     required
                                     rows={5}
-                                    className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700/50 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#1E3A8A] dark:focus:ring-[#3B82F6] focus:border-transparent transition-all resize-none"
+                                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-600 dark:focus:ring-emerald-500 focus:border-transparent transition-all shadow-sm resize-none"
                                 />
                             </div>
 
@@ -193,7 +207,7 @@ const ContactClient: React.FC = () => {
                             <button
                                 type="submit"
                                 disabled={submitting}
-                                className="w-full flex items-center justify-center gap-2 px-6 py-3.5 bg-[#1E3A8A] dark:bg-[#3B82F6] text-white font-semibold rounded-xl hover:bg-[#1E3A8A]/90 dark:hover:bg-[#3B82F6]/90 transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+                                className="w-full flex items-center justify-center gap-2 px-6 py-3.5 bg-emerald-600 text-white font-semibold rounded-xl hover:bg-emerald-700 transition-all shadow-lg hover:shadow-emerald-600/20 disabled:opacity-70 disabled:cursor-not-allowed"
                             >
                                 {submitting ? (
                                     <>
@@ -208,8 +222,8 @@ const ContactClient: React.FC = () => {
                                 )}
                             </button>
 
-                            <p className="text-xs text-slate-500 dark:text-slate-400 text-center">
-                                By submitting this form, you'll be automatically subscribed to our newsletter.
+                            <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
+                                By submitting this form, you agree to receive communications from us.
                             </p>
                         </form>
                     </div>
