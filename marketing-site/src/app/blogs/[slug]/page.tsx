@@ -5,9 +5,11 @@ import Image from "next/image";
 import { fetchBlogBySlug } from "../../../services/hygraphApi";
 import { format } from "date-fns";
 import { notFound } from "next/navigation";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 interface BlogPageProps {
-    params: { slug: string };
+    params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
@@ -21,7 +23,8 @@ export async function generateMetadata(
     { params }: BlogPageProps,
     parent: ResolvingMetadata
 ): Promise<Metadata> {
-    const blog = await fetchBlogBySlug(params.slug);
+    const { slug } = await params;
+    const blog = await fetchBlogBySlug(slug);
 
     if (!blog) {
         return {
@@ -39,7 +42,8 @@ export async function generateMetadata(
 }
 
 export default async function BlogPostPage({ params }: BlogPageProps) {
-    const blog = await fetchBlogBySlug(params.slug);
+    const { slug } = await params;
+    const blog = await fetchBlogBySlug(slug);
 
     if (!blog) {
         notFound();
@@ -84,9 +88,21 @@ export default async function BlogPostPage({ params }: BlogPageProps) {
                 )}
             </div>
 
-            <div className="mt-10 max-w-2xl mx-auto prose dark:prose-invert lg:prose-lg">
-                <p className="lead">{blog.excerpt}</p>
-                <div dangerouslySetInnerHTML={{ __html: blog.content.markdown }} />
+            <div className="mt-10 max-w-2xl mx-auto prose dark:prose-invert lg:prose-lg prose-emerald">
+                <p className="lead text-xl text-gray-600 dark:text-gray-300 mb-8">{blog.excerpt}</p>
+                <ReactMarkdown
+                    remarkPlugins={[remarkGfm]}
+                    components={{
+                        p: ({ children }) => <p className="mb-6 text-gray-700 dark:text-gray-300 leading-relaxed">{children}</p>,
+                        h2: ({ children }) => <h2 className="text-2xl font-bold mt-12 mb-6 text-gray-900 dark:text-white">{children}</h2>,
+                        h3: ({ children }) => <h3 className="text-xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">{children}</h3>,
+                        ul: ({ children }) => <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-700 dark:text-gray-300">{children}</ul>,
+                        li: ({ children }) => <li className="pl-1">{children}</li>,
+                        strong: ({ children }) => <strong className="font-bold text-gray-900 dark:text-white">{children}</strong>
+                    }}
+                >
+                    {blog.content.markdown || ''}
+                </ReactMarkdown>
             </div>
         </article>
     );
