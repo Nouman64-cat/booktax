@@ -4,57 +4,7 @@
 import React from "react";
 import Link from "next/link";
 import { format } from "date-fns";
-
-const dummyBlogs = [
-    {
-        slug: "top-tax-deductions-startups-2026",
-        title: "10 Essential Tax Deductions for Startups in 2026",
-        excerpt: "Maximize your tax savings this year with our guide to the most overlooked deductions for new businesses. From R&D credits to home office expenses, ensure you're not leaving money on the table.",
-        coverImage: {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=2000",
-        },
-        date: "2026-01-15",
-        author: {
-            name: "Sarah Jenkins, CPA",
-            picture: {
-                url: "https://randomuser.me/api/portraits/women/44.jpg",
-            },
-        },
-        category: "Tax Strategy",
-    },
-    {
-        slug: "bookkeeping-mistakes-to-avoid",
-        title: "5 Common Bookkeeping Mistakes That Kill Startups",
-        excerpt: "Poor financial records can sink a promising company. Learn about the most common bookkeeping errors founders make and how to automate your way to accuracy.",
-        coverImage: {
-            url: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000",
-        },
-        date: "2026-02-01",
-        author: {
-            name: "Michael Chang",
-            picture: {
-                url: "https://randomuser.me/api/portraits/men/32.jpg",
-            },
-        },
-        category: "Bookkeeping",
-    },
-    {
-        slug: "hiring-fractional-cfo",
-        title: "When Is the Right Time to Hire a Fractional CFO?",
-        excerpt: "As your revenue grows, so does financial complexity. Discover the key indicators that suggest your startup is ready for high-level financial strategic guidance.",
-        coverImage: {
-            url: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=2000",
-        },
-        date: "2026-02-05",
-        author: {
-            name: "Nouman Ejaz",
-            picture: {
-                url: "https://randomuser.me/api/portraits/men/85.jpg",
-            },
-        },
-        category: "Growth Strategy",
-    },
-];
+import { dummyBlogs } from "../../data/dummyBlogs";
 
 const BlogsClient: React.FC = () => {
     return (
@@ -70,11 +20,13 @@ const BlogsClient: React.FC = () => {
                     {dummyBlogs.map((post) => (
                         <article key={post.slug} className="flex flex-col items-start justify-between">
                             <div className="relative w-full">
-                                <img
-                                    src={post.coverImage.url}
-                                    alt={post.title}
-                                    className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
-                                />
+                                {post.imageUrl && (
+                                    <img
+                                        src={post.imageUrl}
+                                        alt={post.title}
+                                        className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
+                                    />
+                                )}
                                 <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10 dark:ring-white/10" />
                             </div>
                             <div className="max-w-xl">
@@ -82,9 +34,11 @@ const BlogsClient: React.FC = () => {
                                     <time dateTime={post.date} className="text-gray-500 dark:text-gray-400">
                                         {format(new Date(post.date), "MMM d, yyyy")}
                                     </time>
-                                    <span className="relative z-10 rounded-full bg-gray-50 dark:bg-gray-800 px-3 py-1.5 font-medium text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-                                        {post.category}
-                                    </span>
+                                    {post.categories.map((cat) => (
+                                        <span key={cat.slug} className="relative z-10 rounded-full bg-gray-50 dark:bg-gray-800 px-3 py-1.5 font-medium text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                                            {cat.title}
+                                        </span>
+                                    ))}
                                 </div>
                                 <div className="group relative">
                                     <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-white group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">
@@ -98,13 +52,19 @@ const BlogsClient: React.FC = () => {
                                     </p>
                                 </div>
                                 <div className="relative mt-8 flex items-center gap-x-4">
-                                    <img src={post.author.picture.url} alt="" className="h-10 w-10 rounded-full bg-gray-100" />
-                                    <div className="text-sm leading-6">
-                                        <p className="font-semibold text-gray-900 dark:text-white">
-                                            <span className="absolute inset-0" />
-                                            {post.author.name}
-                                        </p>
-                                    </div>
+                                    {post.authors.map((author) => (
+                                        <div key={author.name} className="flex items-center gap-x-2">
+                                            {author.imageUrl && (
+                                                <img src={author.imageUrl} alt="" className="h-10 w-10 rounded-full bg-gray-100" />
+                                            )}
+                                            <div className="text-sm leading-6">
+                                                <p className="font-semibold text-gray-900 dark:text-white">
+                                                    <span className="absolute inset-0" />
+                                                    {author.name}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
                         </article>

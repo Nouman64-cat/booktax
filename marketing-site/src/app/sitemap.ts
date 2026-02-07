@@ -7,16 +7,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://booktaxsolution.com";
 
   // Static routes
-  const routes = [
-    "",
-    "/about",
-    "/contact",
-    "/pricing",
-    "/product/ai",
-    "/services",
-    "/tools/tax-calculator",
-    "/tools/bookkeeping-estimator",
-  ].map((route) => ({
+  const routes = ["", "/about", "/services", "/blogs"].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
