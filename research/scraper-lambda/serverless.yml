@@ -1,0 +1,57 @@
+service: ai-accountant-scraper
+
+provider:
+  name: aws
+  profile: zygotrix
+  region: us-east-1
+  ecr:
+    images:
+      scraper-image:
+        path: ./
+  environment:
+    OPENAI_API_KEY: ${ssm:/ai-accountant/prod/OPENAI_API_KEY~true}
+    QDRANT_HOST: ${ssm:/ai-accountant/prod/QDRANT_HOST}
+  iam:
+    role:
+      statements:
+        - Effect: "Allow"
+          Action:
+            - "dynamodb:Query"
+            - "dynamodb:GetItem"
+            - "dynamodb:PutItem"
+            - "dynamodb:UpdateItem"
+          Resource:
+            - "arn:aws:dynamodb:${aws:region}:${aws:accountId}:table/ScraperState"
+            - "arn:aws:dynamodb:${aws:region}:${aws:accountId}:table/ScraperState/index/StatusIndex"
+
+functions:
+  dailyScraper:
+    image:
+      name: scraper-image
+    timeout: 900
+    memorySize: 1024
+    events:
+      - schedule: cron(0 20 * * ? *)
+
+resources:
+  Resources:
+    ScraperStateTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: ScraperState
+        AttributeDefinitions:
+          - AttributeName: url
+            AttributeType: S
+          - AttributeName: status
+            AttributeType: S
+        KeySchema:
+          - AttributeName: url
+            KeyType: HASH
+        BillingMode: PAY_PER_REQUEST
+        GlobalSecondaryIndexes:
+          - IndexName: StatusIndex
+            KeySchema:
+              - AttributeName: status
+                KeyType: HASH
+            Projection:
+              ProjectionType: ALL

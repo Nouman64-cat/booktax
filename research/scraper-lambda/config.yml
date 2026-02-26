@@ -1,0 +1,24 @@
+qdrant:
+  collection_name: "tax_knowledge_base"
+  vector_size: 1536
+  distance_metric: "Cosine"
+
+openai:
+  embedding_model: "text-embedding-3-small"
+
+scrapers:
+  irs_base_url: "https://www.irs.gov"
+  cra_base_url: "https://www.canada.ca"
+  irs_sitemap_url: "https://www.irs.gov/sitemap.xml"
+  cra_sitemap_url: "https://www.canada.ca/en/sitemap.xml"
+
+chunking:
+  max_tokens: 500
+  overlap: 50
+  encoding_model: "cl100k_base" # Required for text-embedding-3-small
+
+dynamodb:
+  table_name: "ScraperState"
+  status_pending: "PENDING"
+  status_processed: "PROCESSED"
+  status_error: "ERROR"
