@@ -1,13 +1,19 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 interface NavItem {
     label: string;
     href: string;
     icon: React.ReactNode;
+}
+
+interface UserInfo {
+    name: string;
+    email: string;
+    role: string;
 }
 
 const NAV_ITEMS: NavItem[] = [
@@ -59,6 +65,22 @@ const NAV_ITEMS: NavItem[] = [
 
 export default function Sidebar() {
     const pathname = usePathname();
+    const router = useRouter();
+    const [user, setUser] = useState<UserInfo | null>(null);
+
+    useEffect(() => {
+        fetch('/api/auth/me')
+            .then((res) => res.json())
+            .then((json) => {
+                if (json.success) setUser(json.data);
+            })
+            .catch(() => { });
+    }, []);
+
+    const handleLogout = async () => {
+        await fetch('/api/auth/logout', { method: 'POST' });
+        router.push('/login');
+    };
 
     return (
         <aside className="sidebar">
@@ -76,8 +98,8 @@ export default function Sidebar() {
                     </svg>
                 </div>
                 <div className="sidebar__brand-text">
-                    <span className="sidebar__brand-name">TaxKB Portal</span>
-                    <span className="sidebar__brand-tag">Knowledge Base</span>
+                    <span className="sidebar__brand-name">Bixious Research</span>
+                    <span className="sidebar__brand-tag">Research Portal</span>
                 </div>
             </div>
 
@@ -101,6 +123,28 @@ export default function Sidebar() {
             </nav>
 
             <div className="sidebar__footer">
+                {user && (
+                    <div className="sidebar__user">
+                        <div className="sidebar__user-avatar">
+                            {user.name.charAt(0).toUpperCase()}
+                        </div>
+                        <div className="sidebar__user-info">
+                            <span className="sidebar__user-name">{user.name}</span>
+                            <span className="sidebar__user-email">{user.email}</span>
+                        </div>
+                        <button
+                            className="sidebar__logout-btn"
+                            onClick={handleLogout}
+                            title="Sign out"
+                        >
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                                <polyline points="16 17 21 12 16 7" />
+                                <line x1="21" y1="12" x2="9" y2="12" />
+                            </svg>
+                        </button>
+                    </div>
+                )}
                 <div className="sidebar__status">
                     <span className="sidebar__status-dot" />
                     <span className="sidebar__status-text">System Online</span>

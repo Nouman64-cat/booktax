@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Outfit } from 'next/font/google';
 import './globals.css';
-import Sidebar from '@/components/layout/Sidebar';
-import { ToastProvider } from '@/components/ui/Toast';
+import ClientLayout from '@/components/layout/ClientLayout';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -17,9 +16,9 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: 'TaxKB Portal — Knowledge Base Ingestion',
+  title: 'Bixious Research — Research Portal',
   description:
-    'Upload documents, generate embeddings, and manage your tax knowledge base with TaxKB Portal.',
+    'Upload documents, generate embeddings, and manage your research knowledge base with Bixious Research Portal.',
 };
 
 export default function RootLayout({
@@ -30,12 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${outfit.variable}`}>
       <body>
-        <ToastProvider>
-          <div className="app-layout">
-            <Sidebar />
-            <div className="app-layout__content">{children}</div>
-          </div>
-        </ToastProvider>
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );
